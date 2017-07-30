@@ -1,0 +1,12 @@
+<shape name="wheel_03_150.png">
+  <circle x="90" y="89" radius="10" />
+  <triangle x1="82" y1="81" x2="82" y2="9" x3="96" y3="9" />
+  <triangle x1="96" y1="9" x2="82" y2="82" x3="96" y3="83" />
+  <triangle x1="19" y1="122" x2="25" y2="134" x3="86" y3="98" />
+  <triangle x1="86" y1="98" x2="81" y2="87" x3="19" y3="122" />
+  <triangle x1="92" y1="99" x2="99" y2="87" x3="160" y3="121" />
+  <triangle x1="160" y1="121" x2="150" y2="133" x3="92" y3="99" />
+  <circle x="89" y="13" radius="7" />
+  <circle x="155" y="127" radius="7" />
+  <circle x="24" y="127" radius="7" />
+</shape>

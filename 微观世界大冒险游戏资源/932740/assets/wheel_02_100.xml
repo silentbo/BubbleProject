@@ -1,0 +1,4 @@
+<shape name="wheel_02_100.png">
+  <triangle x1="26" y1="4" x2="26" y2="55" x3="32" y3="55" />
+  <triangle x1="26" y1="4" x2="32" y2="3" x3="32" y3="55" />
+</shape>

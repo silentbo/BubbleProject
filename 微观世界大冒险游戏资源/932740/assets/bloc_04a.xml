@@ -1,0 +1,11 @@
+<shape name="bloc_04a.png">
+  <circle x="20" y="20" radius="18" />
+  <circle x="59" y="58" radius="18" />
+  <circle x="34" y="44" radius="19" />
+  <triangle x1="35" y1="11" x2="47" y2="31" x3="29" y3="35" />
+  <triangle x1="47" y1="31" x2="69" y2="44" x3="50" y3="50" />
+  <triangle x1="2" y1="21" x2="6" y2="41" x3="29" y3="35" />
+  <triangle x1="6" y1="41" x2="21" y2="58" x3="29" y3="35" />
+  <triangle x1="23" y1="60" x2="41" y2="72" x3="50" y3="50" />
+  <triangle x1="50" y1="50" x2="41" y2="72" x3="59" y3="77" />
+</shape>

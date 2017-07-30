@@ -1,0 +1,7 @@
+<shape name="jelly_04.png">
+  <circle x="80" y="36" radius="23" />
+  <circle x="54" y="68" radius="23" />
+  <circle x="98" y="70" radius="25" />
+  <circle x="31" y="74" radius="22" />
+  <circle x="127" y="73" radius="24" />
+</shape>

@@ -1,0 +1,8 @@
+<shape name="bloc_02.png">
+  <circle x="19" y="19" radius="18" />
+  <circle x="59" y="19" radius="18" />
+  <triangle x1="20" y1="1" x2="40" y2="6" x3="40" y3="20" />
+  <triangle x1="40" y1="20" x2="40" y2="6" x3="61" y3="1" />
+  <triangle x1="40" y1="20" x2="18" y2="37" x3="40" y3="31" />
+  <triangle x1="40" y1="31" x2="61" y2="38" x3="40" y3="20" />
+</shape>

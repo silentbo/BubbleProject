@@ -1,0 +1,9 @@
+<shape name="bloc_06b_200.png">
+	<circle x="200" y="119" radius="35" />
+	<circle x="42" y="41" radius="38" />
+	<circle x="91" y="56" radius="38" />
+	<circle x="169" y="114" radius="37" />
+	<circle x="125" y="84" radius="34" />
+	<circle x="68" y="46" radius="38" />
+	<circle x="145" y="101" radius="36" />
+</shape>

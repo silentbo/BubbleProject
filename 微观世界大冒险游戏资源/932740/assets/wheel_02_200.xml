@@ -1,0 +1,6 @@
+<shape name="wheel_02_200.png">
+  <triangle x1="83" y1="13" x2="82" y2="166" x3="96" y3="167" />
+  <circle x="89" y="14" radius="7" />
+  <circle x="89" y="164" radius="7" />
+  <triangle x1="83" y1="13" x2="96" y2="12" x3="96" y3="167" />
+</shape>

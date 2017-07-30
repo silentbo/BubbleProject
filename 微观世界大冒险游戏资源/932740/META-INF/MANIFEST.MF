@@ -1,0 +1,3253 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_37 (Sun Microsystems Inc.)
+
+Name: assets/stripes.png
+SHA1-Digest: dJVdoHYp3hhALFpXz6InKtRIOF0=
+
+Name: assets/C_179.h
+SHA1-Digest: KcBlWghKnxKDf1OEqYYkGh5ss8w=
+
+Name: assets/A/A_05.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/C/C_126.h
+SHA1-Digest: /bFSaFODOj3h23ZigTlCEcdRBYs=
+
+Name: assets/C/C_86.h
+SHA1-Digest: WnY5wvpNwpQiKuKG4O1/NFVCgfY=
+
+Name: assets/germ_small_01.xml
+SHA1-Digest: sayjcvR9L6ykdpHDss+hmAZyPTY=
+
+Name: assets/bloc_05a_200.xml
+SHA1-Digest: fQRtUEF/xwBFoqA/xOdR0fw5q5A=
+
+Name: assets/B/B_115.hills.h
+SHA1-Digest: Ay7tKBjRM4aGWDSkGOBqn0lMpoA=
+
+Name: assets/B/B_46.hills.h
+SHA1-Digest: 3UH5ZhyaCDhVRejNWznL+cq8+mc=
+
+Name: assets/A_148.h
+SHA1-Digest: 7AnDZyg2ruNR848XO6WYyqj2rtY=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_disabled_light.9.png
+SHA1-Digest: dlyC1g3UFccxhzDkcTFKyeN/a1U=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_disabled_light.9.png
+SHA1-Digest: 335/wED48zH+87QMXhgn/9PUEWc=
+
+Name: assets/C_209.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/jelly_01.xml
+SHA1-Digest: HRdA8jgj0antz33Zn2YVftOFOUQ=
+
+Name: assets/jelly_02a.xml
+SHA1-Digest: FzoD2pEh8uLFtNQbjjll/Wt52v4=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: m/Xwtft/xZQGPmqPZTS+CWA9RPw=
+
+Name: assets/D/D_164.h
+SHA1-Digest: uclE7iFnVJWlph8cnN4pA4IxLYE=
+
+Name: assets/B/B_84.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B/B_205.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/D_118.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/B/B_51.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: dlyC1g3UFccxhzDkcTFKyeN/a1U=
+
+Name: assets/A_65.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/A/A_82.h
+SHA1-Digest: AKJ8/xpU7pMGrH6fVAnkOvXxt4Y=
+
+Name: assets/world04_blocs@2x.png
+SHA1-Digest: fVK64EOZA1S8tozBdEUsYJHQ2PQ=
+
+Name: assets/B/B_22.hills.h
+SHA1-Digest: G+dG1E4ZjJ6Sa13Qw8Uvaw9vJ0E=
+
+Name: assets/C/C_86.hills.h
+SHA1-Digest: eGg+sZ0Nw/g+TRpvbPlUMQ435P0=
+
+Name: assets/Boom.wav
+SHA1-Digest: lgxQu1RmET+M8QDlxxeAhlGt5AE=
+
+Name: assets/C/C_198.h
+SHA1-Digest: va38RTWyYjX+zoqasuMfricKsU0=
+
+Name: assets/B_165.hills.h
+SHA1-Digest: n7hbGYI2wp+o7SpowPSrRrPu2es=
+
+Name: assets/C/C_215.hills.h
+SHA1-Digest: C+i7LlVUNYkBUkxzHxbODnb6Gx8=
+
+Name: res/drawable-xxhdpi/ic_plusone_small_off_client.png
+SHA1-Digest: QITJ8CHL6O6NtaNSW5zIXy1Z3PY=
+
+Name: assets/world03_tex_base_01@2x.png
+SHA1-Digest: Lsw4v5bYiTQz5gBcN2qeXCgr4ZY=
+
+Name: assets/B_163.hills.h
+SHA1-Digest: EIPkicxRoNMxheCpmUpraJFIiXk=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_disabled_focus_light.
+ 9.png
+SHA1-Digest: b42K0clHNFYXwV3ZnPnqegDHkPk=
+
+Name: assets/C_102.h
+SHA1-Digest: YRdvI3Uoar3vCvYG9PULK05ZNb4=
+
+Name: assets/A_26.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: XafQmHTM31rmnwizdORnSLe3D8c=
+
+Name: assets/B_68.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_60.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_51.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C/C_156.hills.h
+SHA1-Digest: GJ446NCDWknmTadZA+4vs5cIfvo=
+
+Name: assets/B_133.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B/B_78.hills.h
+SHA1-Digest: ofrJ7n/vJlE9UIgucRcJ/1TS5QA=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: Ra0CWtLa2DJikrOgUnX71YmlLDo=
+
+Name: assets/B_97.hills.h
+SHA1-Digest: q+7sl45jZUbtYvKUkwB7ODNBYYM=
+
+Name: assets/A_32.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/B_130.hills.h
+SHA1-Digest: 0L40gEqg5FWLHFGh+JtcWCR3/2E=
+
+Name: assets/B_18.hills.h
+SHA1-Digest: etpzROvT0U/9Ria3BlxOxg5VjkI=
+
+Name: assets/B/B_175.hills.h
+SHA1-Digest: D3RqHm8BOiQ11hnqgSeq3feHFCA=
+
+Name: assets/bloc_04a_150.xml
+SHA1-Digest: 2AXaR4512rhyH7avUyln8s3iYjI=
+
+Name: assets/C/C_166.h
+SHA1-Digest: ryeJb+YymBi0BaX8s3Cn6p0GfnQ=
+
+Name: assets/B/B_205.h
+SHA1-Digest: /mMIvkl0hEieiDCzWIPl/B8/HnM=
+
+Name: assets/C_170.h
+SHA1-Digest: cebhVXVUKT7uGZ/f2Td8raV2how=
+
+Name: assets/A/A_42.h
+SHA1-Digest: nJczPuj9khl7mWR6u+FnZUBFvG0=
+
+Name: assets/B_80.h
+SHA1-Digest: KtSIX4px15xAY/Fi5g9sQ0g+gaY=
+
+Name: assets/A/A_178.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B/B_108.h
+SHA1-Digest: xfhUiIKCg3uYfgC/efLC7vFxhEY=
+
+Name: assets/B_52.hills.h
+SHA1-Digest: n7hbGYI2wp+o7SpowPSrRrPu2es=
+
+Name: assets/C/C_162.h
+SHA1-Digest: lckUoZTQi7FZFLOlwZ5o8Nh0+pM=
+
+Name: assets/B_91.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: res/drawable-xxhdpi/ic_plusone_medium_off_client.png
+SHA1-Digest: 5jta9QUYJ9k9tMHwzhYqoefVy+o=
+
+Name: assets/B/B_10.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/C_16.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/world02_blocs@2x.png
+SHA1-Digest: sKyY1gtBzvhQJoG6ienvlqXfp0E=
+
+Name: res/drawable-xxhdpi/ic_plusone_standard_off_client.png
+SHA1-Digest: GsuPJv1dNcolfrnKEL4GX2NHRmk=
+
+Name: assets/general.png
+SHA1-Digest: PSz0lwKHD5XrcTPciGnMmCRZUAo=
+
+Name: assets/B_96.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C/C_214.h
+SHA1-Digest: 10bB6Zu+NTL5xPz5YXTBOUKgTZ8=
+
+Name: assets/C_116.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/B_57.h
+SHA1-Digest: 74elODcuQpSi+TYnELPb+hL7ulg=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: rJ+E2Md9eoyscbWGEF0Z5SPnWAU=
+
+Name: assets/B_39.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/B_91.h
+SHA1-Digest: fjaiAOxyZKo86k3ncCG5kd0E0TE=
+
+Name: assets/B/B_204.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/bloc_05b.xml
+SHA1-Digest: sKyOxPzTs7bqEh7u7GZILmqU9OQ=
+
+Name: assets/C/C_127.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/Gameover.wav
+SHA1-Digest: pTNKoTmNXidvnXustiEsEy6/4eU=
+
+Name: assets/B_36.h
+SHA1-Digest: I8ckankATFnC872EyArDX7fsX6Q=
+
+Name: assets/wheel_04_200.xml
+SHA1-Digest: IVIWPW3JNhIIA1kWUhw9/7gwQ0Q=
+
+Name: assets/general@2x.plist
+SHA1-Digest: a4DN0IC8X6Tav8X++VhnWJvURSE=
+
+Name: assets/C/C_170.h
+SHA1-Digest: cebhVXVUKT7uGZ/f2Td8raV2how=
+
+Name: assets/A/A_159.h
+SHA1-Digest: tbNtwU3JjRQwIf0Ycn7AO53x5Fs=
+
+Name: assets/B_71.h
+SHA1-Digest: Zd7+EuFSvppHn5VERHnwvRVuH8M=
+
+Name: assets/B/B_64.h
+SHA1-Digest: MT8hnbUFvPjClk3BF3wgSUQd1To=
+
+Name: assets/B_192.h
+SHA1-Digest: q2/34pOzHU6FtVr/F3Ok3KbPN8M=
+
+Name: assets/world03_blocs@2x.plist
+SHA1-Digest: 9Hx74fQmHw6XpzkIGaO36jkO74o=
+
+Name: assets/wheel_03_100.xml
+SHA1-Digest: YAHHd7g4VYC2WJh3mFgRKYI8OxY=
+
+Name: assets/C/C_99.h
+SHA1-Digest: 7880zpH58Ze7dDHzhZToIlC48iI=
+
+Name: assets/B_206.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/A/A_15.h
+SHA1-Digest: Snc6k1VPGo+EG0DyQSYKzW4ia18=
+
+Name: assets/world03_blocs.png
+SHA1-Digest: Io2XOYfO02SApH2s3MZB/CTC06A=
+
+Name: assets/C/C_155.h
+SHA1-Digest: vmj/OheoFO5Y1hmsWyRYJZfLpOk=
+
+Name: assets/C_154.h
+SHA1-Digest: 1VXIs/BQZmvloYatEWu45Q1cFaw=
+
+Name: assets/B/B_39.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/C/C_179.hills.h
+SHA1-Digest: jF9oTiKEcQ2z/TPJ35GwuqNASiM=
+
+Name: assets/A/A_148.h
+SHA1-Digest: 7AnDZyg2ruNR848XO6WYyqj2rtY=
+
+Name: assets/C/C_179.h
+SHA1-Digest: KcBlWghKnxKDf1OEqYYkGh5ss8w=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_disabled_focus_dark.9
+ .png
+SHA1-Digest: b42K0clHNFYXwV3ZnPnqegDHkPk=
+
+Name: assets/general.plist
+SHA1-Digest: U2yxC/343Fi0FKhdJo3/DVn33MI=
+
+Name: assets/Back.wav
+SHA1-Digest: wKiPTaOzGBBJSwhPmAhq0DrfeqM=
+
+Name: assets/B/B_171.h
+SHA1-Digest: QFIuc4DU3szvg0pZheteqwZcods=
+
+Name: assets/A/A_17.h
+SHA1-Digest: PFm74pXKFU5+hEAnFtZ0Y3n8ULs=
+
+Name: assets/B/B_57.h
+SHA1-Digest: 74elODcuQpSi+TYnELPb+hL7ulg=
+
+Name: res/drawable/common_signin_btn_icon_dark.xml
+SHA1-Digest: Es+BrUj/3iO3PavER7kzspqepwc=
+
+Name: assets/D/D_87.h
+SHA1-Digest: 2r7wdeG81g0+P/7WOsmuR9zEoGI=
+
+Name: assets/B_176.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B_213.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/C_215.h
+SHA1-Digest: OklTCDnLT2noJPc8SVRB650NUoc=
+
+Name: assets/B_61.h
+SHA1-Digest: FIOMnlqPYM5/3z5rc2Ez79P29ic=
+
+Name: assets/C_16.h
+SHA1-Digest: bI+KzD1ZXE8PVbWQWAxzl3tEidw=
+
+Name: assets/B/B_160.hills.h
+SHA1-Digest: LKHaMQ4G9r0HUgb9PQy1wqXZdyk=
+
+Name: assets/C_117.h
+SHA1-Digest: MVRxqZ25pKcl0BvAXm74WJbyMn8=
+
+Name: assets/A_26.h
+SHA1-Digest: CFTOYDH4wo7f5GJK5u0cNQnhRos=
+
+Name: assets/C_173.h
+SHA1-Digest: xjHqIk/qEREFcRQqUxph87RtDE4=
+
+Name: assets/C_131.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B/B_111.h
+SHA1-Digest: PmdavR3VhRtB/FDiUHPQVl3klUs=
+
+Name: assets/A/A_19.hills.h
+SHA1-Digest: FJS16Neo9dSruud/s7MMM4iCyP8=
+
+Name: assets/A_56.h
+SHA1-Digest: fIFAp9AAhlIJB8j/cBqyV30XKfc=
+
+Name: assets/B_130.h
+SHA1-Digest: fW/k70JnQBP/pqB+KxvT3DO+GcE=
+
+Name: assets/D_114.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_13.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: CK9qY4V6yvTc5Oq6NlFVhW2IhC8=
+
+Name: assets/B_119.h
+SHA1-Digest: c5l+BgazLwVmGZXytGKXy8cAwyk=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: +06/NDBvS48sX5YZ+/Ckh0GqeVY=
+
+Name: assets/A/A_188.h
+SHA1-Digest: /wZnD00cv7wPvyqi4tijxQPTR0E=
+
+Name: assets/B_95.h
+SHA1-Digest: V4cNAT3Jj7Zcv2sgrfUzI5C9WuI=
+
+Name: assets/B/B_158.h
+SHA1-Digest: 0KlHWauHuUJB6xAUZV+WYWnksCM=
+
+Name: assets/D_114.h
+SHA1-Digest: QQNbJCmuw2fGi5B4PjWXgtD55Ak=
+
+Name: assets/B_40.h
+SHA1-Digest: o8tuoxiqG0VUZIM5LNdO0CIwe/o=
+
+Name: assets/B/B_91.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C_110.hills.h
+SHA1-Digest: jUoMozlJQeB3hmbap63SnoNDGX4=
+
+Name: assets/B/B_53.h
+SHA1-Digest: DtmdlxuBR0f8EILnLL64EIvehwo=
+
+Name: assets/B_76.h
+SHA1-Digest: 0eSCC9rFlStvO9csCtHkkNtZZl8=
+
+Name: assets/B_80.hills.h
+SHA1-Digest: wcCzq4ijzO5ihYsBCS7WD8DQZno=
+
+Name: assets/B/B_80.hills.h
+SHA1-Digest: wcCzq4ijzO5ihYsBCS7WD8DQZno=
+
+Name: assets/A_58.h
+SHA1-Digest: F6v0yt7ZWxUw2BNnHbi3B0YBr/0=
+
+Name: assets/D/D_90.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_79.h
+SHA1-Digest: h1QRDe6ltvQlMkDiqrw/MOb4PjY=
+
+Name: assets/B/B_160.h
+SHA1-Digest: e1x1wHaXrKUDGFR8z1ttqNW1uOg=
+
+Name: assets/B/B_196.h
+SHA1-Digest: 3AG/6T4dYZvEz57erd2SLkXcyaw=
+
+Name: assets/A_17.h
+SHA1-Digest: PFm74pXKFU5+hEAnFtZ0Y3n8ULs=
+
+Name: assets/A_30.h
+SHA1-Digest: uSfOep6woQBppCp073yFmOkCkec=
+
+Name: res/drawable-mdpi/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: fs43cK8pCa8r8nHinjOjK5qWK0M=
+
+Name: assets/B_18.h
+SHA1-Digest: Mf2RwfLA9FME+NmQGVrGXtsiNj8=
+
+Name: assets/A_148.hills.h
+SHA1-Digest: 64kXYzSopDK8BkuIjJzRUgGkxH4=
+
+Name: assets/A/A_38.h
+SHA1-Digest: xMt9WcP3UswFH5482ervzdiVPGs=
+
+Name: assets/A_19.h
+SHA1-Digest: dOA6RpJDQFfbynLU27Uc4AXd6sI=
+
+Name: assets/B/B_52.hills.h
+SHA1-Digest: n7hbGYI2wp+o7SpowPSrRrPu2es=
+
+Name: assets/A_141.h
+SHA1-Digest: POTnoiCvr4aUHm/hPwBXbblNzSc=
+
+Name: assets/B_22.hills.h
+SHA1-Digest: G+dG1E4ZjJ6Sa13Qw8Uvaw9vJ0E=
+
+Name: assets/C_117.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/B_44.h
+SHA1-Digest: 6JYrCN0mwqXNQirr/nP1cL9Xao8=
+
+Name: assets/B/B_06.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/wheel_04_150.xml
+SHA1-Digest: Rvl4hCsH2JzFQEW6MkSeuIBMBuI=
+
+Name: assets/A/A_29.hills.h
+SHA1-Digest: uqH/HcExBWPKh/dK7E6OuhWeukw=
+
+Name: assets/B_97.h
+SHA1-Digest: gOqCvPalZ+5uTGb57ZDVp5TPHdg=
+
+Name: assets/B/B_183.hills.h
+SHA1-Digest: bNn3NY2JUZaNKWPpyKJj0qy05kE=
+
+Name: assets/B/B_41.hills.h
+SHA1-Digest: Bxc1zWULVXs1FRdQiDyKgmFLGkw=
+
+Name: assets/C/C_151.h
+SHA1-Digest: a/aRNSGRHNmcEftr5PbkVDSdAzo=
+
+Name: assets/B_93.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C/C_69.hills.h
+SHA1-Digest: hOjpk8PD8aZHvuaE6IXW93hH9sM=
+
+Name: assets/A_60.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_75.hills.h
+SHA1-Digest: NJLAg6bGhLst+mnUn4FMh0MZeqk=
+
+Name: assets/B/B_67.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/B_132.h
+SHA1-Digest: RYJ8hzPhfxds+Ztxqe0ykaeYeAg=
+
+Name: assets/D_191.hills.h
+SHA1-Digest: zQu7mzVgOlEdcYbM8xwO7McqTnQ=
+
+Name: assets/B_171.h
+SHA1-Digest: QFIuc4DU3szvg0pZheteqwZcods=
+
+Name: assets/tex2_test.png
+SHA1-Digest: frV6wFpXw5w29zNIk+O6ASUZP6M=
+
+Name: assets/B_134.h
+SHA1-Digest: CUfW5VXH6L5WPjLefi41oLF6SyQ=
+
+Name: assets/C/C_153.h
+SHA1-Digest: rc1udZ5zKDYakWY6UGWx4bAwhu0=
+
+Name: assets/stripes@2x.png
+SHA1-Digest: k43FVZoyT19KqvYp7hYfq8nTjOA=
+
+Name: assets/bloc_06b_150.xml
+SHA1-Digest: I9FO0MYbXGBC78z5ZxtuXS/Pz3s=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: Z0AQ31oUXoN9NNsjqdwAzo8AFG8=
+
+Name: assets/A_09.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/C_200.hills.h
+SHA1-Digest: uSERogvtW2ldOcwcpvP3mypQquc=
+
+Name: assets/C/C_211.hills.h
+SHA1-Digest: ZYBBRStO3EhUEP6IKtJLQOhZ2R8=
+
+Name: res/drawable-mdpi/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: CjWbJGF7yPHXZJW4G6h47JrTVCI=
+
+Name: assets/D_125.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B_174.hills.h
+SHA1-Digest: D3RqHm8BOiQ11hnqgSeq3feHFCA=
+
+Name: assets/D_125.h
+SHA1-Digest: +WoR3/5pTI2JwoZJ7EcwVFGnWDU=
+
+Name: assets/world02_tex_base_01.png
+SHA1-Digest: o+uR6E2bpDkxtlvSLFFlPuFs1lE=
+
+Name: assets/A/A_65.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/world02_tex_01@2x.png
+SHA1-Digest: s3D8QFkgTNhPc7u650YWKPPfqLc=
+
+Name: assets/B/B_169.hills.h
+SHA1-Digest: pUUpUKUz3h5bixWZMYtBoWgTCDk=
+
+Name: assets/D_190.h
+SHA1-Digest: hfyqXp68KaQ3OZkuP5DpxfiFVYg=
+
+Name: assets/B/B_39.h
+SHA1-Digest: nu16LKCFoiEoLZ83LmKvl9Ysvig=
+
+Name: assets/B_196.hills.h
+SHA1-Digest: AIanPURZUnBusvfOoFUPbQ24l+I=
+
+Name: assets/C/C_112.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_10.h
+SHA1-Digest: Q5IPHDNBIPA2Fr7fHW4JdouvmXs=
+
+Name: assets/C_162.h
+SHA1-Digest: lckUoZTQi7FZFLOlwZ5o8Nh0+pM=
+
+Name: assets/A_24.hills.h
+SHA1-Digest: EDHzUT7m+SesBUcxFAwunOJYEr8=
+
+Name: assets/A/A_20.h
+SHA1-Digest: QOI2MHaYn/snfjVWaY7l1jEurAs=
+
+Name: assets/C_166.h
+SHA1-Digest: ryeJb+YymBi0BaX8s3Cn6p0GfnQ=
+
+Name: assets/C_166.hills.h
+SHA1-Digest: H+uSViMVu/lAUIchvnsqq7d6m0s=
+
+Name: assets/B_165.h
+SHA1-Digest: lsbPkPdAo/3IKnPzAVmTqErAy7g=
+
+Name: assets/D_92.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: OebhkvLzi+HxWyFSPLXN317xnu4=
+
+Name: assets/C_85.hills.h
+SHA1-Digest: yYiINuwwbpoQdqnt0ZRWMeIt5xo=
+
+Name: assets/A/A_09.h
+SHA1-Digest: Zoj/SxP0v7KxVTviKlQwJVCokxs=
+
+Name: assets/B_47.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B/B_97.hills.h
+SHA1-Digest: q+7sl45jZUbtYvKUkwB7ODNBYYM=
+
+Name: assets/C/C_54.h
+SHA1-Digest: Q6UxdLuegbHlR2FO325TmPRz9Js=
+
+Name: assets/A/A_14.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/B_10.h
+SHA1-Digest: Q5IPHDNBIPA2Fr7fHW4JdouvmXs=
+
+Name: assets/B_175.h
+SHA1-Digest: sbPV656wb4TVeG+NLv/vwQ+dWkY=
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: S0/MYG9ZBW5qDcemwqkioBESTSg=
+
+Name: assets/A_83.h
+SHA1-Digest: bSnYHQIBmJsXjZ22KU+5PSLXIuE=
+
+Name: res/drawable-mdpi/ic_plusone_standard_off_client.png
+SHA1-Digest: xWYT0qzRVNaGybBaBeMKbeGgkgE=
+
+Name: assets/C_189.hills.h
+SHA1-Digest: 3wTVhD19ZuiuJb4C4qakoLDzsoQ=
+
+Name: assets/B/B_96.h
+SHA1-Digest: swITEP0JCN8JhdpQZYdoJY3vTHc=
+
+Name: assets/bloc_06a.xml
+SHA1-Digest: 3Ab5cn72e0zSUqagITVvLS3NHDI=
+
+Name: res/drawable-mdpi/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: e/1gfXv1VTsUSosCIqLmo08hhVo=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: BGkrvXXWq/EKzYVVD87lu1lO/no=
+
+Name: assets/C/C_198.hills.h
+SHA1-Digest: LSli9Mgh82nZSUnBLbAvfYCS1h0=
+
+Name: assets/C/C_209.h
+SHA1-Digest: OJ0od0yGJy8iwMuNrulEjm77kyQ=
+
+Name: assets/ui@2x.plist
+SHA1-Digest: RkZDFPC8xcWuZjagfucnfzqJ9HI=
+
+Name: assets/D_87.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B/B_91.h
+SHA1-Digest: fjaiAOxyZKo86k3ncCG5kd0E0TE=
+
+Name: assets/B/B_25.h
+SHA1-Digest: Z1d1n/gs5I6CRu2F4/dVEKY0GHY=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: DrMvHJWaI2bzI4qWHNAd/Yb/6Sw=
+
+Name: assets/B/B_185.h
+SHA1-Digest: b2VicCpRHc1Fa4Mtu6WLRiaQGmg=
+
+Name: assets/B_205.h
+SHA1-Digest: /mMIvkl0hEieiDCzWIPl/B8/HnM=
+
+Name: assets/C_156.hills.h
+SHA1-Digest: GJ446NCDWknmTadZA+4vs5cIfvo=
+
+Name: assets/B/B_94.h
+SHA1-Digest: gZLvyd4ThYi7QPCY2q39MmhmT1I=
+
+Name: assets/B/B_81.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/A_139.h
+SHA1-Digest: jzdym5k5wkJARNWBaB0cJ0NPGcs=
+
+Name: assets/C_173.hills.h
+SHA1-Digest: 2SWw/gH5q58u3W/hMUxz7ngc7ks=
+
+Name: assets/A/A_04.hills.h
+SHA1-Digest: sLmCwzBqUcFBE9iqwY6EbYyCTsE=
+
+Name: assets/HelloWorld.png
+SHA1-Digest: uMRP9CaYnsLPgVhUPLYuza/uWAs=
+
+Name: assets/A/A_31.h
+SHA1-Digest: Abm/fRL0Jh74tIitFHxNHHVUb3s=
+
+Name: assets/B_208.hills.h
+SHA1-Digest: LT9VSc6c72Uzv8ZJLknp8SyrYtE=
+
+Name: assets/B_108.h
+SHA1-Digest: xfhUiIKCg3uYfgC/efLC7vFxhEY=
+
+Name: assets/B_177.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/B/B_62.h
+SHA1-Digest: h8KC8LKQBXNscXOGTb6Ad2Ee7ZM=
+
+Name: assets/B/B_98.h
+SHA1-Digest: 2E6DhLgl4ByMtpkB1s5mimTBNXY=
+
+Name: assets/B_182.hills.h
+SHA1-Digest: UYyugP+HG4ppRbm/+UV/O4hIYhA=
+
+Name: assets/B_160.hills.h
+SHA1-Digest: LKHaMQ4G9r0HUgb9PQy1wqXZdyk=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: SywzYCel2AcDOrnPJ5YRbWP19yU=
+
+Name: assets/C/C_218.hills.h
+SHA1-Digest: EONKm34GcSIOPIjm8sMry83VxFU=
+
+Name: assets/D/D_194.h
+SHA1-Digest: 15u615JCPGLb0nMWo312od37u+4=
+
+Name: assets/D_219.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B/B_183.h
+SHA1-Digest: 1icXSyzVaHqVSSJD4p4ZLEdneqo=
+
+Name: assets/B/B_181.h
+SHA1-Digest: p/Oz+3nNQ0Rg2N1aaoG+wkSisJY=
+
+Name: assets/C_156.h
+SHA1-Digest: W6w1rrtM8XxDTNZhiHTcbeyK8IU=
+
+Name: assets/B/B_71.hills.h
+SHA1-Digest: fJoNzyPe33uf5SFwyYu8mUHJNPM=
+
+Name: assets/B_157.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B_184.h
+SHA1-Digest: CPeNksL8Lu8VQinTftRQ+e1R3M0=
+
+Name: assets/B_11.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/A_07.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/A/A_188.hills.h
+SHA1-Digest: jkV+sHu/1UWmdKlCbATOV6+LubI=
+
+Name: assets/B/B_48.hills.h
+SHA1-Digest: 2mW9JbS8J6IcGFLAt6XI2BO8pSI=
+
+Name: res/drawable-hdpi/common_signin_btn_text_disabled_focus_light.9.
+ png
+SHA1-Digest: EAeuLKBLl4TC68T+TeSlHUjUtcc=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_disabled_focus_light.9.
+ png
+SHA1-Digest: Y0ihoUpFM8pJPV2dmcbo9kwE5PI=
+
+Name: assets/A/A_28.h
+SHA1-Digest: GmujE04zK5sLW3Ap16s7PzDVH9s=
+
+Name: assets/C/C_203.h
+SHA1-Digest: 0KikAJVTStJCTpgE2qOo1gZkzSw=
+
+Name: assets/B/B_51.h
+SHA1-Digest: pmIar1Y3eZKAIt1UyG0B9oiv+Gg=
+
+Name: assets/world01_tex_base_01.png
+SHA1-Digest: M/nu6QbOzLDBdOlssBHRMkcfqQQ=
+
+Name: assets/C/C_155.hills.h
+SHA1-Digest: dftfRaTgoA+Q7xe2lDuxZRHu9Vw=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: qEJecPIWA8Y6E2TaFjGT267csWs=
+
+Name: assets/C/C_152.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B/B_18.h
+SHA1-Digest: Mf2RwfLA9FME+NmQGVrGXtsiNj8=
+
+Name: assets/D_187.hills.h
+SHA1-Digest: mAY9a8dQqWLWgGamxzwVhXTC/ak=
+
+Name: assets/A/A_02.hills.h
+SHA1-Digest: VhKr5n8a2FDj7NWiqq/RMvpvoUs=
+
+Name: assets/A_24.h
+SHA1-Digest: QyaOeULfTUUZpy1COzIyIUahgBE=
+
+Name: assets/C/C_162.hills.h
+SHA1-Digest: C+HJLQWWaVwCnAdAgEWk+ofdrMs=
+
+Name: assets/C/C_107.hills.h
+SHA1-Digest: WsPAyx6MIx5QmKrHi7ORRT/CWlc=
+
+Name: res/drawable-xhdpi/icon.png
+SHA1-Digest: PSVlAsoZ+OYT7fAhmiAWjnEw0wk=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: Zq4vKMaaFuv7aJlVfp+xH2lAlQg=
+
+Name: assets/C/C_110.h
+SHA1-Digest: VxPWGrnPEn1m6IVSSQ0MBxM+Xdg=
+
+Name: assets/C_155.hills.h
+SHA1-Digest: dftfRaTgoA+Q7xe2lDuxZRHu9Vw=
+
+Name: assets/A_28.h
+SHA1-Digest: GmujE04zK5sLW3Ap16s7PzDVH9s=
+
+Name: assets/B_186.h
+SHA1-Digest: up2dfTfSrcNVI9IuDB2oO76vaGQ=
+
+Name: assets/B_25.h
+SHA1-Digest: Z1d1n/gs5I6CRu2F4/dVEKY0GHY=
+
+Name: assets/B/B_138.hills.h
+SHA1-Digest: eoIMRircIP52Sh4rM24SQDKBmQQ=
+
+Name: assets/B_95.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C_99.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A_27.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/stripes@2x.plist
+SHA1-Digest: 8tIrvrMQj4zghte2YO0OLzZkDgM=
+
+Name: assets/B_134.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/D/D_187.hills.h
+SHA1-Digest: mAY9a8dQqWLWgGamxzwVhXTC/ak=
+
+Name: assets/B_78.h
+SHA1-Digest: TWlNd3GE5cvCzB9Cl/CYrr9m2qY=
+
+Name: assets/C/C_121.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B/B_169.h
+SHA1-Digest: 1bt4LUOuj2iNG/cYUkWUUFfkKoA=
+
+Name: assets/D_201.hills.h
+SHA1-Digest: M/juc0LItulvsc4ciiyRYB1M3vk=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: jSpbfiEyALRKJOe5Cv4aya+GKDk=
+
+Name: assets/world02_tex_01.png
+SHA1-Digest: g3KPFJvfDwyPZ6ikEVsi6WKYE4Y=
+
+Name: assets/B/B_124.h
+SHA1-Digest: CS+EFEwuRjKIn/VJEVQhlgu0VZs=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: XCBel0uHJgpzVHsudWnofvVQJGw=
+
+Name: assets/world03_tex_01@2x.png
+SHA1-Digest: MWaf787Q7z9ip1FEnyg7E8bfVx8=
+
+Name: assets/B/B_34.h
+SHA1-Digest: bgH8q6IAFBAdM8bnbfr2uKZ+dCc=
+
+Name: assets/C_167.h
+SHA1-Digest: yv+/CaWhN5/73tgaQ17nCgS6/Mg=
+
+Name: assets/wheel_03_200.xml
+SHA1-Digest: lyolTzUQdaGn2ACsIRoOswGiKaw=
+
+Name: assets/C/C_150.hills.h
+SHA1-Digest: D3RqHm8BOiQ11hnqgSeq3feHFCA=
+
+Name: assets/void_01.h
+SHA1-Digest: eN5ibwcu9VR24UIgSYWDB+I1/uY=
+
+Name: assets/C_216.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/A_29.h
+SHA1-Digest: p1ShzCz6NzMZnrf4ckMNztleHug=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_disabled_focus_dark.9.p
+ ng
+SHA1-Digest: /9atOqtPDBdAN8fQhRv3UDgC7sc=
+
+Name: assets/world04_blocs.png
+SHA1-Digest: w2So8BQeGvihkjUADwnzAI5um74=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: H3M45l3TzbI5bqwXQc+pqiivgiI=
+
+Name: assets/A_32.h
+SHA1-Digest: HrjmdKKPXxKEcvFWq1hoWtPgE64=
+
+Name: assets/B/B_157.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/ui.png
+SHA1-Digest: CZlcKKugyINmRMVIZX/2FlHGvX0=
+
+Name: assets/B_52.h
+SHA1-Digest: Ucl7eHO9oEuaokra1xslFkxVnkA=
+
+Name: res/drawable-xhdpi/ic_plusone_tall_off_client.png
+SHA1-Digest: znT4P8AI3xcWsBof3ElTFY2hDrk=
+
+Name: assets/B_46.h
+SHA1-Digest: Vgkt9EU2dcU9y5pS0TsKXKsMa64=
+
+Name: assets/C/C_16.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/B/B_36.h
+SHA1-Digest: I8ckankATFnC872EyArDX7fsX6Q=
+
+Name: assets/C_200.h
+SHA1-Digest: DVpooyp110k4Vx7rf2PdiFLPrGE=
+
+Name: assets/D_149.hills.h
+SHA1-Digest: 64kXYzSopDK8BkuIjJzRUgGkxH4=
+
+Name: assets/B_124.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B/B_132.hills.h
+SHA1-Digest: oXA3cgjqYA7I9G8Lv8OvMWoSqfk=
+
+Name: assets/B/B_180.h
+SHA1-Digest: oub8axzKP51+eqGub/hPVgemVj0=
+
+Name: assets/A/A_14.h
+SHA1-Digest: ZvxLP2UMaQRzVGPPlHFyznbJYNE=
+
+Name: assets/B_175.hills.h
+SHA1-Digest: D3RqHm8BOiQ11hnqgSeq3feHFCA=
+
+Name: assets/world04_blocs.plist
+SHA1-Digest: MKGTBAo03WWMfU6nzR3Nn0htHDU=
+
+Name: assets/B_50.h
+SHA1-Digest: 23Q/Yk1N4CFbm4kiCLrb88c9cVo=
+
+Name: assets/D/D_191.h
+SHA1-Digest: TNoYwZZPflwI1teQA3bjRUh1v3E=
+
+Name: assets/A/A_12.h
+SHA1-Digest: +kthXMi4EfBOj6V5cMGbpc60MFY=
+
+Name: assets/C_131.h
+SHA1-Digest: RZDc5/pmETV8wEdtpN6Volq0TSQ=
+
+Name: assets/A/A_07.h
+SHA1-Digest: 3GHz2kfNfKgUoL1AuwhWb8GXvUg=
+
+Name: assets/C/C_203.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/C/C_214.hills.h
+SHA1-Digest: 4EENxdAx1wxsMlKhdENTnAgdENA=
+
+Name: assets/B/B_176.h
+SHA1-Digest: SDwxc7fM4sfoljyanvyiIEG2a+Q=
+
+Name: assets/world02_blocs.plist
+SHA1-Digest: a1RXg1tAznjnw6/X2FuFdwC43OQ=
+
+Name: assets/C/C_218.h
+SHA1-Digest: u7QxkKozei2usqZozhVulCS/fMk=
+
+Name: assets/A/A_03.h
+SHA1-Digest: 9Hl+11JMUFRGEAEFcCk2o1VwKr0=
+
+Name: assets/B_71.hills.h
+SHA1-Digest: fJoNzyPe33uf5SFwyYu8mUHJNPM=
+
+Name: assets/B_50.hills.h
+SHA1-Digest: VErw2txQRyM8OkpFaT/swzIdlIQ=
+
+Name: assets/B/B_72.h
+SHA1-Digest: Kcy8PghQBbVO59dvOUpDIebBX/Y=
+
+Name: assets/general@2x.png
+SHA1-Digest: ZPAyj9JEF+LXR7RtAGJdlJ01rcE=
+
+Name: assets/A_35.hills.h
+SHA1-Digest: QQVbSjrr+E0/l0qeqMmOtOoLvhs=
+
+Name: assets/A/A_38.hills.h
+SHA1-Digest: NaYCQOQRo/DGJ+ekF3bmWFByDwU=
+
+Name: assets/C_109.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_212.h
+SHA1-Digest: 4gx2+SMX1nl3HFY4nLi6RWcwWkw=
+
+Name: assets/D/D_122.h
+SHA1-Digest: d5q/qvTF+DcyNKf5lWShLPjNDqk=
+
+Name: assets/B_49.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/B/B_11.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B_169.hills.h
+SHA1-Digest: pUUpUKUz3h5bixWZMYtBoWgTCDk=
+
+Name: assets/A_38.hills.h
+SHA1-Digest: NaYCQOQRo/DGJ+ekF3bmWFByDwU=
+
+Name: assets/C/C_126.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/A_05.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/C/C_147.hills.h
+SHA1-Digest: J+lruxOL+1Zh5x04LhQQ47dyK9k=
+
+Name: assets/A/A_23.h
+SHA1-Digest: tguYoT1xcvHui442nBriknjV7EY=
+
+Name: assets/world04_tex_01.png
+SHA1-Digest: nr0V+PSbTFo47haUZGTnLjEQTbA=
+
+Name: assets/C_69.h
+SHA1-Digest: 5d57eI1Zx7Crq35xmiewokODTSw=
+
+Name: assets/B/B_47.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/C_203.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/C/C_106.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C/C_112.h
+SHA1-Digest: EQM3UnLiZ9K+zywMYFi9sFKMHEI=
+
+Name: assets/C_209.h
+SHA1-Digest: OJ0od0yGJy8iwMuNrulEjm77kyQ=
+
+Name: assets/D/D_202.h
+SHA1-Digest: ahKPaJNtO1akDed39mVqovtb40s=
+
+Name: assets/C_198.h
+SHA1-Digest: va38RTWyYjX+zoqasuMfricKsU0=
+
+Name: res/drawable-mdpi/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: vy6M1w6HBJW88cSK3mrq5Mo0jxs=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: TLGJt38QF/V7ZjdRMxhIHQGu0wA=
+
+Name: assets/B_160.h
+SHA1-Digest: e1x1wHaXrKUDGFR8z1ttqNW1uOg=
+
+Name: assets/B_34.h
+SHA1-Digest: bgH8q6IAFBAdM8bnbfr2uKZ+dCc=
+
+Name: assets/C_161.h
+SHA1-Digest: o1oeVegNnLMkStLQElJjbgffd2g=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_dark.9.
+ png
+SHA1-Digest: YJmDcoJhm94kAut2goBNpsKuupk=
+
+Name: assets/C/C_116.h
+SHA1-Digest: aMpPjiR/fluUse8hUgQxIS73J8Y=
+
+Name: assets/A_23.h
+SHA1-Digest: tguYoT1xcvHui442nBriknjV7EY=
+
+Name: assets/B_98.hills.h
+SHA1-Digest: +rxWJOIhbFKuLStWZpQHHj9K5Uc=
+
+Name: assets/B/B_68.h
+SHA1-Digest: p/1O0cn3Dhbr7B/U3ar4VBS3Ldw=
+
+Name: assets/bloc_01.xml
+SHA1-Digest: n/OleuONDdNMrlu+GuIkJYbDvLc=
+
+Name: assets/A/A_19.h
+SHA1-Digest: dOA6RpJDQFfbynLU27Uc4AXd6sI=
+
+Name: assets/C/C_189.h
+SHA1-Digest: vyHAcv953IUB6mDDstdVfrqWPU0=
+
+Name: assets/world01_tex_01@2x.png
+SHA1-Digest: oocM6My/16Lzp8pQEd5IJ2qW5EQ=
+
+Name: assets/A_178.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: tN0X80ClRIsJHlYapfnxQK81xy4=
+
+Name: assets/A_21.h
+SHA1-Digest: olZMqXEcyhhP2NU+gygyj6WkfsI=
+
+Name: res/drawable-hdpi/ic_plusone_medium_off_client.png
+SHA1-Digest: NHqkBfIL0tvXQGsGHO91mUCAPyI=
+
+Name: assets/A/A_27.h
+SHA1-Digest: AKtZy0xuXhHXhBnzaaOfNyhHqyY=
+
+Name: assets/C_214.hills.h
+SHA1-Digest: 4EENxdAx1wxsMlKhdENTnAgdENA=
+
+Name: assets/B/B_208.hills.h
+SHA1-Digest: LT9VSc6c72Uzv8ZJLknp8SyrYtE=
+
+Name: res/drawable-hdpi/common_signin_btn_text_disabled_light.9.png
+SHA1-Digest: XRUzUssSTuqdHpV4iCR3LqO6py0=
+
+Name: assets/Hit.wav
+SHA1-Digest: 2/HOysmVOw8P4x9wgw67w88Ybh8=
+
+Name: assets/B/B_111.hills.h
+SHA1-Digest: mOjykvlTTCNILl62Opt97j4GXuc=
+
+Name: assets/C_147.h
+SHA1-Digest: q5/TH9heiS+RaCon2k+96//Qmkc=
+
+Name: assets/B/B_06.h
+SHA1-Digest: mFygeufVqMtpJrjmxgw+VtD+N7s=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: U9T2T0mqZMMd9RjRyTRAqTDsYfE=
+
+Name: assets/A_12.h
+SHA1-Digest: +kthXMi4EfBOj6V5cMGbpc60MFY=
+
+Name: assets/bloc_03_150.xml
+SHA1-Digest: NKZmM3iBt5kL2GuN+yZ1e2bhDpg=
+
+Name: assets/bloc_01_150.xml
+SHA1-Digest: 2zqOcUfkun0chRmPv4zGHWSxUIA=
+
+Name: assets/D_201.h
+SHA1-Digest: FJmHtoydri18E6h+L9YsKh+g5vg=
+
+Name: assets/B_196.h
+SHA1-Digest: 3AG/6T4dYZvEz57erd2SLkXcyaw=
+
+Name: res/drawable-hdpi/ic_plusone_tall_off_client.png
+SHA1-Digest: mKmFlpzPqO2eN1UQWWTrY/HvgmA=
+
+Name: assets/B/B_75.hills.h
+SHA1-Digest: NJLAg6bGhLst+mnUn4FMh0MZeqk=
+
+Name: assets/A_139.hills.h
+SHA1-Digest: XiS7dpjuFsdTl4QtIHsGMejALII=
+
+Name: assets/A/A_12.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/C_107.hills.h
+SHA1-Digest: WsPAyx6MIx5QmKrHi7ORRT/CWlc=
+
+Name: assets/C/C_69.h
+SHA1-Digest: 5d57eI1Zx7Crq35xmiewokODTSw=
+
+Name: assets/D/D_149.hills.h
+SHA1-Digest: 64kXYzSopDK8BkuIjJzRUgGkxH4=
+
+Name: assets/Void/01.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_184.hills.h
+SHA1-Digest: nBKg7JqG6dvwR19Y4fnHC8r6OK0=
+
+Name: assets/B/B_165.hills.h
+SHA1-Digest: n7hbGYI2wp+o7SpowPSrRrPu2es=
+
+Name: assets/C_195.h
+SHA1-Digest: Hl7/oErPShJ6iVrJ6g5Q9EtuQYA=
+
+Name: assets/D_90.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C_153.hills.h
+SHA1-Digest: mbgyzfmz2i5nCRKNmgjH8V9aFfc=
+
+Name: assets/A_30.hills.h
+SHA1-Digest: ITY3dh3J8TA5OWr/tAe3kf/ASYc=
+
+Name: assets/B/B_45.hills.h
+SHA1-Digest: Rk607cO5xdQyriICLHKNSe9ZqkY=
+
+Name: assets/B/B_88.h
+SHA1-Digest: ohN2kfhOVTiJTUhhTiGNhb7LCAA=
+
+Name: assets/B/B_130.hills.h
+SHA1-Digest: 0L40gEqg5FWLHFGh+JtcWCR3/2E=
+
+Name: assets/bloc_01_200.xml
+SHA1-Digest: PaO0Nivd8pj/Wdq3Bn4dFWfxjOc=
+
+Name: assets/A_13.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/A_58.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/A_66.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/C/C_85.h
+SHA1-Digest: pgpIJhXJ4ma4bcTkKF3pCbWVTXs=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: pQSKkzLGVsk3otQAXnRA53Cklc8=
+
+Name: assets/A_141.hills.h
+SHA1-Digest: XiS7dpjuFsdTl4QtIHsGMejALII=
+
+Name: assets/C/C_103.h
+SHA1-Digest: iWAKJKZtzUplN+TuKSZ2aJHIYqI=
+
+Name: res/drawable-mdpi/ic_plusone_small_off_client.png
+SHA1-Digest: lOwgiwPxI8R2+0EZBBOzp3VD+bg=
+
+Name: assets/B_119.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/wheel_02_200.xml
+SHA1-Digest: F7XF4Zb3FJSAUmRDoz7AskmqBBo=
+
+Name: assets/B/B_75.h
+SHA1-Digest: vLCcIV74Hgt2V/xfsHd/H2ZRuME=
+
+Name: assets/B/B_128.h
+SHA1-Digest: cJX4B8oFwrDFIWAvkWrOO2GXEwE=
+
+Name: assets/C_152.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B/B_77.h
+SHA1-Digest: NiH8melqq8R911SOLOsFpm/2+lo=
+
+Name: assets/A/A_08.hills.h
+SHA1-Digest: mY4eAWOh6FXExcvH0vAcCvrLBp0=
+
+Name: assets/B/B_88.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_48.h
+SHA1-Digest: n5k9d9FUtSdoON7dXz9Z2yegwwA=
+
+Name: assets/B_94.h
+SHA1-Digest: gZLvyd4ThYi7QPCY2q39MmhmT1I=
+
+Name: assets/C_85.h
+SHA1-Digest: pgpIJhXJ4ma4bcTkKF3pCbWVTXs=
+
+Name: assets/B/B_124.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B/B_44.hills.h
+SHA1-Digest: ZIFaI2luNV+HCh/kVqoZUD7VyT0=
+
+Name: assets/C_120.h
+SHA1-Digest: 2sMfgZ0+Cg7xdujCzGNE9BIw7gc=
+
+Name: assets/A_60.h
+SHA1-Digest: WBiwNyG6u9AcuxrRKTni2p1LT50=
+
+Name: lib/armeabi/libgame.so
+SHA1-Digest: Z7kR/p1ALCY8Cok+V+v5mVKlSqI=
+
+Name: assets/B/B_192.hills.h
+SHA1-Digest: x3mS0+VcCmOe05C2clJGwPBlW8o=
+
+Name: assets/B/B_41.h
+SHA1-Digest: IqVyugLGNvDFngWrkEgw8GA0WhQ=
+
+Name: assets/C/C_101.h
+SHA1-Digest: hYhr+TXjD7Ii9EYPcziawyzXKxc=
+
+Name: assets/C_147.hills.h
+SHA1-Digest: J+lruxOL+1Zh5x04LhQQ47dyK9k=
+
+Name: assets/B_100.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_183.hills.h
+SHA1-Digest: bNn3NY2JUZaNKWPpyKJj0qy05kE=
+
+Name: assets/B_64.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/C_168.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B/B_177.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/A/A_82.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B_138.h
+SHA1-Digest: ZkgutJfrWVqvTPNHZyCy25UPZMI=
+
+Name: assets/B_74.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B/B_80.h
+SHA1-Digest: KtSIX4px15xAY/Fi5g9sQ0g+gaY=
+
+Name: assets/A_05.h
+SHA1-Digest: DVNMTUaR1q2xOoar6x+s3q1qBQg=
+
+Name: assets/A/A_42.hills.h
+SHA1-Digest: hvDLR/sLjiwC/aR8FOJ/6/9z5/M=
+
+Name: assets/A/A_139.h
+SHA1-Digest: jzdym5k5wkJARNWBaB0cJ0NPGcs=
+
+Name: assets/C/C_154.h
+SHA1-Digest: 1VXIs/BQZmvloYatEWu45Q1cFaw=
+
+Name: assets/B/B_206.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/B/B_146.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/C_69.hills.h
+SHA1-Digest: hOjpk8PD8aZHvuaE6IXW93hH9sM=
+
+Name: assets/A/A_56.h
+SHA1-Digest: fIFAp9AAhlIJB8j/cBqyV30XKfc=
+
+Name: assets/B/B_49.h
+SHA1-Digest: m+FISrLlwC3szg2k8FXZg0d/jms=
+
+Name: assets/A/A_09.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/C_126.h
+SHA1-Digest: /bFSaFODOj3h23ZigTlCEcdRBYs=
+
+Name: res/drawable-mdpi/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: QbTxVjEvf5QAiC/Su+pugvsUFjM=
+
+Name: assets/D_202.hills.h
+SHA1-Digest: 8HBo2Bhoq3gKHGDmJjxiET35cXg=
+
+Name: assets/B_105.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_60.h
+SHA1-Digest: WBiwNyG6u9AcuxrRKTni2p1LT50=
+
+Name: assets/C/C_216.h
+SHA1-Digest: HwLHxfqiDB6hUFJ6ImrfDvmIh8E=
+
+Name: assets/B_136.h
+SHA1-Digest: JyP2DgB2tTV9Ly3hS7sCpZwLQIc=
+
+Name: assets/B/B_70.h
+SHA1-Digest: prUQdP7nSpx/jaFOEtukKHZnRfo=
+
+Name: assets/A_03.h
+SHA1-Digest: 9Hl+11JMUFRGEAEFcCk2o1VwKr0=
+
+Name: assets/D/D_104.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_45.h
+SHA1-Digest: p0SV6E1NG8gOc+Vt7ugDZFFEP38=
+
+Name: assets/B/B_192.h
+SHA1-Digest: q2/34pOzHU6FtVr/F3Ok3KbPN8M=
+
+Name: assets/B_72.h
+SHA1-Digest: Kcy8PghQBbVO59dvOUpDIebBX/Y=
+
+Name: assets/B/B_119.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B/B_74.h
+SHA1-Digest: k3itK2bFxQQoJGsThMLedNVJTYI=
+
+Name: assets/A/A_05.h
+SHA1-Digest: DVNMTUaR1q2xOoar6x+s3q1qBQg=
+
+Name: assets/bloc_02_150.xml
+SHA1-Digest: 3Lt7nNz5bjzpO83q/8Oxm2Io9fI=
+
+Name: assets/C/C_89.h
+SHA1-Digest: kFpMFvyg6lWX/UzC8l3vBc8GMvE=
+
+Name: assets/D_197.h
+SHA1-Digest: 7BaVOqxGsHTT+2MsF9Wq+pg5KwU=
+
+Name: assets/C/C_161.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/B/B_213.h
+SHA1-Digest: MNb3puEmAXAWpWFHkEPH3oJrliM=
+
+Name: assets/B/B_50.hills.h
+SHA1-Digest: VErw2txQRyM8OkpFaT/swzIdlIQ=
+
+Name: assets/A_01.h
+SHA1-Digest: Nm9cclg5RKbSTL8ATFuLT9wrlAs=
+
+Name: assets/A/A_17.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: res/drawable-hdpi/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: DEUD3h7S2Xx2JGvz/zBbk0EHR7E=
+
+Name: assets/D_219.h
+SHA1-Digest: y9eMiClcXNoJlEBtdxoWmG350FQ=
+
+Name: assets/B_111.hills.h
+SHA1-Digest: mOjykvlTTCNILl62Opt97j4GXuc=
+
+Name: assets/B_76.hills.h
+SHA1-Digest: 6PNUWdT3FvC+MtZKoHPQ6gU06KM=
+
+Name: assets/D_210.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/B/B_47.h
+SHA1-Digest: pntgQe27S4MIgNrS/uca7E5kVH4=
+
+Name: assets/C/C_16.h
+SHA1-Digest: bI+KzD1ZXE8PVbWQWAxzl3tEidw=
+
+Name: assets/C/C_211.h
+SHA1-Digest: /a8LN8Id2tIllE8Alje9mvqBneM=
+
+Name: assets/B_217.hills.h
+SHA1-Digest: 2XbQzTPDydB3rSEvFaPuE2QcE0o=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_disabled_light.9.png
+SHA1-Digest: Le0XmsQFzmC9YoqYcbQniIg+BoQ=
+
+Name: assets/B_74.h
+SHA1-Digest: k3itK2bFxQQoJGsThMLedNVJTYI=
+
+Name: assets/B/B_96.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C_86.hills.h
+SHA1-Digest: eGg+sZ0Nw/g+TRpvbPlUMQ435P0=
+
+Name: assets/C/C_63.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_133.h
+SHA1-Digest: 1/sBK45pa0+cgXsY3tmnGJT2Y0k=
+
+Name: assets/C_151.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/A/A_65.h
+SHA1-Digest: MtTwAp+mgDBIbgiXGXEGe4Vo+uQ=
+
+Name: assets/A/A_148.hills.h
+SHA1-Digest: 64kXYzSopDK8BkuIjJzRUgGkxH4=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_disabled_focus_light.
+ 9.png
+SHA1-Digest: B3SOs8eHEYwTXDxWUWZFUG1Ow28=
+
+Name: assets/B_157.h
+SHA1-Digest: Bb0ykV9rOMageRSpjuh7nglWO5c=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: +rf5rWPhyi1HrQ0EQgRyFrjAFn0=
+
+Name: assets/C/C_167.h
+SHA1-Digest: yv+/CaWhN5/73tgaQ17nCgS6/Mg=
+
+Name: assets/bonus_pill.xml
+SHA1-Digest: BUY+tSCEFA81yGqLbeql01tHep4=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_disabled_focus_dark.9.
+ png
+SHA1-Digest: /oiDCmkJ0BRZfRQBoO9e1NgMKVQ=
+
+Name: assets/world02_blocs@2x.plist
+SHA1-Digest: je2t3jdHEzfkiSgZSaiusI4PFJg=
+
+Name: assets/C_151.h
+SHA1-Digest: a/aRNSGRHNmcEftr5PbkVDSdAzo=
+
+Name: assets/B/B_137.h
+SHA1-Digest: De7W1EobLP9Cm5ibZYr0tHS3Ses=
+
+Name: assets/B_182.h
+SHA1-Digest: LackQLlAwz2ja8N4uRtohh6wgAw=
+
+Name: assets/C_150.hills.h
+SHA1-Digest: D3RqHm8BOiQ11hnqgSeq3feHFCA=
+
+Name: assets/C_99.h
+SHA1-Digest: 7880zpH58Ze7dDHzhZToIlC48iI=
+
+Name: assets/C_167.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: 0mbIZCTpZD2Bmc1OsrKYN+O1Jnw=
+
+Name: assets/B_180.h
+SHA1-Digest: oub8axzKP51+eqGub/hPVgemVj0=
+
+Name: lib/armeabi/libprotectClass.so
+SHA1-Digest: JURziMfzeIiC1B4rA9dJyFako4M=
+
+Name: assets/B/B_135.h
+SHA1-Digest: kGDPYzXgOjmJJnoKZ+lyRcvMPgM=
+
+Name: assets/B_67.h
+SHA1-Digest: 3ZWfrINkyC4gdQJ7yfSoF+NRa+I=
+
+Name: assets/bloc_04b_150.xml
+SHA1-Digest: 6wu5+OdIO+z298D7FOTFWd9DjZc=
+
+Name: assets/C/C_216.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/C_189.h
+SHA1-Digest: vyHAcv953IUB6mDDstdVfrqWPU0=
+
+Name: assets/C_198.hills.h
+SHA1-Digest: LSli9Mgh82nZSUnBLbAvfYCS1h0=
+
+Name: assets/A_14.h
+SHA1-Digest: ZvxLP2UMaQRzVGPPlHFyznbJYNE=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: EELSExdrNqQWfpZnFHII/XtsPFk=
+
+Name: assets/C_153.h
+SHA1-Digest: rc1udZ5zKDYakWY6UGWx4bAwhu0=
+
+Name: assets/C_54.h
+SHA1-Digest: Q6UxdLuegbHlR2FO325TmPRz9Js=
+
+Name: assets/B/B_119.h
+SHA1-Digest: c5l+BgazLwVmGZXytGKXy8cAwyk=
+
+Name: assets/Checkpoint.wav
+SHA1-Digest: NjGMB5EywcdVmDYIYc2uSoLXjkU=
+
+Name: assets/A_08.h
+SHA1-Digest: BWbaIR8chx223EKRhIsudTjlpdc=
+
+Name: res/drawable-xhdpi/ic_plusone_medium_off_client.png
+SHA1-Digest: pxNZ8SkEfPjyfAiSKNlW4SZk60Q=
+
+Name: assets/D/D_219.h
+SHA1-Digest: y9eMiClcXNoJlEBtdxoWmG350FQ=
+
+Name: assets/B/B_61.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_142.h
+SHA1-Digest: T7YEKy3ikZNm4rT0OAcdYiNBSmo=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: N8bQHOfxBwU0zqoZVD3olgWx2V0=
+
+Name: assets/A/A_59.h
+SHA1-Digest: mlsIY2gtaiucxREQQHbBaxgU0I8=
+
+Name: assets/B/B_76.hills.h
+SHA1-Digest: 6PNUWdT3FvC+MtZKoHPQ6gU06KM=
+
+Name: assets/C/C_153.hills.h
+SHA1-Digest: mbgyzfmz2i5nCRKNmgjH8V9aFfc=
+
+Name: assets/B/B_181.hills.h
+SHA1-Digest: siB9qmmHUdjAn9/ZdH1hWoXHefQ=
+
+Name: assets/B/B_74.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/C_107.h
+SHA1-Digest: q/BL85PG/2df1csSDyV3Jvkdm8g=
+
+Name: assets/B/B_61.h
+SHA1-Digest: FIOMnlqPYM5/3z5rc2Ez79P29ic=
+
+Name: assets/D_87.h
+SHA1-Digest: 2r7wdeG81g0+P/7WOsmuR9zEoGI=
+
+Name: assets/C/C_106.h
+SHA1-Digest: d7zw0/O2p9UiD7cCRk+OL7Fcj4k=
+
+Name: assets/A/A_21.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/B/B_165.h
+SHA1-Digest: lsbPkPdAo/3IKnPzAVmTqErAy7g=
+
+Name: assets/C_215.hills.h
+SHA1-Digest: C+i7LlVUNYkBUkxzHxbODnb6Gx8=
+
+Name: assets/B/B_185.hills.h
+SHA1-Digest: JtNBWIr/J9OKWiQxtApasNDDJ0w=
+
+Name: assets/B_128.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/A_01.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest: +cIaK/bPY/1bcWX9e/99PJZ2NC0=
+
+Name: assets/bloc_04b_200.xml
+SHA1-Digest: dbIHGSluvdGauCqe40MESdmh2eY=
+
+Name: assets/A_66.h
+SHA1-Digest: mOv8Qa+yjtEFlTQ0fjVels75fRw=
+
+Name: assets/B/B_163.h
+SHA1-Digest: zCEbj9zYc8d3/5XqvrULtUnCtQY=
+
+Name: assets/B_146.h
+SHA1-Digest: YgvRGE5SB3YViXl7oj2FeAc/NlI=
+
+Name: assets/B/B_68.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_32.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/C/C_117.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/B/B_184.h
+SHA1-Digest: CPeNksL8Lu8VQinTftRQ+e1R3M0=
+
+Name: assets/B_138.hills.h
+SHA1-Digest: eoIMRircIP52Sh4rM24SQDKBmQQ=
+
+Name: assets/B_111.h
+SHA1-Digest: PmdavR3VhRtB/FDiUHPQVl3klUs=
+
+Name: assets/B/B_49.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/germ_big_01.xml
+SHA1-Digest: VCjMnDnvJmP33Ab3X1utwWeKtiI=
+
+Name: res/drawable-mdpi/ic_plusone_medium_off_client.png
+SHA1-Digest: HHc+sqWu5XtWgMQhN1F5cAwzeew=
+
+Name: assets/D/D_114.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_100.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/bloc_03_200.xml
+SHA1-Digest: n3tsg/9Oi9fyJfaBJ6QRa8VT8qE=
+
+Name: assets/D_149.h
+SHA1-Digest: bl8DnbDtyQP1rbtkGSNtG/555As=
+
+Name: assets/B/B_36.hills.h
+SHA1-Digest: eICNIbV4GyBoYV2M5OgXMTnD2NU=
+
+Name: assets/cell_white.xml
+SHA1-Digest: jykIgWrPu2RnGzcE4XttNjDdKpE=
+
+Name: assets/B/B_98.hills.h
+SHA1-Digest: +rxWJOIhbFKuLStWZpQHHj9K5Uc=
+
+Name: assets/B/B_22.h
+SHA1-Digest: w4tAXW8xPyfMzDOg1XUes/HoJnE=
+
+Name: assets/D/D_118.h
+SHA1-Digest: 7LP153/zyo1kQjRiRCmOV9QqVpk=
+
+Name: assets/B_113.h
+SHA1-Digest: fSwlF4eLEdw4iVdyieZm+/7Tdfg=
+
+Name: assets/B/B_33.hills.h
+SHA1-Digest: DCzWDWo3K929qU9/bHdzXw01HdY=
+
+Name: assets/B/B_133.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B/B_34.hills.h
+SHA1-Digest: krau3IDJMr5dLb2bTO1UDClRFas=
+
+Name: assets/B_193.h
+SHA1-Digest: 024s9mo2MvGKp+SdKRT2OhuUUc8=
+
+Name: assets/bloc_06b.xml
+SHA1-Digest: cpm09WEv0s1YHSOg2fbXQBtCGCg=
+
+Name: assets/world01_blocs.png
+SHA1-Digest: mTvbsG1/It4NtuiBzErmtSE+XV4=
+
+Name: assets/bloc_02.xml
+SHA1-Digest: BTtlP2fNUpfDnDlV0azcJyyIWbw=
+
+Name: assets/A_31.hills.h
+SHA1-Digest: 1eEnJ/pi063QEV6B3fQk9TdBp+A=
+
+Name: assets/B/B_193.hills.h
+SHA1-Digest: o6tUJ1kqaZINAJbUoOj/Oi3tbu4=
+
+Name: assets/C/C_109.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C_103.h
+SHA1-Digest: iWAKJKZtzUplN+TuKSZ2aJHIYqI=
+
+Name: assets/C_109.h
+SHA1-Digest: Ep57Do8QUEfB0Lu16jPn1SKklKY=
+
+Name: res/drawable-xxhdpi/ic_launcher.png
+SHA1-Digest: QcdTchIblwcy7RCZ/+6EqT0wb4M=
+
+Name: assets/B_199.hills.h
+SHA1-Digest: d8rwpGNWsZpsjXaekz6JLme//vc=
+
+Name: assets/B_158.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/B_172.h
+SHA1-Digest: agvWhmdm+CWGJFrdxIB9szgENZA=
+
+Name: assets/B_171.hills.h
+SHA1-Digest: M/juc0LItulvsc4ciiyRYB1M3vk=
+
+Name: assets/C/C_147.h
+SHA1-Digest: q5/TH9heiS+RaCon2k+96//Qmkc=
+
+Name: assets/A_178.h
+SHA1-Digest: IBITXMwEKwJtqQ1IZ+qcIYd/fbc=
+
+Name: assets/C_101.h
+SHA1-Digest: hYhr+TXjD7Ii9EYPcziawyzXKxc=
+
+Name: assets/B_115.h
+SHA1-Digest: hLIqgjBZMo5cuuGXZToWgFE3I7w=
+
+Name: assets/world03_tex_base_01.png
+SHA1-Digest: Lsw4v5bYiTQz5gBcN2qeXCgr4ZY=
+
+Name: assets/C_54.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: res/drawable/common_signin_btn_text_light.xml
+SHA1-Digest: nhdJpLpS66oIUCe2eTfXQ0NhwiQ=
+
+Name: assets/B_88.h
+SHA1-Digest: ohN2kfhOVTiJTUhhTiGNhb7LCAA=
+
+Name: assets/A_20.hills.h
+SHA1-Digest: FJS16Neo9dSruud/s7MMM4iCyP8=
+
+Name: assets/B/B_204.h
+SHA1-Digest: TbBw46tuEfNBx7NcOBQ5Y3nBwTc=
+
+Name: res/drawable-hdpi/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: XRUzUssSTuqdHpV4iCR3LqO6py0=
+
+Name: assets/D_194.hills.h
+SHA1-Digest: gL+t1yLU3R4P0jtG4CZrgkUsfWA=
+
+Name: assets/B/B_206.h
+SHA1-Digest: wItosIA+eDVTb827jnwTK5ylSP8=
+
+Name: res/drawable-xhdpi/ic_plusone_standard_off_client.png
+SHA1-Digest: NEAofQuoLcRt99gbmL+/kRTDnUE=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_light.9
+ .png
+SHA1-Digest: YJmDcoJhm94kAut2goBNpsKuupk=
+
+Name: assets/world04_tex_base_01@2x.png
+SHA1-Digest: R5giKpjj4oe3TNCVXB/KJqpC9X0=
+
+Name: assets/B_183.h
+SHA1-Digest: 1icXSyzVaHqVSSJD4p4ZLEdneqo=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: +WNqYU9iwYTUJ7+AP3QlFhv95sw=
+
+Name: assets/C/C_154.hills.h
+SHA1-Digest: dftfRaTgoA+Q7xe2lDuxZRHu9Vw=
+
+Name: assets/A_27.h
+SHA1-Digest: AKtZy0xuXhHXhBnzaaOfNyhHqyY=
+
+Name: res/drawable-mdpi/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: S7ihaWKUDc22MZxd+pxT2TPVnMg=
+
+Name: assets/D_187.h
+SHA1-Digest: mOC0IaPxQlROgdDr7tILSCcUesA=
+
+Name: assets/B_184.hills.h
+SHA1-Digest: nBKg7JqG6dvwR19Y4fnHC8r6OK0=
+
+Name: assets/A/A_35.hills.h
+SHA1-Digest: QQVbSjrr+E0/l0qeqMmOtOoLvhs=
+
+Name: res/drawable-hdpi/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: vDRZXVRHfOWigezkFv1VJrpOFdM=
+
+Name: assets/C/C_161.h
+SHA1-Digest: o1oeVegNnLMkStLQElJjbgffd2g=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: K+9yb5eLlTY02AqBaMGl1gdsHQA=
+
+Name: assets/B/B_105.h
+SHA1-Digest: wRGO7dGUmDMJKVfgYPq0AsLSfTM=
+
+Name: assets/bloc_02_200.xml
+SHA1-Digest: 0vYnl7nrX0HJaSh7XymUm3rr+Kw=
+
+Name: res/drawable-hdpi/ic_plusone_small_off_client.png
+SHA1-Digest: MDqgTVve/ECWdg1RF1Xo/IJ49zo=
+
+Name: assets/B/B_208.h
+SHA1-Digest: BbAzdtosPkPeOVE2MPfEif/iGDc=
+
+Name: res/drawable-xhdpi/ic_plusone_small_off_client.png
+SHA1-Digest: LtV8CfoAmgWuTGWNZXeWeNDR1hY=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: ZwpmUeMpKikLIxCPbKFJB9i7E00=
+
+Name: assets/D/D_92.h
+SHA1-Digest: YqIKVZq6t40v/4rfXHJEMoVTwZU=
+
+Name: assets/B/B_140.h
+SHA1-Digest: Wxvkwo0so3aCkUhOYPZGGYtBsjs=
+
+Name: assets/C/C_127.h
+SHA1-Digest: bIPNJyK1pG3aM4cpuLU8bF2Yx4g=
+
+Name: assets/C_89.h
+SHA1-Digest: kFpMFvyg6lWX/UzC8l3vBc8GMvE=
+
+Name: assets/B_169.h
+SHA1-Digest: 1bt4LUOuj2iNG/cYUkWUUFfkKoA=
+
+Name: assets/A/A_141.h
+SHA1-Digest: POTnoiCvr4aUHm/hPwBXbblNzSc=
+
+Name: assets/B_37.h
+SHA1-Digest: Ncz6c8BM2e5UjiK8DytRS32n0sE=
+
+Name: assets/bloc_05b_200.xml
+SHA1-Digest: 7wQZCqQl6Igt/2BfjrbMhxwS4DU=
+
+Name: assets/B_70.h
+SHA1-Digest: prUQdP7nSpx/jaFOEtukKHZnRfo=
+
+Name: assets/B_132.hills.h
+SHA1-Digest: oXA3cgjqYA7I9G8Lv8OvMWoSqfk=
+
+Name: assets/B_140.h
+SHA1-Digest: Wxvkwo0so3aCkUhOYPZGGYtBsjs=
+
+Name: assets/D_92.h
+SHA1-Digest: YqIKVZq6t40v/4rfXHJEMoVTwZU=
+
+Name: assets/B/B_142.h
+SHA1-Digest: T7YEKy3ikZNm4rT0OAcdYiNBSmo=
+
+Name: assets/B/B_193.h
+SHA1-Digest: 024s9mo2MvGKp+SdKRT2OhuUUc8=
+
+Name: assets/B_88.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_96.h
+SHA1-Digest: swITEP0JCN8JhdpQZYdoJY3vTHc=
+
+Name: assets/B_81.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/D/D_90.h
+SHA1-Digest: 3JscR/55Sj7OFgVIF85Syi47eko=
+
+Name: assets/C_179.hills.h
+SHA1-Digest: jF9oTiKEcQ2z/TPJ35GwuqNASiM=
+
+Name: assets/A/A_58.h
+SHA1-Digest: F6v0yt7ZWxUw2BNnHbi3B0YBr/0=
+
+Name: assets/A/A_01.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_79.hills.h
+SHA1-Digest: 9k7pgBWCT2kPZdwnFTMnGevx/kU=
+
+Name: res/drawable-mdpi/common_signin_btn_text_disabled_focus_dark.9.p
+ ng
+SHA1-Digest: om0wnjdRQqfWtPW1nQc9lIl2kr0=
+
+Name: assets/B_36.hills.h
+SHA1-Digest: eICNIbV4GyBoYV2M5OgXMTnD2NU=
+
+Name: assets/A_159.h
+SHA1-Digest: tbNtwU3JjRQwIf0Ycn7AO53x5Fs=
+
+Name: assets/B_108.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_66.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/B/B_199.h
+SHA1-Digest: g5rDtxqQRJ42ZQh+xGmjIJUCCD8=
+
+Name: assets/D/D_202.hills.h
+SHA1-Digest: 8HBo2Bhoq3gKHGDmJjxiET35cXg=
+
+Name: res/drawable-xxhdpi/ic_plusone_tall_off_client.png
+SHA1-Digest: nnQrYOSge8+DJ/aZ1dVTUztprv8=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_disabled_light.9.png
+SHA1-Digest: EELSExdrNqQWfpZnFHII/XtsPFk=
+
+Name: assets/B/B_172.h
+SHA1-Digest: agvWhmdm+CWGJFrdxIB9szgENZA=
+
+Name: assets/B_181.hills.h
+SHA1-Digest: siB9qmmHUdjAn9/ZdH1hWoXHefQ=
+
+Name: assets/B/B_217.hills.h
+SHA1-Digest: 2XbQzTPDydB3rSEvFaPuE2QcE0o=
+
+Name: assets/B_128.h
+SHA1-Digest: cJX4B8oFwrDFIWAvkWrOO2GXEwE=
+
+Name: assets/C/C_167.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: 7B0dIrwxsCd4mo/aB0mP1ZiAmVE=
+
+Name: assets/A/A_159.hills.h
+SHA1-Digest: CUr9Oi9IzMHSTdVJIZ8Rb6JcuvQ=
+
+Name: assets/C/C_150.h
+SHA1-Digest: LGsmbrudlu30rnLgnD7TJIKlsLs=
+
+Name: assets/C/C_156.h
+SHA1-Digest: W6w1rrtM8XxDTNZhiHTcbeyK8IU=
+
+Name: assets/A_14.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/B_113.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_83.h
+SHA1-Digest: bSnYHQIBmJsXjZ22KU+5PSLXIuE=
+
+Name: assets/B/B_78.h
+SHA1-Digest: TWlNd3GE5cvCzB9Cl/CYrr9m2qY=
+
+Name: assets/wheel_03_150.xml
+SHA1-Digest: V3pjjNW6BiyQZJCAe5Aeo2n9cEc=
+
+Name: assets/B_81.h
+SHA1-Digest: jSmhEKXnZDGyEYBFDxrRcoDPE/U=
+
+Name: assets/C_195.hills.h
+SHA1-Digest: rLzFlI1tYWaoOCsvzPhwReS9cRQ=
+
+Name: assets/B/B_146.h
+SHA1-Digest: YgvRGE5SB3YViXl7oj2FeAc/NlI=
+
+Name: assets/B/B_50.h
+SHA1-Digest: 23Q/Yk1N4CFbm4kiCLrb88c9cVo=
+
+Name: assets/B_79.h
+SHA1-Digest: h1QRDe6ltvQlMkDiqrw/MOb4PjY=
+
+Name: assets/C_161.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: yEYJBdXGqFOfAHeVIvRtNigVaeE=
+
+Name: assets/A_83.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/A_59.h
+SHA1-Digest: mlsIY2gtaiucxREQQHbBaxgU0I8=
+
+Name: assets/C/C_101.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_30.hills.h
+SHA1-Digest: ITY3dh3J8TA5OWr/tAe3kf/ASYc=
+
+Name: assets/B_41.h
+SHA1-Digest: IqVyugLGNvDFngWrkEgw8GA0WhQ=
+
+Name: assets/A_29.hills.h
+SHA1-Digest: uqH/HcExBWPKh/dK7E6OuhWeukw=
+
+Name: assets/B_06.h
+SHA1-Digest: mFygeufVqMtpJrjmxgw+VtD+N7s=
+
+Name: assets/C/C_131.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B/B_171.hills.h
+SHA1-Digest: M/juc0LItulvsc4ciiyRYB1M3vk=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: x/VaksfPeHnDpPesT3JBXmp985Y=
+
+Name: assets/B_62.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C_102.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A_04.hills.h
+SHA1-Digest: sLmCwzBqUcFBE9iqwY6EbYyCTsE=
+
+Name: assets/B_217.h
+SHA1-Digest: 9moWDlE33r1wPyLcnhGtknufZ0M=
+
+Name: assets/A/A_03.hills.h
+SHA1-Digest: XrjjrJHh+hIttz7ebGkVfYmhTQs=
+
+Name: assets/B_75.h
+SHA1-Digest: vLCcIV74Hgt2V/xfsHd/H2ZRuME=
+
+Name: assets/C_123.h
+SHA1-Digest: SnSepXGSfMyh6Yix3QAnpaXaRLk=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: rghQV4PUTOrWJrHu+0rGCabq22U=
+
+Name: assets/B/B_115.h
+SHA1-Digest: hLIqgjBZMo5cuuGXZToWgFE3I7w=
+
+Name: assets/A_82.h
+SHA1-Digest: AKJ8/xpU7pMGrH6fVAnkOvXxt4Y=
+
+Name: assets/B_174.h
+SHA1-Digest: 7f7aVhRVxsk35QSOamVTLAsF1wY=
+
+Name: assets/A_19.hills.h
+SHA1-Digest: FJS16Neo9dSruud/s7MMM4iCyP8=
+
+Name: assets/A_20.h
+SHA1-Digest: QOI2MHaYn/snfjVWaY7l1jEurAs=
+
+Name: assets/B/B_186.h
+SHA1-Digest: up2dfTfSrcNVI9IuDB2oO76vaGQ=
+
+Name: assets/B/B_176.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/tex_test.png
+SHA1-Digest: Qtyptn/WnzCE33M7tPjGbMMIAow=
+
+Name: assets/Ok.wav
+SHA1-Digest: ATB6QuhN3Z2Q7OaOS2wMl59gWt8=
+
+Name: assets/B/B_73.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/A/A_139.hills.h
+SHA1-Digest: XiS7dpjuFsdTl4QtIHsGMejALII=
+
+Name: assets/B/B_84.h
+SHA1-Digest: bMYl51QaiOIOMgsp2obt7cJ26tw=
+
+Name: assets/B/B_137.hills.h
+SHA1-Digest: eoIMRircIP52Sh4rM24SQDKBmQQ=
+
+Name: assets/B/B_113.h
+SHA1-Digest: fSwlF4eLEdw4iVdyieZm+/7Tdfg=
+
+Name: assets/B_45.h
+SHA1-Digest: p0SV6E1NG8gOc+Vt7ugDZFFEP38=
+
+Name: assets/C/C_120.h
+SHA1-Digest: 2sMfgZ0+Cg7xdujCzGNE9BIw7gc=
+
+Name: assets/B/B_182.h
+SHA1-Digest: LackQLlAwz2ja8N4uRtohh6wgAw=
+
+Name: assets/C_155.h
+SHA1-Digest: vmj/OheoFO5Y1hmsWyRYJZfLpOk=
+
+Name: assets/B_40.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/B/B_158.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/C_211.h
+SHA1-Digest: /a8LN8Id2tIllE8Alje9mvqBneM=
+
+Name: assets/D_197.hills.h
+SHA1-Digest: n2E2O2XNagkr/nmRzsEFKtAOkok=
+
+Name: assets/A/A_28.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/Pill.wav
+SHA1-Digest: /zbQf0SSnwPjr0dSFfh7xMfuAdI=
+
+Name: assets/C/C_173.hills.h
+SHA1-Digest: 2SWw/gH5q58u3W/hMUxz7ngc7ks=
+
+Name: assets/A_21.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/world01_blocs@2x.png
+SHA1-Digest: 8CWMzuyTcg6nSCESNXcrNlizaE8=
+
+Name: assets/world04_tex_base_01.png
+SHA1-Digest: R5giKpjj4oe3TNCVXB/KJqpC9X0=
+
+Name: res/drawable-mdpi/common_signin_btn_text_disabled_focus_light.9.
+ png
+SHA1-Digest: om0wnjdRQqfWtPW1nQc9lIl2kr0=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: 9qvbFoV8vRYeW4VqgkydOwG+lnw=
+
+Name: assets/D_164.hills.h
+SHA1-Digest: AR/mBO9+smV5x76UyuzUOcNDw54=
+
+Name: assets/B_133.h
+SHA1-Digest: 1/sBK45pa0+cgXsY3tmnGJT2Y0k=
+
+Name: assets/C_127.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B_100.h
+SHA1-Digest: k8aJUyElLytXQnfm67jw+fqjPkY=
+
+Name: assets/B_77.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B/B_79.hills.h
+SHA1-Digest: 9k7pgBWCT2kPZdwnFTMnGevx/kU=
+
+Name: assets/C_116.h
+SHA1-Digest: aMpPjiR/fluUse8hUgQxIS73J8Y=
+
+Name: assets/A/A_29.h
+SHA1-Digest: p1ShzCz6NzMZnrf4ckMNztleHug=
+
+Name: AndroidManifest.xml
+SHA1-Digest: bqJdGMB9lcGASxGMTP3ankIrjEg=
+
+Name: assets/A_42.hills.h
+SHA1-Digest: hvDLR/sLjiwC/aR8FOJ/6/9z5/M=
+
+Name: assets/C_214.h
+SHA1-Digest: 10bB6Zu+NTL5xPz5YXTBOUKgTZ8=
+
+Name: assets/B/B_212.hills.h
+SHA1-Digest: YrClsWAky0uKgRhFLy62VX+w+dc=
+
+Name: res/color/common_signin_btn_text_light.xml
+SHA1-Digest: TA9wUnlml2x5fM2cDTAMKQ24DpE=
+
+Name: assets/B/B_95.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_185.h
+SHA1-Digest: b2VicCpRHc1Fa4Mtu6WLRiaQGmg=
+
+Name: assets/jelly_03b.xml
+SHA1-Digest: /81Qjc88hfpE6iZnu+cP+F8+nmQ=
+
+Name: assets/B/B_11.h
+SHA1-Digest: sYIBq28vPuJbg0onN9ys7a4KidE=
+
+Name: classes.dex
+SHA1-Digest: 9/ygoSlKp2yvzca6Kc2dxH9F6uw=
+
+Name: assets/B/B_70.hills.h
+SHA1-Digest: p8iyvlb15b9H0LglHDF5UTzNBOY=
+
+Name: assets/C_218.h
+SHA1-Digest: u7QxkKozei2usqZozhVulCS/fMk=
+
+Name: res/drawable-hdpi/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: Y7BgkIE5Z75txkMJIFho52FM/R8=
+
+Name: assets/B/B_157.h
+SHA1-Digest: Bb0ykV9rOMageRSpjuh7nglWO5c=
+
+Name: assets/C_89.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_25.hills.h
+SHA1-Digest: dfP+j8zWMUmGBR5VPWhirjnVEW0=
+
+Name: assets/B/B_196.hills.h
+SHA1-Digest: AIanPURZUnBusvfOoFUPbQ24l+I=
+
+Name: assets/C_216.h
+SHA1-Digest: HwLHxfqiDB6hUFJ6ImrfDvmIh8E=
+
+Name: assets/D/D_197.h
+SHA1-Digest: 7BaVOqxGsHTT+2MsF9Wq+pg5KwU=
+
+Name: assets/A/A_08.h
+SHA1-Digest: BWbaIR8chx223EKRhIsudTjlpdc=
+
+Name: assets/A/A_20.hills.h
+SHA1-Digest: FJS16Neo9dSruud/s7MMM4iCyP8=
+
+Name: assets/A/A_21.h
+SHA1-Digest: olZMqXEcyhhP2NU+gygyj6WkfsI=
+
+Name: assets/B/B_177.h
+SHA1-Digest: H08u1wvznjWLzuxCPTqm8JGnIY0=
+
+Name: assets/A_08.hills.h
+SHA1-Digest: mY4eAWOh6FXExcvH0vAcCvrLBp0=
+
+Name: assets/C/C_166.hills.h
+SHA1-Digest: H+uSViMVu/lAUIchvnsqq7d6m0s=
+
+Name: assets/C/C_131.h
+SHA1-Digest: RZDc5/pmETV8wEdtpN6Volq0TSQ=
+
+Name: assets/B_137.hills.h
+SHA1-Digest: eoIMRircIP52Sh4rM24SQDKBmQQ=
+
+Name: assets/C/C_117.h
+SHA1-Digest: MVRxqZ25pKcl0BvAXm74WJbyMn8=
+
+Name: assets/B/B_95.h
+SHA1-Digest: V4cNAT3Jj7Zcv2sgrfUzI5C9WuI=
+
+Name: res/drawable-mdpi/ic_plusone_tall_off_client.png
+SHA1-Digest: AD2aFw6TcqHuDE1AdYky7h+et9s=
+
+Name: assets/B_105.h
+SHA1-Digest: wRGO7dGUmDMJKVfgYPq0AsLSfTM=
+
+Name: assets/C/C_54.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/C/C_120.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/A_31.h
+SHA1-Digest: Abm/fRL0Jh74tIitFHxNHHVUb3s=
+
+Name: assets/B_204.h
+SHA1-Digest: TbBw46tuEfNBx7NcOBQ5Y3nBwTc=
+
+Name: assets/D/D_87.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B/B_186.hills.h
+SHA1-Digest: nVTVwaWZX7nqg5WCl2v/k3Uq0dY=
+
+Name: assets/A/A_26.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/B/B_93.h
+SHA1-Digest: jg++j25/0kEZNsqEbcIa3AQcrRM=
+
+Name: assets/bloc_05a.xml
+SHA1-Digest: dby+XOVLI/jGN0y84dW+YcClp+g=
+
+Name: assets/B/B_134.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/A/A_01.h
+SHA1-Digest: Nm9cclg5RKbSTL8ATFuLT9wrlAs=
+
+Name: assets/B/B_172.hills.h
+SHA1-Digest: M/juc0LItulvsc4ciiyRYB1M3vk=
+
+Name: assets/B/B_97.h
+SHA1-Digest: gOqCvPalZ+5uTGb57ZDVp5TPHdg=
+
+Name: assets/C_121.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B_98.h
+SHA1-Digest: 2E6DhLgl4ByMtpkB1s5mimTBNXY=
+
+Name: assets/B/B_174.h
+SHA1-Digest: 7f7aVhRVxsk35QSOamVTLAsF1wY=
+
+Name: assets/C/C_189.hills.h
+SHA1-Digest: 3wTVhD19ZuiuJb4C4qakoLDzsoQ=
+
+Name: assets/D/D_149.h
+SHA1-Digest: bl8DnbDtyQP1rbtkGSNtG/555As=
+
+Name: assets/B_53.hills.h
+SHA1-Digest: n7hbGYI2wp+o7SpowPSrRrPu2es=
+
+Name: assets/B_78.hills.h
+SHA1-Digest: ofrJ7n/vJlE9UIgucRcJ/1TS5QA=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_disabled_light.9.png
+SHA1-Digest: +rf5rWPhyi1HrQ0EQgRyFrjAFn0=
+
+Name: assets/stripes.plist
+SHA1-Digest: 2cSf0T5VkjEr+2Z9lwfjZo5D44M=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_disabled_focus_light.9
+ .png
+SHA1-Digest: /oiDCmkJ0BRZfRQBoO9e1NgMKVQ=
+
+Name: assets/bloc_06b_200.xml
+SHA1-Digest: M/7sYxjrQLZTedTBnu9xLjwQuck=
+
+Name: assets/C_211.hills.h
+SHA1-Digest: ZYBBRStO3EhUEP6IKtJLQOhZ2R8=
+
+Name: assets/bloc_04a.xml
+SHA1-Digest: 1Q+42BzVAAhhYjb6jqZnoQbqmWI=
+
+Name: assets/A/A_30.h
+SHA1-Digest: uSfOep6woQBppCp073yFmOkCkec=
+
+Name: assets/C_63.h
+SHA1-Digest: dJUgp4sky04QBxm48LXD7MswHsk=
+
+Name: assets/jelly_04.xml
+SHA1-Digest: 4zOXwQnQp8tcVaItKQyR94EpFJM=
+
+Name: assets/B/B_108.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_35.h
+SHA1-Digest: EnDrywnCp2cVwHHLV+v/f/hKJ7A=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: fQPf5q4Hse9n71c3MDFpM12B1gs=
+
+Name: assets/B_34.hills.h
+SHA1-Digest: krau3IDJMr5dLb2bTO1UDClRFas=
+
+Name: assets/B/B_53.hills.h
+SHA1-Digest: n7hbGYI2wp+o7SpowPSrRrPu2es=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: /T3y/NDBNNcGRnUuquxkdTcnTTg=
+
+Name: assets/C/C_152.h
+SHA1-Digest: rGDf/WeOegwq4HnQtQQto91aiSc=
+
+Name: assets/B/B_52.h
+SHA1-Digest: Ucl7eHO9oEuaokra1xslFkxVnkA=
+
+Name: assets/B_115.hills.h
+SHA1-Digest: Ay7tKBjRM4aGWDSkGOBqn0lMpoA=
+
+Name: assets/B_61.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_24.hills.h
+SHA1-Digest: EDHzUT7m+SesBUcxFAwunOJYEr8=
+
+Name: assets/B_57.hills.h
+SHA1-Digest: n7hbGYI2wp+o7SpowPSrRrPu2es=
+
+Name: assets/B/B_113.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_40.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/CloseSelected.png
+SHA1-Digest: wOJaPmjZ86MhMVdhh++6FOLXPcQ=
+
+Name: assets/B/B_105.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_199.hills.h
+SHA1-Digest: d8rwpGNWsZpsjXaekz6JLme//vc=
+
+Name: res/drawable-mdpi/common_signin_btn_icon_disabled_focus_light.9.
+ png
+SHA1-Digest: /9atOqtPDBdAN8fQhRv3UDgC7sc=
+
+Name: assets/bloc_05b_150.xml
+SHA1-Digest: A01OWvZFr7jdvUdXt+mKuz5TzNk=
+
+Name: assets/world03_tex_01.png
+SHA1-Digest: zVKM3NPCxP+cgB+8K/Ae1r8foT0=
+
+Name: assets/D_191.h
+SHA1-Digest: TNoYwZZPflwI1teQA3bjRUh1v3E=
+
+Name: assets/Cookies.ttf
+SHA1-Digest: bH18b3mm5bNnltNEYu7bvflx2Ho=
+
+Name: assets/B_192.hills.h
+SHA1-Digest: x3mS0+VcCmOe05C2clJGwPBlW8o=
+
+Name: assets/bloc_03.xml
+SHA1-Digest: /0hs30PVySqxTI7j6hytqk5cmXw=
+
+Name: assets/C/C_200.h
+SHA1-Digest: DVpooyp110k4Vx7rf2PdiFLPrGE=
+
+Name: assets/A_38.h
+SHA1-Digest: xMt9WcP3UswFH5482ervzdiVPGs=
+
+Name: assets/C/C_151.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/B_11.h
+SHA1-Digest: sYIBq28vPuJbg0onN9ys7a4KidE=
+
+Name: assets/B_176.h
+SHA1-Digest: SDwxc7fM4sfoljyanvyiIEG2a+Q=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_disabled_focus_dark.9.p
+ ng
+SHA1-Digest: Y0ihoUpFM8pJPV2dmcbo9kwE5PI=
+
+Name: assets/B_135.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/C/C_170.hills.h
+SHA1-Digest: oOxQrCZDdYOezG4TlLjDzHd+4eY=
+
+Name: assets/B_41.hills.h
+SHA1-Digest: Bxc1zWULVXs1FRdQiDyKgmFLGkw=
+
+Name: assets/C/C_85.hills.h
+SHA1-Digest: yYiINuwwbpoQdqnt0ZRWMeIt5xo=
+
+Name: assets/C/C_123.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_disabled_focus_dark.9
+ .png
+SHA1-Digest: B3SOs8eHEYwTXDxWUWZFUG1Ow28=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: b7nvI/e8i0Ng7w+7J/i4cswsHPI=
+
+Name: assets/B_77.h
+SHA1-Digest: NiH8melqq8R911SOLOsFpm/2+lo=
+
+Name: assets/bloc_05a_150.xml
+SHA1-Digest: sRCCy8sHtTDGHNgC7qEQD9XrKhs=
+
+Name: assets/B/B_182.hills.h
+SHA1-Digest: UYyugP+HG4ppRbm/+UV/O4hIYhA=
+
+Name: assets/B_67.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/A_56.hills.h
+SHA1-Digest: sqR7QvzrpO44xxv9l6K/a17EYxA=
+
+Name: assets/B_84.h
+SHA1-Digest: bMYl51QaiOIOMgsp2obt7cJ26tw=
+
+Name: assets/C_203.h
+SHA1-Digest: 0KikAJVTStJCTpgE2qOo1gZkzSw=
+
+Name: assets/D/D_118.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/B_158.h
+SHA1-Digest: 0KlHWauHuUJB6xAUZV+WYWnksCM=
+
+Name: assets/C/C_129.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: res/drawable-mdpi/common_signin_btn_text_disabled_light.9.png
+SHA1-Digest: e/1gfXv1VTsUSosCIqLmo08hhVo=
+
+Name: assets/B_177.h
+SHA1-Digest: H08u1wvznjWLzuxCPTqm8JGnIY0=
+
+Name: assets/D/D_210.h
+SHA1-Digest: 3n69MEXJMXLVktQi4yoKz8rnLPc=
+
+Name: assets/B_146.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/C/C_168.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/B/B_93.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_67.h
+SHA1-Digest: 3ZWfrINkyC4gdQJ7yfSoF+NRa+I=
+
+Name: assets/B_47.h
+SHA1-Digest: pntgQe27S4MIgNrS/uca7E5kVH4=
+
+Name: assets/D_104.h
+SHA1-Digest: MzMp3pkK5q8gm+EkIrguUZHwgzk=
+
+Name: assets/B/B_180.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/B_140.hills.h
+SHA1-Digest: XiS7dpjuFsdTl4QtIHsGMejALII=
+
+Name: assets/B_180.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/A/A_13.h
+SHA1-Digest: 3brrVr039drftFw4MduCy7HDVEI=
+
+Name: assets/B_51.h
+SHA1-Digest: pmIar1Y3eZKAIt1UyG0B9oiv+Gg=
+
+Name: assets/C_129.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/world01_tex_01.png
+SHA1-Digest: ahqz2NVdnvXkepUtjGxkEVQ6ixQ=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: 0LsZjL/y+64mr/YRzx/wikXmMDo=
+
+Name: assets/C_170.hills.h
+SHA1-Digest: oOxQrCZDdYOezG4TlLjDzHd+4eY=
+
+Name: assets/B_22.h
+SHA1-Digest: w4tAXW8xPyfMzDOg1XUes/HoJnE=
+
+Name: assets/A_59.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_213.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/B/B_175.h
+SHA1-Digest: sbPV656wb4TVeG+NLv/vwQ+dWkY=
+
+Name: assets/B_172.hills.h
+SHA1-Digest: M/juc0LItulvsc4ciiyRYB1M3vk=
+
+Name: res/drawable-hdpi/ic_plusone_standard_off_client.png
+SHA1-Digest: 3M2Hwey0trjQpX8kpVoQgSeehjY=
+
+Name: assets/world03_blocs@2x.png
+SHA1-Digest: UrrhNEyKgbN7t2ls46E+2NIatAc=
+
+Name: assets/B_204.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C_63.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A/A_178.h
+SHA1-Digest: IBITXMwEKwJtqQ1IZ+qcIYd/fbc=
+
+Name: assets/B/B_37.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: res/color/common_signin_btn_text_dark.xml
+SHA1-Digest: l+DyoAf/NhyKXzQ1WiNUYBnwwEg=
+
+Name: assets/A/A_58.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/A/A_02.h
+SHA1-Digest: hamAJiOf6O4XetW3etr/w7smtKA=
+
+Name: assets/B_48.hills.h
+SHA1-Digest: 2mW9JbS8J6IcGFLAt6XI2BO8pSI=
+
+Name: assets/C/C_200.hills.h
+SHA1-Digest: uSERogvtW2ldOcwcpvP3mypQquc=
+
+Name: assets/D/D_122.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/C_103.hills.h
+SHA1-Digest: lpVqYq0Cuu8gBPc/GwDP745yh0I=
+
+Name: assets/B_72.hills.h
+SHA1-Digest: rnPqYFQKt2QL09Pxph0Q9Zd4ljU=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: I5fVPZBkCym03yDeDC5GdAuPQCQ=
+
+Name: assets/A_42.h
+SHA1-Digest: nJczPuj9khl7mWR6u+FnZUBFvG0=
+
+Name: assets/B/B_77.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: res/drawable-xhdpi/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: Le0XmsQFzmC9YoqYcbQniIg+BoQ=
+
+Name: assets/bloc_06a_200.xml
+SHA1-Digest: Ct7dvUMraTiNu0Y3OBU5LTNggZ0=
+
+Name: assets/C_154.hills.h
+SHA1-Digest: dftfRaTgoA+Q7xe2lDuxZRHu9Vw=
+
+Name: assets/D/D_219.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/B_25.hills.h
+SHA1-Digest: dfP+j8zWMUmGBR5VPWhirjnVEW0=
+
+Name: assets/C/C_129.h
+SHA1-Digest: lwwqQpB1t7ySOnQlw34GEvqgN4I=
+
+Name: assets/C_168.h
+SHA1-Digest: p9sPD8mnSX6pU16kAkX1vt+KEXk=
+
+Name: assets/B/B_18.hills.h
+SHA1-Digest: etpzROvT0U/9Ria3BlxOxg5VjkI=
+
+Name: assets/D/D_201.h
+SHA1-Digest: FJmHtoydri18E6h+L9YsKh+g5vg=
+
+Name: assets/C_101.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: dSRcdMQsQiIGDjWUaoAbMJeE4gY=
+
+Name: assets/D_90.h
+SHA1-Digest: 3JscR/55Sj7OFgVIF85Syi47eko=
+
+Name: assets/A/A_83.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B_33.h
+SHA1-Digest: nmyeTpdGKXHeh3EFeVeIQEHISmM=
+
+Name: assets/B/B_33.h
+SHA1-Digest: nmyeTpdGKXHeh3EFeVeIQEHISmM=
+
+Name: assets/A/A_27.hills.h
+SHA1-Digest: ULoDq5Nx9p2I2U76BKUnxZtdCeU=
+
+Name: assets/C/C_195.hills.h
+SHA1-Digest: rLzFlI1tYWaoOCsvzPhwReS9cRQ=
+
+Name: assets/D/D_210.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/C_218.hills.h
+SHA1-Digest: EONKm34GcSIOPIjm8sMry83VxFU=
+
+Name: assets/B/B_37.h
+SHA1-Digest: Ncz6c8BM2e5UjiK8DytRS32n0sE=
+
+Name: assets/B_163.h
+SHA1-Digest: zCEbj9zYc8d3/5XqvrULtUnCtQY=
+
+Name: assets/B/B_140.hills.h
+SHA1-Digest: XiS7dpjuFsdTl4QtIHsGMejALII=
+
+Name: assets/B_124.h
+SHA1-Digest: CS+EFEwuRjKIn/VJEVQhlgu0VZs=
+
+Name: assets/A_28.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/Destruction.wav
+SHA1-Digest: WOZBByXnk8Pnv7ENIm3J/udzwJg=
+
+Name: assets/D_194.h
+SHA1-Digest: 15u615JCPGLb0nMWo312od37u+4=
+
+Name: assets/B_186.hills.h
+SHA1-Digest: nVTVwaWZX7nqg5WCl2v/k3Uq0dY=
+
+Name: assets/D_122.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/D_118.h
+SHA1-Digest: 7LP153/zyo1kQjRiRCmOV9QqVpk=
+
+Name: assets/C/C_110.hills.h
+SHA1-Digest: jUoMozlJQeB3hmbap63SnoNDGX4=
+
+Name: assets/B_199.h
+SHA1-Digest: g5rDtxqQRJ42ZQh+xGmjIJUCCD8=
+
+Name: assets/void_01.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/D_202.h
+SHA1-Digest: ahKPaJNtO1akDed39mVqovtb40s=
+
+Name: assets/B_33.hills.h
+SHA1-Digest: DCzWDWo3K929qU9/bHdzXw01HdY=
+
+Name: assets/B_45.hills.h
+SHA1-Digest: Rk607cO5xdQyriICLHKNSe9ZqkY=
+
+Name: assets/D/D_92.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: res/drawable-mdpi/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: dqhJzHg9892oeFT0twTRzjshHME=
+
+Name: assets/C/C_63.h
+SHA1-Digest: dJUgp4sky04QBxm48LXD7MswHsk=
+
+Name: assets/CloseNormal.png
+SHA1-Digest: cfH+t8Z1QSBAU06pVgtv50aVMk4=
+
+Name: assets/B_37.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/A/A_32.h
+SHA1-Digest: HrjmdKKPXxKEcvFWq1hoWtPgE64=
+
+Name: assets/D/D_187.h
+SHA1-Digest: mOC0IaPxQlROgdDr7tILSCcUesA=
+
+Name: assets/A_17.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/world04_blocs@2x.plist
+SHA1-Digest: WUD5rpSFbiFXh8l4KBah5biIaho=
+
+Name: assets/C/C_195.h
+SHA1-Digest: Hl7/oErPShJ6iVrJ6g5Q9EtuQYA=
+
+Name: assets/B_39.h
+SHA1-Digest: nu16LKCFoiEoLZ83LmKvl9Ysvig=
+
+Name: assets/B/B_71.h
+SHA1-Digest: Zd7+EuFSvppHn5VERHnwvRVuH8M=
+
+Name: assets/C/C_121.h
+SHA1-Digest: A65uPTp6NkizUnUmHEIX/865kF4=
+
+Name: assets/C_123.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/C_127.h
+SHA1-Digest: bIPNJyK1pG3aM4cpuLU8bF2Yx4g=
+
+Name: assets/B_142.hills.h
+SHA1-Digest: QQvZ/Q8uOYeJG+gJe934xsDC/Dc=
+
+Name: assets/A_03.hills.h
+SHA1-Digest: XrjjrJHh+hIttz7ebGkVfYmhTQs=
+
+Name: assets/A_188.h
+SHA1-Digest: /wZnD00cv7wPvyqi4tijxQPTR0E=
+
+Name: assets/B_213.h
+SHA1-Digest: MNb3puEmAXAWpWFHkEPH3oJrliM=
+
+Name: assets/B/B_128.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/C/C_123.h
+SHA1-Digest: SnSepXGSfMyh6Yix3QAnpaXaRLk=
+
+Name: assets/C_162.hills.h
+SHA1-Digest: C+HJLQWWaVwCnAdAgEWk+ofdrMs=
+
+Name: assets/D_190.hills.h
+SHA1-Digest: MtDUJjsG6B5ZHHBAlG+Pagtbj4c=
+
+Name: assets/B/B_73.h
+SHA1-Digest: 7Vhy6Utsy+enbFwEHjcRpFGjzF0=
+
+Name: assets/A_15.h
+SHA1-Digest: Snc6k1VPGo+EG0DyQSYKzW4ia18=
+
+Name: assets/B_44.hills.h
+SHA1-Digest: ZIFaI2luNV+HCh/kVqoZUD7VyT0=
+
+Name: assets/B_136.hills.h
+SHA1-Digest: EwlH/g1V19MFoqWhN9U3Spynqyc=
+
+Name: assets/C/C_102.h
+SHA1-Digest: YRdvI3Uoar3vCvYG9PULK05ZNb4=
+
+Name: assets/B_49.h
+SHA1-Digest: m+FISrLlwC3szg2k8FXZg0d/jms=
+
+Name: assets/wheel_04_100.xml
+SHA1-Digest: 8ySAR1/x2sFNfgyifSJmDfaO8Ak=
+
+Name: assets/A/A_15.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/bloc_06a_150.xml
+SHA1-Digest: aDi3KOhy+Bq0FbuuFhW1bAuluOw=
+
+Name: assets/B_64.h
+SHA1-Digest: MT8hnbUFvPjClk3BF3wgSUQd1To=
+
+Name: assets/A/A_23.hills.h
+SHA1-Digest: VE4jUlGlPG9nkZiQHtUBgZuSY7U=
+
+Name: assets/B/B_40.h
+SHA1-Digest: o8tuoxiqG0VUZIM5LNdO0CIwe/o=
+
+Name: assets/B_68.h
+SHA1-Digest: p/1O0cn3Dhbr7B/U3ar4VBS3Ldw=
+
+Name: assets/microtrip.mp3
+SHA1-Digest: fm0gez0vqxr54X+00YXSpm/wu+U=
+
+Name: assets/A/A_26.h
+SHA1-Digest: CFTOYDH4wo7f5GJK5u0cNQnhRos=
+
+Name: assets/B_181.h
+SHA1-Digest: p/Oz+3nNQ0Rg2N1aaoG+wkSisJY=
+
+Name: assets/B/B_136.hills.h
+SHA1-Digest: EwlH/g1V19MFoqWhN9U3Spynqyc=
+
+Name: assets/world02_tex_base_01@2x.png
+SHA1-Digest: o+uR6E2bpDkxtlvSLFFlPuFs1lE=
+
+Name: assets/B_62.h
+SHA1-Digest: h8KC8LKQBXNscXOGTb6Ad2Ee7ZM=
+
+Name: res/drawable-hdpi/common_signin_btn_text_disabled_focus_dark.9.p
+ ng
+SHA1-Digest: EAeuLKBLl4TC68T+TeSlHUjUtcc=
+
+Name: assets/A/A_24.h
+SHA1-Digest: QyaOeULfTUUZpy1COzIyIUahgBE=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: rId1N64CNb1utK4J443b5r8L75A=
+
+Name: assets/B_06.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/A/A_59.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/D_164.h
+SHA1-Digest: uclE7iFnVJWlph8cnN4pA4IxLYE=
+
+Name: assets/C/C_103.hills.h
+SHA1-Digest: lpVqYq0Cuu8gBPc/GwDP745yh0I=
+
+Name: assets/wheel_02_150.xml
+SHA1-Digest: +ONpoTUblYutycRKLQbIRmswUxo=
+
+Name: assets/jelly_02b.xml
+SHA1-Digest: bzU9JZFijc0d2ezNACq+d/uYrqc=
+
+Name: assets/B/B_142.hills.h
+SHA1-Digest: QQvZ/Q8uOYeJG+gJe934xsDC/Dc=
+
+Name: assets/A_04.h
+SHA1-Digest: jgwRSdwmh3i2YeUWnZyftKLb6b0=
+
+Name: res/drawable-hdpi/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: 9WjUIGgn4/x4k4ckr/lPi4dGA2k=
+
+Name: assets/C_110.h
+SHA1-Digest: VxPWGrnPEn1m6IVSSQ0MBxM+Xdg=
+
+Name: resources.arsc
+SHA1-Digest: ey4N8DLM65wnHP1yRaQTrVnfd2Q=
+
+Name: assets/A_07.h
+SHA1-Digest: 3GHz2kfNfKgUoL1AuwhWb8GXvUg=
+
+Name: assets/C_152.h
+SHA1-Digest: rGDf/WeOegwq4HnQtQQto91aiSc=
+
+Name: res/drawable-hdpi/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: yC2vgo3XZuCmTfWOsi2Ts/MwsdI=
+
+Name: assets/B_137.h
+SHA1-Digest: De7W1EobLP9Cm5ibZYr0tHS3Ses=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: Wwe1rVvuGfXSfizLG5G1W1QR744=
+
+Name: assets/A/A_141.hills.h
+SHA1-Digest: XiS7dpjuFsdTl4QtIHsGMejALII=
+
+Name: assets/A_09.h
+SHA1-Digest: Zoj/SxP0v7KxVTviKlQwJVCokxs=
+
+Name: assets/A_02.h
+SHA1-Digest: hamAJiOf6O4XetW3etr/w7smtKA=
+
+Name: assets/B_84.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B_135.h
+SHA1-Digest: kGDPYzXgOjmJJnoKZ+lyRcvMPgM=
+
+Name: res/drawable-xxhdpi/icon.png
+SHA1-Digest: lFIysbZSuDznnt2LjwciG84oDL0=
+
+Name: assets/jelly_03a.xml
+SHA1-Digest: Nez2ittx9L0bzjgoIyIzSncA5U8=
+
+Name: assets/C/C_215.h
+SHA1-Digest: OklTCDnLT2noJPc8SVRB650NUoc=
+
+Name: assets/D/D_104.h
+SHA1-Digest: MzMp3pkK5q8gm+EkIrguUZHwgzk=
+
+Name: assets/C_112.h
+SHA1-Digest: EQM3UnLiZ9K+zywMYFi9sFKMHEI=
+
+Name: assets/B/B_174.hills.h
+SHA1-Digest: D3RqHm8BOiQ11hnqgSeq3feHFCA=
+
+Name: assets/B/B_48.h
+SHA1-Digest: n5k9d9FUtSdoON7dXz9Z2yegwwA=
+
+Name: assets/C_86.h
+SHA1-Digest: WnY5wvpNwpQiKuKG4O1/NFVCgfY=
+
+Name: assets/A_65.h
+SHA1-Digest: MtTwAp+mgDBIbgiXGXEGe4Vo+uQ=
+
+Name: assets/B/B_57.hills.h
+SHA1-Digest: n7hbGYI2wp+o7SpowPSrRrPu2es=
+
+Name: res/drawable/common_signin_btn_icon_light.xml
+SHA1-Digest: 6sckvy5Jwoon3rBDDscCMxUXIvE=
+
+Name: res/drawable-hdpi/common_signin_btn_icon_disabled_light.9.png
+SHA1-Digest: x/VaksfPeHnDpPesT3JBXmp985Y=
+
+Name: assets/A/A_04.h
+SHA1-Digest: jgwRSdwmh3i2YeUWnZyftKLb6b0=
+
+Name: assets/C/C_209.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/ui@2x.png
+SHA1-Digest: HS3qN8ysjB+Dunobqj57ZabV5+8=
+
+Name: assets/Void/01.h
+SHA1-Digest: eN5ibwcu9VR24UIgSYWDB+I1/uY=
+
+Name: assets/B/B_44.h
+SHA1-Digest: 6JYrCN0mwqXNQirr/nP1cL9Xao8=
+
+Name: assets/B_70.hills.h
+SHA1-Digest: p8iyvlb15b9H0LglHDF5UTzNBOY=
+
+Name: assets/C_112.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/bloc_04a_200.xml
+SHA1-Digest: C4RtnT3CoOohol3WoMH43Ihp2YU=
+
+Name: assets/C/C_116.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: res/drawable/common_signin_btn_text_dark.xml
+SHA1-Digest: +dGVOOgtGrsuUQ7q8tguxU/EHEc=
+
+Name: assets/B/B_46.h
+SHA1-Digest: Vgkt9EU2dcU9y5pS0TsKXKsMa64=
+
+Name: assets/D/D_125.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/A/A_07.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/C/C_89.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/D/D_190.hills.h
+SHA1-Digest: MtDUJjsG6B5ZHHBAlG+Pagtbj4c=
+
+Name: assets/B_193.hills.h
+SHA1-Digest: o6tUJ1kqaZINAJbUoOj/Oi3tbu4=
+
+Name: assets/B/B_132.h
+SHA1-Digest: RYJ8hzPhfxds+Ztxqe0ykaeYeAg=
+
+Name: assets/A/A_56.hills.h
+SHA1-Digest: sqR7QvzrpO44xxv9l6K/a17EYxA=
+
+Name: assets/world01_tex_base_01@2x.png
+SHA1-Digest: M/nu6QbOzLDBdOlssBHRMkcfqQQ=
+
+Name: assets/C_121.h
+SHA1-Digest: A65uPTp6NkizUnUmHEIX/865kF4=
+
+Name: assets/D_104.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A_35.h
+SHA1-Digest: EnDrywnCp2cVwHHLV+v/f/hKJ7A=
+
+Name: assets/B_212.hills.h
+SHA1-Digest: YrClsWAky0uKgRhFLy62VX+w+dc=
+
+Name: assets/D/D_191.hills.h
+SHA1-Digest: zQu7mzVgOlEdcYbM8xwO7McqTnQ=
+
+Name: assets/B_53.h
+SHA1-Digest: DtmdlxuBR0f8EILnLL64EIvehwo=
+
+Name: assets/B_93.h
+SHA1-Digest: jg++j25/0kEZNsqEbcIa3AQcrRM=
+
+Name: assets/B/B_76.h
+SHA1-Digest: 0eSCC9rFlStvO9csCtHkkNtZZl8=
+
+Name: assets/C_106.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/Eat.wav
+SHA1-Digest: 43SiVE8c2fAoiE7bWCrDoAcRE8o=
+
+Name: res/drawable-xxhdpi/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: GBKGFAu8WgNe9xgvdO3tYkKa2cs=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: CZCrnnymVScCKUUwDcFqzJuxes8=
+
+Name: assets/A_12.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/world03_blocs.plist
+SHA1-Digest: SsfD4Nd/wZHs5Q70rOP+Boji/r4=
+
+Name: assets/A/A_66.h
+SHA1-Digest: mOv8Qa+yjtEFlTQ0fjVels75fRw=
+
+Name: assets/B/B_134.h
+SHA1-Digest: CUfW5VXH6L5WPjLefi41oLF6SyQ=
+
+Name: assets/A_02.hills.h
+SHA1-Digest: VhKr5n8a2FDj7NWiqq/RMvpvoUs=
+
+Name: assets/B_46.hills.h
+SHA1-Digest: 3UH5ZhyaCDhVRejNWznL+cq8+mc=
+
+Name: res/drawable-xhdpi/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: FRyVoHgez+sduUGrAYI53stU7JU=
+
+Name: assets/B/B_138.h
+SHA1-Digest: ZkgutJfrWVqvTPNHZyCy25UPZMI=
+
+Name: assets/C_120.hills.h
+SHA1-Digest: RDLS9u02loLkBX3Ir86KMvitzOI=
+
+Name: assets/B/B_135.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/C_126.hills.h
+SHA1-Digest: qfuCUIypnYHxb8HkR/IwvsRutRk=
+
+Name: assets/C_150.h
+SHA1-Digest: LGsmbrudlu30rnLgnD7TJIKlsLs=
+
+Name: assets/world01_blocs.plist
+SHA1-Digest: P2yxTu8/uQIIfLhOsl6EuUZ7br4=
+
+Name: assets/world01_blocs@2x.plist
+SHA1-Digest: jL4GWhMmpLNLEXZqoSEBaLg1eAA=
+
+Name: assets/D/D_114.h
+SHA1-Digest: QQNbJCmuw2fGi5B4PjWXgtD55Ak=
+
+Name: res/drawable-xxhdpi/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: 335/wED48zH+87QMXhgn/9PUEWc=
+
+Name: assets/B/B_100.h
+SHA1-Digest: k8aJUyElLytXQnfm67jw+fqjPkY=
+
+Name: assets/A/A_31.hills.h
+SHA1-Digest: 1eEnJ/pi063QEV6B3fQk9TdBp+A=
+
+Name: assets/B/B_94.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B_94.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/D_122.h
+SHA1-Digest: d5q/qvTF+DcyNKf5lWShLPjNDqk=
+
+Name: assets/B/B_136.h
+SHA1-Digest: JyP2DgB2tTV9Ly3hS7sCpZwLQIc=
+
+Name: assets/A_82.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/D/D_164.hills.h
+SHA1-Digest: AR/mBO9+smV5x76UyuzUOcNDw54=
+
+Name: assets/A_13.h
+SHA1-Digest: 3brrVr039drftFw4MduCy7HDVEI=
+
+Name: assets/D/D_201.hills.h
+SHA1-Digest: M/juc0LItulvsc4ciiyRYB1M3vk=
+
+Name: assets/B/B_130.h
+SHA1-Digest: fW/k70JnQBP/pqB+KxvT3DO+GcE=
+
+Name: assets/C/C_102.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/C_106.h
+SHA1-Digest: d7zw0/O2p9UiD7cCRk+OL7Fcj4k=
+
+Name: assets/B_10.hills.h
+SHA1-Digest: tiQM49wR6ucJ2mBMAQUHucmETKg=
+
+Name: assets/C/C_107.h
+SHA1-Digest: q/BL85PG/2df1csSDyV3Jvkdm8g=
+
+Name: assets/bloc_04b.xml
+SHA1-Digest: WFidwhs0/8uF6FYk2jYKWYO1Fho=
+
+Name: assets/D_210.h
+SHA1-Digest: 3n69MEXJMXLVktQi4yoKz8rnLPc=
+
+Name: assets/D/D_125.h
+SHA1-Digest: +WoR3/5pTI2JwoZJ7EcwVFGnWDU=
+
+Name: assets/B/B_81.h
+SHA1-Digest: jSmhEKXnZDGyEYBFDxrRcoDPE/U=
+
+Name: assets/A_159.hills.h
+SHA1-Digest: CUr9Oi9IzMHSTdVJIZ8Rb6JcuvQ=
+
+Name: assets/B/B_64.hills.h
+SHA1-Digest: /c7qNt3+WBDSF7CjUJ1ObKYX7pw=
+
+Name: assets/B_205.hills.h
+SHA1-Digest: le0z6BXU3Lfy96ffNKhdfJ15/Js=
+
+Name: assets/B_73.hills.h
+SHA1-Digest: sW9CgkjRC/nhUaiI0xcqHA93DXg=
+
+Name: assets/B_185.hills.h
+SHA1-Digest: JtNBWIr/J9OKWiQxtApasNDDJ0w=
+
+Name: assets/D/D_194.hills.h
+SHA1-Digest: gL+t1yLU3R4P0jtG4CZrgkUsfWA=
+
+Name: assets/B/B_212.h
+SHA1-Digest: 4gx2+SMX1nl3HFY4nLi6RWcwWkw=
+
+Name: assets/world02_blocs.png
+SHA1-Digest: cTgNyELa4Fq7rOW4HN9eg/Jdypk=
+
+Name: assets/world04_tex_01@2x.png
+SHA1-Digest: SpandboIVKg9clnMJ0osy0GVqx4=
+
+Name: assets/C/C_168.h
+SHA1-Digest: p9sPD8mnSX6pU16kAkX1vt+KEXk=
+
+Name: assets/B_208.h
+SHA1-Digest: BbAzdtosPkPeOVE2MPfEif/iGDc=
+
+Name: assets/C/C_173.h
+SHA1-Digest: xjHqIk/qEREFcRQqUxph87RtDE4=
+
+Name: assets/D/D_190.h
+SHA1-Digest: hfyqXp68KaQ3OZkuP5DpxfiFVYg=
+
+Name: assets/C/C_99.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/A_23.hills.h
+SHA1-Digest: VE4jUlGlPG9nkZiQHtUBgZuSY7U=
+
+Name: res/drawable-hdpi/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: kXY0FUDA5yTlhg+sxnPW3XXyNkQ=
+
+Name: assets/A_15.hills.h
+SHA1-Digest: YVYae6OMSjix1JpwzEI/ArQSIiI=
+
+Name: assets/C_129.h
+SHA1-Digest: lwwqQpB1t7ySOnQlw34GEvqgN4I=
+
+Name: assets/ui.plist
+SHA1-Digest: lkrgej0s0+hcdNI9O1lxsKrqE6I=
+
+Name: assets/B_206.h
+SHA1-Digest: wItosIA+eDVTb827jnwTK5ylSP8=
+
+Name: assets/C/C_109.h
+SHA1-Digest: Ep57Do8QUEfB0Lu16jPn1SKklKY=
+
+Name: assets/B/B_62.hills.h
+SHA1-Digest: A0PcYXn/eFlUfPZw5l9bNiJz+EA=
+
+Name: assets/B/B_72.hills.h
+SHA1-Digest: rnPqYFQKt2QL09Pxph0Q9Zd4ljU=
+
+Name: assets/B/B_217.h
+SHA1-Digest: 9moWDlE33r1wPyLcnhGtknufZ0M=
+
+Name: assets/A_188.hills.h
+SHA1-Digest: jkV+sHu/1UWmdKlCbATOV6+LubI=
+
+Name: assets/B_73.h
+SHA1-Digest: 7Vhy6Utsy+enbFwEHjcRpFGjzF0=
+
+Name: assets/D/D_197.hills.h
+SHA1-Digest: n2E2O2XNagkr/nmRzsEFKtAOkok=
+
+Name: assets/wheel_02_100.xml
+SHA1-Digest: A208IBDMujC8txJ6Mldg5dVgZ1c=
+
+Name: assets/B/B_163.hills.h
+SHA1-Digest: EIPkicxRoNMxheCpmUpraJFIiXk=
+

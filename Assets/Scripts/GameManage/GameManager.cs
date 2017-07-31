@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
     public float playerLifeMin = 0.0f;  // 玩家最小生命值
     public float playerLifeDecreasePerSecond = 1.0f; // 玩家每秒减少的生命值
 
-    public Image playerLifeChange; // 玩家生命改变显示
+    public PlayerLife playerLifeScript; // 玩家生命改变显示
 
 	// Use this for initialization
 	void Start () {
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour {
 
     private void ChangePlayerLife()
     {
-        playerLifeChange.fillAmount = playerLife / playerLifeMax;
+        playerLifeScript.SetPlayerLife(playerLife / playerLifeMax);
     }
 
     // 游戏结束

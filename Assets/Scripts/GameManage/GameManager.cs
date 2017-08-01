@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour {
     // 增加玩家生命(增加的生命值)
     public void IncreasePlayerLife(float increaseLifeNum)
     {
+        print("-- silent -- increase player life == " + increaseLifeNum);
         playerLife = playerLife > playerLifeMax ? playerLifeMax : playerLife + increaseLifeNum;
         ChangePlayerLife();
     }

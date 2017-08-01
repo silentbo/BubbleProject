@@ -24,7 +24,7 @@ public class BtnControlDirection : MonoBehaviour {
 
     void OnMouseDrag()
     {
-        print("-- silent -- OnMouseDrag ......");
+        //print("-- silent -- OnMouseDrag ......");
 
         switch (btnControlDirectionType)
         {

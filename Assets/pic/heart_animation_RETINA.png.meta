@@ -1,0 +1,773 @@
+fileFormatVersion: 2
+guid: 0526a6e01fe1b2744a9d929466ca1082
+timeCreated: 1501579301
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: heart_animation_RETINA_0
+    21300002: heart_animation_RETINA_1
+    21300004: heart_animation_RETINA_2
+    21300006: heart_animation_RETINA_3
+    21300008: heart_animation_RETINA_4
+    21300010: heart_animation_RETINA_5
+    21300012: heart_animation_RETINA_6
+    21300014: heart_animation_RETINA_7
+    21300016: heart_animation_RETINA_8
+    21300018: heart_animation_RETINA_9
+    21300020: heart_animation_RETINA_10
+    21300022: heart_animation_RETINA_11
+    21300024: heart_animation_RETINA_12
+    21300026: heart_animation_RETINA_13
+    21300028: heart_animation_RETINA_14
+    21300030: heart_animation_RETINA_15
+    21300032: heart_animation_RETINA_16
+    21300034: heart_animation_RETINA_17
+    21300036: heart_animation_RETINA_18
+    21300038: heart_animation_RETINA_19
+    21300040: heart_animation_RETINA_20
+    21300042: heart_animation_RETINA_21
+    21300044: heart_animation_RETINA_22
+    21300046: heart_animation_RETINA_23
+    21300048: heart_animation_RETINA_24
+    21300050: heart_animation_RETINA_25
+    21300052: heart_animation_RETINA_26
+    21300054: heart_animation_RETINA_27
+    21300056: heart_animation_RETINA_28
+    21300058: heart_animation_RETINA_29
+    21300060: heart_animation_RETINA_30
+    21300062: heart_animation_RETINA_31
+    21300064: heart_animation_RETINA_32
+    21300066: heart_animation_RETINA_33
+    21300068: heart_animation_RETINA_34
+    21300070: heart_animation_RETINA_35
+    21300072: heart_animation_RETINA_36
+    21300074: heart_animation_RETINA_37
+    21300076: heart_animation_RETINA_38
+    21300078: heart_animation_RETINA_39
+    21300080: heart_animation_RETINA_40
+    21300082: heart_animation_RETINA_41
+    21300084: heart_animation_RETINA_42
+    21300086: heart_animation_RETINA_43
+    21300088: heart_animation_RETINA_44
+    21300090: heart_animation_RETINA_45
+    21300092: heart_animation_RETINA_46
+    21300094: heart_animation_RETINA_47
+    21300096: heart_animation_RETINA_48
+    21300098: heart_animation_RETINA_49
+    21300100: heart_animation_RETINA_50
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: heart_animation_RETINA_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 487
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 502
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 475
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_3
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 461
+        width: 17
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 499
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_5
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 435
+        width: 81
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 463
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_7
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 480
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_8
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 447
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_9
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 476
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 454
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_11
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 474
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 441
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 447
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_14
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 433
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 450
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_16
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 435
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_17
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 444
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_18
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 448
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_19
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 392
+        width: 127
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 127
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_21
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 437
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_22
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 438
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_23
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 431
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_24
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 379
+        width: 128
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_25
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 301
+        width: 86
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 366
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_27
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 358
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_28
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 356
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_29
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 356
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_30
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 357
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 127
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_32
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 332
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_33
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 341
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_34
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 348
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_35
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 326
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_36
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 127
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_37
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 335
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_38
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 339
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_39
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 341
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_40
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 305
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_41
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 240
+        width: 91
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_42
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 300
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 127
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_44
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 227
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_45
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 139
+        width: 127
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_46
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 119
+        width: 127
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_47
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 207
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 127
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 74
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart_animation_RETINA_50
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 82
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

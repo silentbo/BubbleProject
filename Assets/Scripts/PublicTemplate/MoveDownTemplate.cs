@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// 物体自动下移类
 public class MoveDownTemplate : MonoBehaviour
 {
 

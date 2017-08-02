@@ -6,9 +6,7 @@ using UnityEngine.UI;
 // 游戏管理类
 public class GameManager : MonoBehaviour {
 
-    public float playerLife = 20.0f; // 玩家生命值(实时更新)
-    public float playerLifeMax = 20.0f; // 玩家最大生命值
-    public float playerLifeMin = 0.0f;  // 玩家最小生命值
+    public float playerLife = 10.0f; // 玩家生命值(实时更新)
     public float playerLifeDecreasePerSecond = 1.0f; // 玩家每秒减少的生命值
 
     public PlayerLife playerLifeScript; // 玩家生命改变显示
@@ -16,24 +14,23 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        //// 3秒之后开始，每秒减少玩家血量
-        //InvokeRepeating("DecreasePlayerLifePerSecond", 3.0f, 1.0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (playerLife >= playerLifeMin)
-            DecreasePlayerLifePerSecond();
+        DecreasePlayerLifePerSecond();
     }
 
     // 每秒减少玩家的生命
     private void DecreasePlayerLifePerSecond()
     {
+        if (playerLife < ConstTemplate.playerLifeMin) return;
+
         playerLifeDecreasePerSecond = Time.deltaTime;
-        playerLife = playerLife > playerLifeMin ? playerLife - playerLifeDecreasePerSecond : playerLifeMin;
+        playerLife = playerLife > ConstTemplate.playerLifeMin ? playerLife - playerLifeDecreasePerSecond : ConstTemplate.playerLifeMin;
         ChangePlayerLife();
-        if (playerLife <= playerLifeMin)
+        if (playerLife <= ConstTemplate.playerLifeMin)
             PlayGameOver();
     }
 
@@ -41,13 +38,13 @@ public class GameManager : MonoBehaviour {
     public void IncreasePlayerLife(float increaseLifeNum)
     {
         print("-- silent -- increase player life == " + increaseLifeNum);
-        playerLife = playerLife > playerLifeMax ? playerLifeMax : playerLife + increaseLifeNum;
+        playerLife = playerLife > ConstTemplate.playerLifeMax ? ConstTemplate.playerLifeMax : playerLife + increaseLifeNum;
         ChangePlayerLife();
     }
 
     private void ChangePlayerLife()
     {
-        playerLifeScript.SetPlayerLife(playerLife / playerLifeMax);
+        playerLifeScript.SetPlayerLife(playerLife / ConstTemplate.playerLifeMax);
     }
 
     // 游戏结束

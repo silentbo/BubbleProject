@@ -7,6 +7,11 @@ public class Player : MonoBehaviour {
     public bool isEatFinished; // 是否吃完了
     public GameManager gameManager;
 
+    public float speedMoveByBtn = 5.0f; // 按钮控制其左右移动的速度
+    public Vector3 moveDirection = Vector3.zero; // 主角移动的方向
+
+    public bool isAnimation = true; // 是否播放动画
+
 	// Use this for initialization
 	void Start () {
 
@@ -19,9 +24,7 @@ public class Player : MonoBehaviour {
 
     // 2d 碰撞触发函数
     void OnTriggerEnter2D(Collider2D other){
-
-        print("-- silent -- other tag Trigger == " + other.tag);
-
+        
         switch (other.tag)
         {
             case "reward_bubble":
@@ -47,10 +50,32 @@ public class Player : MonoBehaviour {
         //other2D.gameObject.SetActive(false);
     }
 
-
+    // 吃掉其他泡泡动画
     private void EatRewardBubble()
     {
         animatorPlayer.PlayInFixedTime("player_eat");
     }
 
+
+    // 左右移动
+    public void MovePlayerLeftOrRightByBtn(ConstTemplate.BtnControlDirectionType btnDirectionType)
+    {
+        if (!isAnimation) return;
+
+        switch (btnDirectionType)
+        {
+            case ConstTemplate.BtnControlDirectionType.BtnControlDirectionDefault:
+                moveDirection = Vector3.zero;
+                break;
+
+            case ConstTemplate.BtnControlDirectionType.BtnControlDirectionLeft:
+                moveDirection = Vector3.left;
+                break;
+
+            case ConstTemplate.BtnControlDirectionType.BtnControlDirectionRight:
+                moveDirection = Vector3.right;
+                break;
+        }
+        this.transform.Translate(moveDirection * speedMoveByBtn * Time.deltaTime);
+    }
 }

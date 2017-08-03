@@ -4,7 +4,6 @@ using System.Collections;
 // 背景移动
 public class BgLoopMove : MonoBehaviour
 {
-	
 	// Update is called once per frame
 	void Update () {
 
@@ -19,6 +18,6 @@ public class BgLoopMove : MonoBehaviour
         if (this.transform.position.y <= -ConstTemplate.screenHeight)
             // 设置图片的位置，用来循环
             this.transform.position = new Vector3(this.transform.position.x,
-                this.transform.position.y + ConstTemplate.screenHeight, this.transform.position.z);
+                this.transform.position.y + ConstTemplate.screenHeight * 2, this.transform.position.z);
     }
 }

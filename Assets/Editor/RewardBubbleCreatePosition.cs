@@ -1,8 +1,20 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using UnityEngine;
 using UnityEditor;
-using System.Collections;
+using Random = UnityEngine.Random;
 
 public static class RewardBubbleCreatePosition {
+
+    struct RewardBubbleData
+    {
+        public float posX;
+        public float posY;
+        public float scaleRadiu;
+    }
+
+    private static List<RewardBubbleData> listRewardBubbleDatas = new List<RewardBubbleData>();
 
     [MenuItem("MyTools/CreateOneRewardBubblePosition")]
 	static void CreateOneRewardBubblePosition()
@@ -33,42 +45,119 @@ public static class RewardBubbleCreatePosition {
     [MenuItem("MyTools/CreateMultiRewardBubblePosition")]
     static void CreateMultiRewardBubblePosition()
     {
-        Debug.Log("-- silent -- 开始创建多个奖励泡泡");
+        Debug.Log("-- silent -- 开始创建各个关卡的多个奖励泡泡");
 
-        float randomY = Random.Range(0.0f, ConstTemplate.screenHeight * 1.5f);
+        // 读取外部配置文件
+        string strCreateRewardBubbleDataAllLevelPath = Application.dataPath + "/Resources/Data/RewardBubbleDataAllLevel.txt";
 
-        int rewardBubbleCount = 100;
+        //string strDateAllLevel = File.ReadAllText(strCreateRewardBubbleDataAllLevelPath); // (第几关，没关中的奖励泡泡的数量),(1,100),(2,150)
+        string[] strAllRewardCount = File.ReadAllLines(strCreateRewardBubbleDataAllLevelPath);
 
-        for (int i = 0; i < rewardBubbleCount; i ++)
+        // 去掉前1个
+        for (int istr = 1; istr < strAllRewardCount.Length; istr ++)
         {
+            string strLevelData = strAllRewardCount[istr];
+            string[] strLevelDataSqlit = strLevelData.Split(',', '(', ')', ' ');
 
-            Sprite spriteRewardBubble = Resources.Load<Sprite>("Player/bubble_02");
+            int createNums = int.Parse(strLevelDataSqlit[0]);
+            Debug.Log("-- silent -- createNums = " + createNums);
 
-            float randomX = Random.Range(-ConstTemplate.screenWith / 2, ConstTemplate.screenWith / 2);
-            float randomYInterval = Random.Range(0.8f, 2.0f);
-            randomY += randomYInterval;
+            listRewardBubbleDatas.Clear();
 
-            float randomScalc = Random.Range(0.3f, 0.8f);
+            int rewardBubbleCount = int.Parse(strLevelDataSqlit[1]);
 
-            GameObject goRewardBubble = new GameObject();
-            goRewardBubble.transform.parent = GameObject.Find("root/reward_bubbles").transform;
-            goRewardBubble.name = "rewardBubbleRandom" + i.ToString();
-            goRewardBubble.tag = "reward_bubble";
-            goRewardBubble.transform.localPosition = new Vector3(randomX, randomY);
-            goRewardBubble.transform.localScale = new Vector3(randomScalc, randomScalc, randomScalc);
+            float randomY = Random.Range(0.0f, ConstTemplate.screenHeight * 1.5f);
 
-            SpriteRenderer spriteRendererRewardBubble = goRewardBubble.AddComponent<SpriteRenderer>();
-            spriteRendererRewardBubble.sprite = spriteRewardBubble;
-            spriteRendererRewardBubble.sortingLayerName = "other_object";
+            for (int i = 0; i < rewardBubbleCount; i ++)
+            {
+                Sprite spriteRewardBubble = Resources.Load<Sprite>("Player/bubble_02");
 
-            MoveDownTemplate moveDownRewardBubble = goRewardBubble.AddComponent<MoveDownTemplate>();
-            moveDownRewardBubble.isAnimation = true;
-            moveDownRewardBubble.speedMoveDown = 3.0f;
+                float randomX = Random.Range(-ConstTemplate.screenWith/2, ConstTemplate.screenWith/2);
+                float randomYInterval = Random.Range(0.8f, 2.0f);
+                randomY += randomYInterval;
 
-            CircleCollider2D circleCollider2dRewardBubble = goRewardBubble.AddComponent<CircleCollider2D>();
+                float randomScalc = Random.Range(0.3f, 0.8f);
+
+                listRewardBubbleDatas.Add(new RewardBubbleData()
+                {
+                    posX = randomX,
+                    posY = randomY,
+                    scaleRadiu = randomScalc
+                });
+
+                GameObject goRewardBubble = new GameObject();
+                goRewardBubble.transform.parent = GameObject.Find("root/reward_bubbles").transform;
+                goRewardBubble.name = "rewardBubbleRandom" + i.ToString();
+                goRewardBubble.tag = "reward_bubble";
+                goRewardBubble.transform.localPosition = new Vector3(randomX, randomY);
+                goRewardBubble.transform.localScale = new Vector3(randomScalc, randomScalc, randomScalc);
+
+                SpriteRenderer spriteRendererRewardBubble = goRewardBubble.AddComponent<SpriteRenderer>();
+                spriteRendererRewardBubble.sprite = spriteRewardBubble;
+                spriteRendererRewardBubble.sortingLayerName = "other_object";
+
+                MoveDownTemplate moveDownRewardBubble = goRewardBubble.AddComponent<MoveDownTemplate>();
+                moveDownRewardBubble.isAnimation = true;
+                moveDownRewardBubble.speedMoveDown = 1.8f;
+
+                /*CircleCollider2D circleCollider2dRewardBubble = */
+                goRewardBubble.AddComponent<CircleCollider2D>();
+            }
+
+            SaveRewardBubblePositionAndScaleData(createNums);
         }
 
-        Debug.Log("-- silent -- 结束创建多个奖励泡泡");
+        Debug.Log("-- silent -- 结束创建各个关卡的多个奖励泡泡");
 
+    }
+
+    private static void SaveRewardBubblePositionAndScaleData(int createNums)
+    {
+        Debug.Log("-- silent -- 开始保存奖励泡泡数据");
+        string strSaveRewardBubbleDataPath = Application.dataPath + "/Resources/Data/RewardBubbleDataLevel_" + createNums.ToString() + ".json";
+
+        // json格式：
+        // { "student":[ {"name":"a", "num":"19", "sex":"m"}, {"name":"b", "num":"20", "sex":"w"} ] }
+
+        // {"reward_bubble_data":[ {"id":"0", "randomX":"1.0", "randomY":"1.0", "randomScale":"1.0"}, ······ ]}
+        string strDataBegin = "{\n\t\"reward_bubble_data\":\n\t[";
+        string strDataEnd = "\n\t]\n}";
+        //string strContentTemplate = "\n\t\t{\n\t\t\t\"id\":\"{0}\", \n\t\t\t\"randomX\":\"{1}\", \n\t\t\t\"randomY\":\"{2}\", \n\t\t\t\"randomScale\":\"{3}\"\n\t\t}";
+        StringBuilder stringBuilderDataContent = new StringBuilder();
+        stringBuilderDataContent.Append(strDataBegin);
+        for (int i = 0; i < listRewardBubbleDatas.Count; i ++)
+        {
+            //stringBuilderDataContent.Append(string.Format(strContentTemplate, i + 1, listRewardBubbleDatas[i].posX,
+            //    listRewardBubbleDatas[i].posY, listRewardBubbleDatas[i].scaleRadiu));
+
+            stringBuilderDataContent.Append("\n\t\t{\n\t\t\t\"id\":\"");
+            stringBuilderDataContent.Append(i+1);
+            stringBuilderDataContent.Append("\", \n\t\t\t\"randomX\":\"");
+            stringBuilderDataContent.Append(listRewardBubbleDatas[i].posX);
+            stringBuilderDataContent.Append("\", \n\t\t\t\"randomY\":\"");
+            stringBuilderDataContent.Append(listRewardBubbleDatas[i].posY);
+            stringBuilderDataContent.Append("\", \n\t\t\t\"randomScale\":\"");
+            stringBuilderDataContent.Append(listRewardBubbleDatas[i].scaleRadiu);
+            stringBuilderDataContent.Append("\"\n\t\t}");
+
+            if (i < listRewardBubbleDatas.Count - 1)
+                stringBuilderDataContent.Append(",");
+        }
+
+        stringBuilderDataContent.Append(strDataEnd);
+
+        Debug.Log("-- silent -- data = ---------- begin ");
+        Debug.Log(stringBuilderDataContent.ToString());
+        Debug.Log("-- silent -- data = ---------- end ");
+
+        Debug.Log("-- silent -- 开始写入json文件");
+
+        File.WriteAllText(strSaveRewardBubbleDataPath, stringBuilderDataContent.ToString());
+
+        Debug.Log("-- silent -- 结束写入json文件");
+
+        Debug.Log("-- silent -- 结束保存奖励泡泡数据");
+
+        
     }
 }

@@ -6,7 +6,7 @@ public class ConstTemplate {
     public const float playerLifeMin = 0.0f;  // 玩家最小生命值
 
     public const float screenWith = 4.8f; // 屏幕的宽
-    public const float screenHeight = 4.8f; // 屏幕的高
+    public const float screenHeight = 8.52f; // 屏幕的高
 
     // 控制方向的enum
     public enum BtnControlDirectionType

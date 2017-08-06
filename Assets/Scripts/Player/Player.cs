@@ -40,13 +40,14 @@ public class Player : MonoBehaviour {
         // 播放吃东西动画
         EatRewardBubble();
 
-        // 获取奖励泡泡增加的生命值
+        //// 获取奖励泡泡增加的生命值
         RewardBubble rewardBubble = other2D.GetComponent<RewardBubble>();
         if (!rewardBubble) return;
+        rewardBubble.Eaten(this.gameObject);
         gameManager.IncreasePlayerLife(rewardBubble.hpRewardBubble);
 
-        // 删除奖励泡泡
-        Destroy(other2D.gameObject);
+        //// 删除奖励泡泡
+        //Destroy(other2D.gameObject);
         //other2D.gameObject.SetActive(false);
     }
 

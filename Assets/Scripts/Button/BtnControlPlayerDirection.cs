@@ -20,8 +20,6 @@ public class BtnControlPlayerDirection : MonoBehaviour {
     void OnMouseDrag()
     {
         Vector3 vec3Position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        print("-- silent -- mousePosition = " + Input.mousePosition);
-        print("-- silent -- mousePositionWorld = " + vec3Position);
 
         if (vec3Position.x < 0)
         {

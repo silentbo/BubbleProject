@@ -77,6 +77,28 @@ public class Player : MonoBehaviour {
                 moveDirection = Vector3.right;
                 break;
         }
-        this.transform.Translate(moveDirection * speedMoveByBtn * Time.deltaTime);
+        Vector3 vec3MoveDirection = moveDirection * speedMoveByBtn * Time.deltaTime;
+
+        if (LimitRangeOfPlayerMove(vec3MoveDirection))
+            this.transform.Translate(vec3MoveDirection);
     }
+
+    // 限制主角的移动范围
+    private bool LimitRangeOfPlayerMove(Vector3 vec3AddValue)
+    {
+        Vector3 vec3PlayerEndPos = this.transform.position + vec3AddValue;
+        float vec3PlayerLimitX = ConstTemplate.screenWith / 2 - ConstTemplate.playerRadius * 1.2f;
+        if (vec3PlayerEndPos.x >= vec3PlayerLimitX)
+        {
+            this.transform.position = new Vector3(vec3PlayerLimitX, this.transform.position.y,this.transform.position.z);
+            return false;
+        }
+        else if (vec3PlayerEndPos.x <= -vec3PlayerLimitX - ConstTemplate.playerRadius)
+        {
+            this.transform.position = new Vector3(vec3PlayerLimitX, this.transform.position.y, this.transform.position.z);
+            return false;
+        }
+        return true;
+    }
+
 }

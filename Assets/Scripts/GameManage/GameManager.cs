@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System;
-using UnityEngine.UI;
 
 // 游戏管理类
 public class GameManager : MonoBehaviour {
@@ -11,9 +8,11 @@ public class GameManager : MonoBehaviour {
 
     public PlayerLife playerLifeScript; // 玩家生命改变显示
 
-	// Use this for initialization
-	void Start () {
+    public int levelId = 1;
 
+	// Use this for initialization
+	void Start (){
+	    levelId = PlayerPrefs.GetInt(ConstTemplate.keyPlayerPrefsLevelId, 1);
 	}
 	
 	// Update is called once per frame
@@ -42,6 +41,7 @@ public class GameManager : MonoBehaviour {
         ChangePlayerLife();
     }
 
+    // 改变生命值
     private void ChangePlayerLife()
     {
         playerLifeScript.SetPlayerLife(playerLife / ConstTemplate.playerLifeMax);
@@ -66,5 +66,6 @@ public class GameManager : MonoBehaviour {
         print("-- silent -- game resume");
     }
 
+   
 
 }

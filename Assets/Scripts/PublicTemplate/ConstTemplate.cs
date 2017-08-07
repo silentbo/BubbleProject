@@ -8,6 +8,11 @@ public class ConstTemplate {
     public const float screenWith = 4.8f; // 屏幕的宽
     public const float screenHeight = 8.52f; // 屏幕的高
 
+    public const float playerRadius = 0.4f; // 主角的半径
+
+
+    public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
+
     // 控制方向的enum
     public enum BtnControlDirectionType
     {

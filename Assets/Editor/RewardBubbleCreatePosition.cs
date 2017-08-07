@@ -48,7 +48,7 @@ public static class RewardBubbleCreatePosition {
         Debug.Log("-- silent -- 开始创建各个关卡的多个奖励泡泡");
 
         // 读取外部配置文件
-        string strCreateRewardBubbleDataAllLevelPath = Application.dataPath + "/Resources/Data/RewardBubbleDataAllLevel.txt";
+        string strCreateRewardBubbleDataAllLevelPath = Application.dataPath + "/Resources/Data/RewardBubbleDataAllLevel/RewardBubbleDataAllLevel.txt";
 
         //string strDateAllLevel = File.ReadAllText(strCreateRewardBubbleDataAllLevelPath); // (第几关，没关中的奖励泡泡的数量),(1,100),(2,150)
         string[] strAllRewardCount = File.ReadAllLines(strCreateRewardBubbleDataAllLevelPath);
@@ -114,7 +114,7 @@ public static class RewardBubbleCreatePosition {
     private static void SaveRewardBubblePositionAndScaleData(int createNums)
     {
         Debug.Log("-- silent -- 开始保存奖励泡泡数据");
-        string strSaveRewardBubbleDataPath = Application.dataPath + "/Resources/Data/RewardBubbleDataLevel_" + createNums.ToString() + ".json";
+        string strSaveRewardBubbleDataPath = Application.dataPath + "/Resources/Data/RewardBubbleDataAllLevel/RewardBubbleDataLevel_" + createNums.ToString() + ".json";
 
         // json格式：
         // { "student":[ {"name":"a", "num":"19", "sex":"m"}, {"name":"b", "num":"20", "sex":"w"} ] }

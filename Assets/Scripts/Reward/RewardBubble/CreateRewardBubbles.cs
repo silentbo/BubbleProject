@@ -23,9 +23,9 @@ public class CreateRewardBubbles : MonoBehaviour
         // 读取泡泡数据
         RewardBubbleLevelData rewardBubbleLevelData = RewardBubbleJsonParse.LoadRewardBubbleLevelJsonData(levelId);
 
-        for (int i = 0; i < rewardBubbleLevelData.rewardBubbleDatas.Length; i ++)
+        for (int i = 0; i < rewardBubbleLevelData.reward_bubble_data.Length; i ++)
         {
-            CreateOneRewardLevelBubble(rewardBubbleLevelData.rewardBubbleDatas[i]);
+            CreateOneRewardLevelBubble(rewardBubbleLevelData.reward_bubble_data[i]);
         }
 
     }
@@ -52,7 +52,7 @@ public class CreateRewardBubbles : MonoBehaviour
         goNewRewardBubble.AddComponent<CircleCollider2D>();
 
         RewardBubble rewardBubble = goNewRewardBubble.AddComponent<RewardBubble>();
-        rewardBubble.hpRewardBubble = rewardBubbleDate.randomScale;
+        rewardBubble.hpRewardBubble = rewardBubbleDate.randomScale * 2.0f;
         rewardBubble.scaleRandomRewardBubble = rewardBubbleDate.randomScale;
         rewardBubble.isEaten = false;
 

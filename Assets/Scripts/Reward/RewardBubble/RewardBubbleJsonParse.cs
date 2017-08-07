@@ -2,12 +2,14 @@
 using UnityEngine;
 
 // 奖励泡泡关卡数据json
+[System.Serializable] // 序列化，必须要加这个，网上说但是不建议使用这个类了，建议使用LitJson
 public class RewardBubbleLevelData
 {
-    public RewardBubbleData[] rewardBubbleDatas;
+    public RewardBubbleData[] reward_bubble_data;
 }
 
 // 奖励泡泡数据信息
+[System.Serializable]
 public class RewardBubbleData
 {
     public int id;

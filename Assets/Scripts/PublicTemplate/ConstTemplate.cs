@@ -10,6 +10,11 @@ public class ConstTemplate {
 
     public const float playerRadius = 0.4f; // 主角的半径
 
+    public const float playerPlayPosY = -2.0f; // 主角开始游戏的时候的位置
+
+    public const float playerDefaultPosY = -4.36f; // 主角默认的位置，未开始进行游戏的位置
+
+    public const float speedPlayerGameStart = 1.0f; // 背景向下的移动速度
 
     public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
 

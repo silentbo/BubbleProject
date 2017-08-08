@@ -8,7 +8,14 @@ public class GameManager : MonoBehaviour {
 
     public PlayerLife playerLifeScript; // 玩家生命改变显示
 
-    public int levelId = 1;
+    public int levelId = 1; // 第几个关卡
+
+    public int playerDistance = 0; // 玩家走过的距离
+
+    public MoveDownTemplate[] bgMoveDownTemplateScrips; // 背景的移动效果
+
+    public CreateRewardBubbles rewardBubbleCreateScrip;
+
 
 	// Use this for initialization
 	void Start (){
@@ -47,21 +54,37 @@ public class GameManager : MonoBehaviour {
         playerLifeScript.SetPlayerLife(playerLife / ConstTemplate.playerLifeMax);
     }
 
+
+    // 开始游戏
+    public void PlayGameStart()
+    {
+        print("-- silent -- game start -- ");
+
+        for (int i = 0; i < bgMoveDownTemplateScrips.Length; i++)
+        {
+            bgMoveDownTemplateScrips[i].isAnimation = true;
+            bgMoveDownTemplateScrips[i].speedMoveDown = 2.0f;
+        }
+
+        rewardBubbleCreateScrip.CreateRewardLevelBubble(levelId);
+
+    }
+
     // 游戏结束
-    private void PlayGameOver()
+    public void PlayGameOver()
     {
         print("-- silent -- game over -- ");
         CancelInvoke("DecreasePlayerLifePerSecond");
     }
 
     // 游戏暂停
-    private void PlayGamePause()
+    public void PlayGamePause()
     {
         print("-- silent -- game pause");
     }
 
     // 游戏恢复
-    private void PlayGameResume()
+    public void PlayGameResume()
     {
         print("-- silent -- game resume");
     }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour {
@@ -10,7 +11,9 @@ public class Player : MonoBehaviour {
     public float speedMoveByBtn = 5.0f; // 按钮控制其左右移动的速度
     public Vector3 moveDirection = Vector3.zero; // 主角移动的方向
 
-    public bool isAnimation = true; // 是否播放动画
+    public bool isAnimMoveLeftOrRight = true; // 是否播放动画
+
+    public bool isGameStart = false; // 是否播放完开场动画了
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +22,7 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        StartGamePlayerAnimation();
 	}
 
     // 2d 碰撞触发函数
@@ -45,10 +48,6 @@ public class Player : MonoBehaviour {
         if (!rewardBubble) return;
         rewardBubble.Eaten(this.gameObject);
         gameManager.IncreasePlayerLife(rewardBubble.hpRewardBubble);
-
-        //// 删除奖励泡泡
-        //Destroy(other2D.gameObject);
-        //other2D.gameObject.SetActive(false);
     }
 
     // 吃掉其他泡泡动画
@@ -61,7 +60,7 @@ public class Player : MonoBehaviour {
     // 左右移动
     public void MovePlayerLeftOrRightByBtn(ConstTemplate.BtnControlDirectionType btnDirectionType)
     {
-        if (!isAnimation) return;
+        if (!isAnimMoveLeftOrRight) return;
 
         switch (btnDirectionType)
         {
@@ -99,6 +98,22 @@ public class Player : MonoBehaviour {
             return false;
         }
         return true;
+    }
+
+    private void StartGamePlayerAnimation()
+    {
+        if (isGameStart)
+            return;
+
+        if (Math.Abs(this.transform.position.y - ConstTemplate.playerPlayPosY) < 0.1f)
+        {
+            print("-- silent -- -- - -- - -");
+            gameManager.PlayGameStart();
+            isGameStart = true;
+            return;
+        }
+
+        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(0.0f, ConstTemplate.playerPlayPosY, 0.0f), ConstTemplate.speedPlayerGameStart * Time.deltaTime);
     }
 
 }

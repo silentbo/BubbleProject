@@ -48,7 +48,7 @@ public static class RewardBubbleCreatePosition {
         Debug.Log("-- silent -- 开始创建各个关卡的多个奖励泡泡");
 
         // 读取外部配置文件
-        string strCreateRewardBubbleDataAllLevelPath = Application.dataPath + "/Resources/Data/RewardBubbleDataAllLevel/RewardBubbleDataAllLevel.txt";
+        string strCreateRewardBubbleDataAllLevelPath = Application.dataPath + "/Resources/Data/RewardBubbleData/RewardBubbleDataAllLevel.txt";
 
         //string strDateAllLevel = File.ReadAllText(strCreateRewardBubbleDataAllLevelPath); // (第几关，没关中的奖励泡泡的数量),(1,100),(2,150)
         string[] strAllRewardCount = File.ReadAllLines(strCreateRewardBubbleDataAllLevelPath);
@@ -66,14 +66,13 @@ public static class RewardBubbleCreatePosition {
 
             int rewardBubbleCount = int.Parse(strLevelDataSqlit[1]);
 
-            float randomY = Random.Range(0.0f, ConstTemplate.screenHeight * 1.5f);
+            float randomY = Random.Range(0.0f, ConstTemplate.screenHeight);
 
             for (int i = 0; i < rewardBubbleCount; i ++)
             {
-                Sprite spriteRewardBubble = Resources.Load<Sprite>("Player/bubble_02");
-
-                float randomX = Random.Range(-ConstTemplate.screenWith/2, ConstTemplate.screenWith/2);
-                float randomYInterval = Random.Range(0.8f, 2.0f);
+                Sprite spriteRewardBubble = Resources.Load<Sprite>("Player/bubble_02_65");
+                float randomX = Random.Range(-ConstTemplate.screenWith * 0.4f, ConstTemplate.screenWith * 0.4f);
+                float randomYInterval = Random.Range(ConstTemplate.playerRadius * 2.0f, ConstTemplate.playerRadius * 5f);
                 randomY += randomYInterval;
 
                 float randomScalc = Random.Range(0.3f, 0.8f);
@@ -114,7 +113,7 @@ public static class RewardBubbleCreatePosition {
     private static void SaveRewardBubblePositionAndScaleData(int createNums)
     {
         Debug.Log("-- silent -- 开始保存奖励泡泡数据");
-        string strSaveRewardBubbleDataPath = Application.dataPath + "/Resources/Data/RewardBubbleDataAllLevel/RewardBubbleDataLevel_" + createNums.ToString() + ".json";
+        string strSaveRewardBubbleDataPath = Application.dataPath + "/Resources/Data/RewardBubbleData/RewardBubbleDataLevel_" + createNums.ToString() + ".json";
 
         // json格式：
         // { "student":[ {"name":"a", "num":"19", "sex":"m"}, {"name":"b", "num":"20", "sex":"w"} ] }

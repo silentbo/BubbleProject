@@ -9,7 +9,7 @@ public class CreateRewardBubbles : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-	    CreateRewardLevelBubble(gameManager.levelId);
+        //CreateRewardLevelBubble(gameManager.levelId);
 	}
 	
 	// Update is called once per frame
@@ -18,7 +18,7 @@ public class CreateRewardBubbles : MonoBehaviour
 	}
 
     // 创建关卡奖励泡泡
-    private void CreateRewardLevelBubble(int levelId)
+    public void CreateRewardLevelBubble(int levelId)
     {
         // 读取泡泡数据
         RewardBubbleLevelData rewardBubbleLevelData = RewardBubbleJsonParse.LoadRewardBubbleLevelJsonData(levelId);

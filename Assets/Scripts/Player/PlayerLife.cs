@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+// 玩家生命值
 public class PlayerLife : MonoBehaviour
 {
 

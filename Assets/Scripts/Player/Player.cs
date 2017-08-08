@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
+// 主角即玩家
 public class Player : MonoBehaviour {
 
     public Animator animatorPlayer; // 泡泡动画

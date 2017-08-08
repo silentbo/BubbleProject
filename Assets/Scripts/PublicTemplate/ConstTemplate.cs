@@ -14,7 +14,9 @@ public class ConstTemplate {
 
     public const float playerDefaultPosY = -4.36f; // 主角默认的位置，未开始进行游戏的位置
 
-    public const float speedPlayerGameStart = 1.0f; // 背景向下的移动速度
+    public const float speedPlayerGameStart = 1.0f; // 玩家开始动画时向上移动的速度
+
+    public const float speedBgGameStart = 2.0f; // 正常游戏时背景向下移动的速度
 
     public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
 

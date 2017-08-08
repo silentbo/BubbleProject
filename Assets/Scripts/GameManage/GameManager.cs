@@ -6,16 +6,20 @@ public class GameManager : MonoBehaviour {
     public float playerLife = 10.0f; // 玩家生命值(实时更新)
     public float playerLifeDecreasePerSecond = 1.0f; // 玩家每秒减少的生命值
 
-    public PlayerLife playerLifeScript; // 玩家生命改变显示
 
     public int levelId = 1; // 第几个关卡
 
     public int playerDistance = 0; // 玩家走过的距离
 
+    public float playerSecondTime = 0.0f; // 玩家游戏中的时间
+
+    public bool isPlaying = false; // 是否在游戏中
+
+    public PlayerLife playerLifeScript; // 玩家生命改变显示
+
     public MoveDownTemplate[] bgMoveDownTemplateScrips; // 背景的移动效果
 
     public CreateRewardBubbles rewardBubbleCreateScrip;
-
 
 	// Use this for initialization
 	void Start (){
@@ -25,7 +29,11 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        DecreasePlayerLifePerSecond();
+        if (isPlaying)
+        {
+            DecreasePlayerLifePerSecond();
+        }
+
     }
 
     // 每秒减少玩家的生命
@@ -60,10 +68,12 @@ public class GameManager : MonoBehaviour {
     {
         print("-- silent -- game start -- ");
 
+        isPlaying = true;
+
         for (int i = 0; i < bgMoveDownTemplateScrips.Length; i++)
         {
             bgMoveDownTemplateScrips[i].isAnimation = true;
-            bgMoveDownTemplateScrips[i].speedMoveDown = 2.0f;
+            bgMoveDownTemplateScrips[i].speedMoveDown = ConstTemplate.speedBgGameStart;
         }
 
         rewardBubbleCreateScrip.CreateRewardLevelBubble(levelId);
@@ -88,7 +98,5 @@ public class GameManager : MonoBehaviour {
     {
         print("-- silent -- game resume");
     }
-
-   
 
 }

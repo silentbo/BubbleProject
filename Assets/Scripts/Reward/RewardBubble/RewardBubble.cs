@@ -20,10 +20,11 @@ public class RewardBubble : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-        //EatenFinish();
         MoveToPlayer();
         MoveToPlayerFinish();
-    }
+
+	    AutoDestroy();
+	}
 
     // 泡泡被吃动画
     public void Eaten(GameObject player)
@@ -42,8 +43,19 @@ public class RewardBubble : MonoBehaviour
     public void MoveToPlayerFinish()
     {
         if (!isEaten || !player || this.transform.position != player.transform.position) return;
+        DestroyRewardBubble();
+    }
 
-        this.gameObject.SetActive(false);
+    // 自动销毁
+    private void AutoDestroy()
+    {
+        if (this.transform.position.y <= -ConstTemplate.screenHeight / 2.0f * 1.5f)
+            DestroyRewardBubble();
+    }
+
+    private void DestroyRewardBubble()
+    {
+        Destroy(this.gameObject);
     }
 
 }

@@ -46,7 +46,7 @@ public class PlayerLife : MonoBehaviour{
 
         SetPlayerLife(playerLife);
 
-        if (playerLife <= ConstTemplate.playerLifeMin)
+        if (playerLife < ConstTemplate.playerLifeMin)
             scriptGameManager.PlayGameOver();
     }
 

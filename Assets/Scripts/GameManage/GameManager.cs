@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour {
             scriptBgMoveDownTemplates[i].isAnimation = false;
 
         scriptPlayer.isPlaying = false;
+        scriptPlayer.isAnimMoveLeftOrRight = false;
         scriptPlayerLife.isPlaying = false;
         scriptPlayerDistance.isPlaying = false;
         scriptPlayerTime.isPlaying = false;

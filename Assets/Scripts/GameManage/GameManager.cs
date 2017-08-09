@@ -3,63 +3,44 @@
 // 游戏管理类
 public class GameManager : MonoBehaviour {
 
-    public float playerLife = 10.0f; // 玩家生命值(实时更新)
-    public float playerLifeDecreasePerSecond = 1.0f; // 玩家每秒减少的生命值
-
+    public bool isPlaying = false; // 是否正在游戏中
 
     public int levelId = 1; // 第几个关卡
 
-    public int playerDistance = 0; // 玩家走过的距离
+    public float speedBgMove = 0.0f; // 游戏中背景移动速度，动态改变的哦
 
-    public float playerSecondTime = 0.0f; // 玩家游戏中的时间
+    public GameObject goRewardBubbleCreate;    // 创建奖励动画的对象
 
-    public bool isPlaying = false; // 是否在游戏中
-
-    public PlayerLife playerLifeScript; // 玩家生命改变显示
-
-    public MoveDownTemplate[] bgMoveDownTemplateScrips; // 背景的移动效果
-
-    public CreateRewardBubbles rewardBubbleCreateScrip;
+    public MoveDownTemplate[] scriptBgMoveDownTemplates; // 背景的移动效果，有几个背景就拖过来几个
+    public CreateRewardBubbles scriptRewardBubbleCreate; // 创建奖励泡泡 脚本
+    public PlayerLife scriptPlayerLife;                  // 玩家生命 脚本
+    public Player scriptPlayer;                          // 玩家主角 脚本
+    public PlayerScore scriptPlayerScore;                // 玩家分数 脚本
+    public PlayerDistance scriptPlayerDistance;          // 玩家距离 脚本
+    public PlayerTime scriptPlayerTime;                  // 玩家时间 脚本
 
 	// Use this for initialization
 	void Start (){
-	    levelId = PlayerPrefs.GetInt(ConstTemplate.keyPlayerPrefsLevelId, 1);
+
+	    InitDataBeforeGameStart();
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-        if (isPlaying)
+    // 初始化数据 游戏开始之前
+    private void InitDataBeforeGameStart()
+    {
+        levelId = PlayerPrefs.GetInt(ConstTemplate.keyPlayerPrefsLevelId, 1);
+        ChangeSpeedBgMove(ConstTemplate.bgSpeedBeforeGameStart);
+    }
+
+    // 改变游戏中的背景的移动速度
+    private void ChangeSpeedBgMove(float speedMoveChanged)
+    {
+        speedBgMove = speedMoveChanged;
+        for (int i = 0; i < scriptBgMoveDownTemplates.Length; i++)
         {
-            DecreasePlayerLifePerSecond();
+            scriptBgMoveDownTemplates[i].isAnimation = true;
+            scriptBgMoveDownTemplates[i].speedMoveDown = speedMoveChanged;
         }
-
-    }
-
-    // 每秒减少玩家的生命
-    private void DecreasePlayerLifePerSecond()
-    {
-        if (playerLife < ConstTemplate.playerLifeMin) return;
-
-        playerLifeDecreasePerSecond = Time.deltaTime;
-        playerLife = playerLife > ConstTemplate.playerLifeMin ? playerLife - playerLifeDecreasePerSecond : ConstTemplate.playerLifeMin;
-        ChangePlayerLife();
-        if (playerLife <= ConstTemplate.playerLifeMin)
-            PlayGameOver();
-    }
-
-    // 增加玩家生命(增加的生命值)
-    public void IncreasePlayerLife(float increaseLifeNum)
-    {
-        print("-- silent -- increase player life == " + increaseLifeNum);
-        playerLife = playerLife > ConstTemplate.playerLifeMax ? ConstTemplate.playerLifeMax : playerLife + increaseLifeNum;
-        ChangePlayerLife();
-    }
-
-    // 改变生命值
-    private void ChangePlayerLife()
-    {
-        playerLifeScript.SetPlayerLife(playerLife / ConstTemplate.playerLifeMax);
     }
 
 
@@ -70,13 +51,11 @@ public class GameManager : MonoBehaviour {
 
         isPlaying = true;
 
-        for (int i = 0; i < bgMoveDownTemplateScrips.Length; i++)
-        {
-            bgMoveDownTemplateScrips[i].isAnimation = true;
-            bgMoveDownTemplateScrips[i].speedMoveDown = ConstTemplate.speedBgGameStart;
-        }
+        ChangeSpeedBgMove(ConstTemplate.bgSpeedGameStart);
 
-        rewardBubbleCreateScrip.CreateRewardLevelBubble(levelId);
+        scriptRewardBubbleCreate.CreateRewardLevelBubble(levelId);
+
+        scriptPlayerLife.PlayerLifeStart();
 
     }
 
@@ -84,7 +63,19 @@ public class GameManager : MonoBehaviour {
     public void PlayGameOver()
     {
         print("-- silent -- game over -- ");
-        CancelInvoke("DecreasePlayerLifePerSecond");
+
+        for (int i = 0; i < scriptBgMoveDownTemplates.Length; i ++)
+            scriptBgMoveDownTemplates[i].isAnimation = false;
+
+        scriptPlayer.isPlaying = false;
+        scriptPlayerLife.isPlaying = false;
+        scriptPlayerDistance.isPlaying = false;
+        scriptPlayerTime.isPlaying = false;
+        scriptPlayerScore.isPlaying = false;
+
+        MoveDownTemplate[] rewardBubbles = goRewardBubbleCreate.GetComponentsInChildren<MoveDownTemplate>();
+        for (int i = 0; i < rewardBubbles.Length; i ++)
+            rewardBubbles[i].isAnimation = false;
     }
 
     // 游戏暂停

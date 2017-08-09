@@ -3,27 +3,25 @@ using UnityEngine;
 using System.Collections;
 
 // 主角即玩家
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour{
 
-    public Animator animatorPlayer; // 泡泡动画
-    public bool isEatFinished; // 是否吃完了
-    public GameManager gameManager;
+    public bool isPlaying = false;               // 是否正在游戏中
+    public bool isAnimMoveLeftOrRight = true;    // 是否可以左右移动
+    public bool isGameStartBeforeFinish = false; // 是否播放完开场动画了
 
     public float speedMoveByBtn = 5.0f; // 按钮控制其左右移动的速度
+
     public Vector3 moveDirection = Vector3.zero; // 主角移动的方向
 
-    public bool isAnimMoveLeftOrRight = true; // 是否播放动画
+    public Animator animatorPlayer;          // 泡泡动画
 
-    public bool isGameStart = false; // 是否播放完开场动画了
-
-	// Use this for initialization
-	void Start () {
-
-	}
+    public PlayerScore scriptPlayerScore;    // 玩家分数脚本
+    public PlayerLife scriptPlayerLife;      // 玩家生命脚本
+    public GameManager scriptGamseManager;   // 管理类
 	
 	// Update is called once per frame
 	void Update () {
-        StartGamePlayerAnimation();
+        BeforeStartGamePlayerAnimation();
 	}
 
     // 2d 碰撞触发函数
@@ -42,17 +40,19 @@ public class Player : MonoBehaviour {
     private void ColliderByRewardBubble(Collider2D other2D)
     {
         // 播放吃东西动画
-        EatRewardBubble();
+        PlayAnimByEatRewardBubble();
 
-        //// 获取奖励泡泡增加的生命值
+        // 获取奖励泡泡增加的生命值
         RewardBubble rewardBubble = other2D.GetComponent<RewardBubble>();
         if (!rewardBubble) return;
-        rewardBubble.Eaten(this.gameObject);
-        gameManager.IncreasePlayerLife(rewardBubble.hpRewardBubble);
+
+        rewardBubble.EatenByPlayer(this.gameObject);                           // 奖励泡泡被吃动画
+        scriptPlayerLife.IncreasePlayerLife(rewardBubble.hpRewardBubble);      // 增加玩家生命值
+        scriptPlayerScore.IncreasePlayerScore(rewardBubble.scoreRewardBubble); // 增加玩家分数
     }
 
     // 吃掉其他泡泡动画
-    private void EatRewardBubble()
+    private void PlayAnimByEatRewardBubble()
     {
         animatorPlayer.PlayInFixedTime("player_eat");
     }
@@ -63,8 +63,8 @@ public class Player : MonoBehaviour {
     {
         if (!isAnimMoveLeftOrRight) return;
 
-        switch (btnDirectionType)
-        {
+        switch (btnDirectionType){
+
             case ConstTemplate.BtnControlDirectionType.BtnControlDirectionDefault:
                 moveDirection = Vector3.zero;
                 break;
@@ -101,20 +101,23 @@ public class Player : MonoBehaviour {
         return true;
     }
 
-    private void StartGamePlayerAnimation()
+    
+    // 在游戏开始之前播放的动画
+    private void BeforeStartGamePlayerAnimation()
     {
-        if (isGameStart)
+        if (isGameStartBeforeFinish)
             return;
 
+        // 是否到达指定高度了，在上移过程中，泡泡是可以左右移动的
         if (Math.Abs(this.transform.position.y - ConstTemplate.playerPlayPosY) < 0.1f)
         {
-            print("-- silent -- -- - -- - -");
-            gameManager.PlayGameStart();
-            isGameStart = true;
+            scriptGamseManager.PlayGameStart();
+            isGameStartBeforeFinish = true;
             return;
         }
 
-        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(0.0f, ConstTemplate.playerPlayPosY, 0.0f), ConstTemplate.speedPlayerGameStart * Time.deltaTime);
+        // 在一定的时间内移动到指定位置，第一个参数为this.transform.position， 自己写的new Vector3(x，y，z)不好使，不理解
+        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(this.transform.position.x, ConstTemplate.playerPlayPosY, this.transform.position.z), ConstTemplate.playerSpeedBeforeGameStart * Time.deltaTime);
     }
 
 }

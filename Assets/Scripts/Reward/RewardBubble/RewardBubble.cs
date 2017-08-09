@@ -2,47 +2,53 @@
 
 public class RewardBubble : MonoBehaviour
 {
+    public bool isPlaying = true;             // 是否正在游戏
+    public bool isEaten = false;              // 是否被吃了
 
-    public float hpRewardBubble = 1.0f; // 泡泡奖励生命值
-    public float scaleRandomRewardBubble = 0.0f; // 泡泡缩放比例
-    public bool isEaten = false; // 是否被吃
-    public float speedMoveToPlayer = 5.0f; // 向主角移动的速度
-    public Vector3 vec3Interval = Vector3.zero; // 与主角相差距离
-
-    public GameObject player = null; // 主角
-
-    //public bool isEatenFinish = false; // 是否被吃完了，在动画中直接调用的
-
-    // Use this for initialization
-    void Start (){
-
-	}
+    public float hpRewardBubble = 0.0f;       // 泡泡奖励生命值
+    public float scaleRewardBubble = 0.0f;    // 泡泡缩放比例
+    public float speedMoveToPlayer = 5.0f;    // 向主角移动的速度
+    public float scoreRewardBubble = 0.0f;    // 泡泡奖励的分数
+    
+    public GameObject goPlayer = null;        // 主角
 	
 	// Update is called once per frame
 	void Update () {
-        MoveToPlayer();
-        MoveToPlayerFinish();
+
+	    if (isPlaying)
+	    {
+	        MoveToPlayer();
+	    }
 
 	    AutoDestroy();
 	}
 
     // 泡泡被吃动画
-    public void Eaten(GameObject player)
+    public void EatenByPlayer(GameObject player)
     {
         isEaten = true;
-        this.player = player;
+        this.goPlayer = player;
     }
 
+    // 向主角移动
     public void MoveToPlayer()
     {
         if (!isEaten) return;
 
-        this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, speedMoveToPlayer * Time.deltaTime);
+        // 边移动位置，边缩小
+        this.transform.position = Vector3.MoveTowards(this.transform.position, goPlayer.transform.position, speedMoveToPlayer * Time.deltaTime);
+        this.transform.localScale = new Vector3(this.transform.localScale.x - 0.1f, this.transform.localScale.y - 0.1f, this.transform.localScale.z - 0.1f);
+
+        if (this.transform.localScale.x <= 0)
+            this.transform.localScale = Vector3.zero;
+
+        MoveToPlayerFinish();
     }
 
+    // 移动到指定的位置了
     public void MoveToPlayerFinish()
     {
-        if (!isEaten || !player || this.transform.position != player.transform.position) return;
+        if (!isEaten || !goPlayer || this.transform.position != goPlayer.transform.position) return;
         DestroyRewardBubble();
     }
 
@@ -53,6 +59,7 @@ public class RewardBubble : MonoBehaviour
             DestroyRewardBubble();
     }
 
+    // 奖励泡泡被销毁了
     private void DestroyRewardBubble()
     {
         Destroy(this.gameObject);

@@ -5,8 +5,10 @@ using UnityEngine;
 using UnityEditor;
 using Random = UnityEngine.Random;
 
+// 工具
 public static class RewardBubbleCreatePosition {
 
+    // 结构体 奖励泡泡的数据
     struct RewardBubbleData
     {
         public float posX;
@@ -14,9 +16,10 @@ public static class RewardBubbleCreatePosition {
         public float scaleRadiu;
     }
 
+    // 有多少个奖励泡泡
     private static List<RewardBubbleData> listRewardBubbleDatas = new List<RewardBubbleData>();
 
-    [MenuItem("MyTools/CreateOneRewardBubblePosition")]
+    [MenuItem("silentTools/CreateOneRewardBubblePosition")]
 	static void CreateOneRewardBubblePosition()
     {
         Debug.Log("-- silent -- 开始创建奖励泡泡");
@@ -27,7 +30,6 @@ public static class RewardBubbleCreatePosition {
         float randomY = Random.Range(0.0f, ConstTemplate.screenHeight * 1.5f);
         float randomYInterval = Random.Range(0.8f, 2.0f);
         randomY += randomYInterval;
-
 
         GameObject goRewardBubble = new GameObject();
         goRewardBubble.transform.localPosition = new Vector3(randomX, randomY);
@@ -42,7 +44,7 @@ public static class RewardBubbleCreatePosition {
         Debug.Log("-- silent -- 结束创建奖励泡泡");
     }
 
-    [MenuItem("MyTools/CreateMultiRewardBubblePosition")]
+    [MenuItem("silentTools/CreateMultiRewardBubblePosition")]
     static void CreateMultiRewardBubblePosition()
     {
         Debug.Log("-- silent -- 开始创建各个关卡的多个奖励泡泡");
@@ -56,18 +58,24 @@ public static class RewardBubbleCreatePosition {
         // 去掉前1个
         for (int istr = 1; istr < strAllRewardCount.Length; istr ++)
         {
+            // 解析字符串
             string strLevelData = strAllRewardCount[istr];
             string[] strLevelDataSqlit = strLevelData.Split(',', '(', ')', ' ');
 
+            // 需要创建的第几个关卡
             int createNums = int.Parse(strLevelDataSqlit[0]);
             Debug.Log("-- silent -- createNums = " + createNums);
 
+            // 清理奖励泡泡列表
             listRewardBubbleDatas.Clear();
 
+            // 需要创建的奖励泡泡的数量
             int rewardBubbleCount = int.Parse(strLevelDataSqlit[1]);
 
+            // 随机生成奖励泡泡的起始高度
             float randomY = Random.Range(0.0f, ConstTemplate.screenHeight);
 
+            // 创建每个奖励泡泡
             for (int i = 0; i < rewardBubbleCount; i ++)
             {
                 Sprite spriteRewardBubble = Resources.Load<Sprite>("Player/bubble_02_65");
@@ -110,6 +118,7 @@ public static class RewardBubbleCreatePosition {
 
     }
 
+    // 保存 关卡 奖励泡泡的 位置，缩放 等信息
     private static void SaveRewardBubblePositionAndScaleData(int createNums)
     {
         Debug.Log("-- silent -- 开始保存奖励泡泡数据");
@@ -156,7 +165,5 @@ public static class RewardBubbleCreatePosition {
         Debug.Log("-- silent -- 结束写入json文件");
 
         Debug.Log("-- silent -- 结束保存奖励泡泡数据");
-
-        
     }
 }

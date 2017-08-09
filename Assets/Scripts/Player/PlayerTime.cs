@@ -5,27 +5,26 @@ using System.Text;
 // 玩家游戏中玩过的时间
 public class PlayerTime : MonoBehaviour {
 
-    public Text textPlayerTime; // 玩家玩过的时间 text
-    public float playerTime = 0.0f; // 玩家玩过的时间
-    public GameManager gameManager; // 管理类
+    public bool isPlaying = true;           // 是否正在游戏
 
-    public bool isPlaying = true; // 是否正在游戏
+    public float playerTime = 0.0f;         // 玩家玩过的时间
+    
+    public Text textPlayerTime;             // 玩家玩过的时间 text
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+    public GameManager scriptGameManager;   // 管理类
+
 	
 	// Update is called once per frame
 	void Update () {
-        if (isPlaying)
-        {
-            AddSecondPlayTime();
+
+        if (isPlaying){
+
+            ShowPlayTime();
         }
 	}
 
-    // 增加游戏的时间
-    private void AddSecondPlayTime()
+    // 显示时间 (10.00 s)
+    private void ShowPlayTime()
     {
         playerTime += Time.deltaTime;
 

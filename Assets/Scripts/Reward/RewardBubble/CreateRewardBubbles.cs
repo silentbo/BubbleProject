@@ -7,9 +7,13 @@ public class CreateRewardBubbles : MonoBehaviour
 
     public GameManager gameManager;
 
+    public RuntimeAnimatorController runtimeAnimatorControllerRewardBubble;
+
+
 	// Use this for initialization
 	void Start () {
         //CreateRewardLevelBubble(gameManager.levelId);
+        runtimeAnimatorControllerRewardBubble = Resources.Load<RuntimeAnimatorController>(ConstTemplate.resPathAnimatorBubbleMotion);
 	}
 	
 	// Update is called once per frame
@@ -55,6 +59,9 @@ public class CreateRewardBubbles : MonoBehaviour
         rewardBubble.hpRewardBubble = rewardBubbleDate.randomScale * 2.0f;
         rewardBubble.scaleRandomRewardBubble = rewardBubbleDate.randomScale;
         rewardBubble.isEaten = false;
+
+        Animator animatorRewardBubble = goNewRewardBubble.AddComponent<Animator>();
+        animatorRewardBubble.runtimeAnimatorController = runtimeAnimatorControllerRewardBubble;
 
     }
 

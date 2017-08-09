@@ -20,6 +20,8 @@ public class ConstTemplate {
 
     public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
 
+    public const string resPathAnimatorBubbleMotion = "anim/animator/bubble_motion"; // 泡泡的待机动画路径
+
     // 控制方向的enum
     public enum BtnControlDirectionType
     {

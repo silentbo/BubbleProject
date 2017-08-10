@@ -67,8 +67,7 @@ public class GameManager : MonoBehaviour {
         for (int i = 0; i < scriptBgMoveDownTemplates.Length; i ++)
             scriptBgMoveDownTemplates[i].isAnimation = false;
 
-        scriptPlayer.isPlaying = false;
-        scriptPlayer.isAnimMoveLeftOrRight = false;
+        scriptPlayer.GameOverPlayer();
         scriptPlayerLife.isPlaying = false;
         scriptPlayerDistance.isPlaying = false;
         scriptPlayerTime.isPlaying = false;

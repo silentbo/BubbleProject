@@ -13,7 +13,10 @@ public class Player : MonoBehaviour{
 
     public Vector3 moveDirection = Vector3.zero; // 主角移动的方向
 
-    public Animator animatorPlayer;          // 泡泡动画
+    public Animator animatorPlayer;          // 主角动画
+    public Animator animatorBubble;          // 泡泡动画
+
+    public CircleCollider2D circleCollider2DPlayer; // 主角的碰撞盒
 
     public PlayerScore scriptPlayerScore;    // 玩家分数脚本
     public PlayerLife scriptPlayerLife;      // 玩家生命脚本
@@ -40,7 +43,7 @@ public class Player : MonoBehaviour{
     private void ColliderByRewardBubble(Collider2D other2D)
     {
         // 播放吃东西动画
-        PlayAnimByEatRewardBubble();
+        PlayAnimEatRewardBubble();
 
         // 获取奖励泡泡增加的生命值
         RewardBubble rewardBubble = other2D.GetComponent<RewardBubble>();
@@ -52,11 +55,10 @@ public class Player : MonoBehaviour{
     }
 
     // 吃掉其他泡泡动画
-    private void PlayAnimByEatRewardBubble()
+    private void PlayAnimEatRewardBubble()
     {
         animatorPlayer.PlayInFixedTime("player_eat");
     }
-
 
     // 左右移动
     public void MovePlayerLeftOrRightByBtn(ConstTemplate.BtnControlDirectionType btnDirectionType)
@@ -101,7 +103,6 @@ public class Player : MonoBehaviour{
         return true;
     }
 
-    
     // 在游戏开始之前播放的动画
     private void BeforeStartGamePlayerAnimation()
     {
@@ -118,6 +119,23 @@ public class Player : MonoBehaviour{
 
         // 在一定的时间内移动到指定位置，第一个参数为this.transform.position， 自己写的new Vector3(x，y，z)不好使，不理解
         this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(this.transform.position.x, ConstTemplate.playerPlayPosY, this.transform.position.z), ConstTemplate.playerSpeedBeforeGameStart * Time.deltaTime);
+    }
+
+    // 游戏结束player需要处理的内容
+    public void GameOverPlayer()
+    {
+        this.circleCollider2DPlayer.enabled = false;
+        this.isPlaying = false;
+        this.isAnimMoveLeftOrRight = false;
+
+        PlayAnimBubbleDie();
+
+    }
+
+    private void PlayAnimBubbleDie()
+    {
+        animatorPlayer.gameObject.SetActive(false);
+        animatorBubble.PlayInFixedTime("bubble_die");
     }
 
 }

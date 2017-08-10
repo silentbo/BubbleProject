@@ -11,9 +11,19 @@ public class RewardBubble : MonoBehaviour
     public float scoreRewardBubble = 0.0f;    // 泡泡奖励的分数
     
     public GameObject goPlayer = null;        // 主角
-	
-	// Update is called once per frame
-	void Update () {
+
+    private Animator animatorBubble;          // 泡泡动画
+
+    private SpriteRenderer spriteRendererbubble; // 泡泡图片
+
+    void Start(){
+
+        animatorBubble = this.transform.GetComponent<Animator>();
+        spriteRendererbubble = this.transform.GetComponent<SpriteRenderer>();
+    }
+
+    // Update is called once per frame
+    void Update () {
 
 	    if (isPlaying)
 	    {
@@ -21,7 +31,8 @@ public class RewardBubble : MonoBehaviour
 	    }
 
 	    AutoDestroy();
-	}
+
+    }
 
     // 泡泡被吃动画
     public void EatenByPlayer(GameObject player)

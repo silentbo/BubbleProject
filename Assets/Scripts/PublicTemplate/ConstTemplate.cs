@@ -34,7 +34,7 @@ public class ConstTemplate
 
     #region 奖励泡泡
         
-        public const float rewardBubbleMaxHp = 3.0f;                 // 奖励泡泡的最大的HP
+        public const float rewardBubbleMaxHp = 2.0f;                 // 奖励泡泡的最大的HP
         public const float rewardBubbleMaxScore = 20.0f;             // 奖励泡泡的最大的Score
         public const float rewardBubbleSpeedMoveToPlayerMax = 5.0f;  // 奖励泡泡被吃后，向主角移动的速度
         

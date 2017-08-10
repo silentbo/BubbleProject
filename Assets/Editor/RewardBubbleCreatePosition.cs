@@ -269,9 +269,9 @@ public static class RewardBubbleCreatePosition {
                     rewardBubble.speedMoveToPlayer = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerMax;
                     rewardBubble.isEaten = false;
                 }
-
-
             }
+
+            SaveRewardBubblePositionAndScaleData(createNums);
         }
     }
 

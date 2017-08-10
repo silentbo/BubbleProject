@@ -13,8 +13,9 @@ public class ConstTemplate
 
     #region 主角
 
-        public const float playerLifeMax = 10.0f;       // 玩家最大生命值
+        public const float playerLifeMax = 15.0f;       // 玩家最大生命值
         public const float playerLifeMin = 0.0f;        // 玩家最小生命值
+        public const float playerLifeDieValue = 0.3f;   // 玩家生命提醒值
         public const float playerRadius = 0.4f;         // 主角的半径
         public const float playerPlayPosY = -2.0f;      // 主角开始游戏的时候的位置
         public const float playerDefaultPosY = -4.36f;  // 主角默认的位置，未开始进行游戏的位置
@@ -33,7 +34,7 @@ public class ConstTemplate
 
     #region 奖励泡泡
         
-        public const float rewardBubbleMaxHp = 2.0f;                 // 奖励泡泡的最大的HP
+        public const float rewardBubbleMaxHp = 3.0f;                 // 奖励泡泡的最大的HP
         public const float rewardBubbleMaxScore = 20.0f;             // 奖励泡泡的最大的Score
         public const float rewardBubbleSpeedMoveToPlayerMax = 5.0f;  // 奖励泡泡被吃后，向主角移动的速度
         

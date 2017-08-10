@@ -23,7 +23,7 @@ public class BgLoopMove : MonoBehaviour{
             this.transform.position = 
                 new Vector3(
                     this.transform.position.x,
-                    this.transform.position.y + ConstTemplate.screenHeight * 2, 
+                    this.transform.position.y + ConstTemplate.screenHeight * 2, // 减一是为了解决游戏暂停时有条线的问题 
                     this.transform.position.z);
     }
 }

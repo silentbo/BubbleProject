@@ -107,8 +107,16 @@ public static class RewardBubbleCreatePosition {
                 moveDownRewardBubble.isAnimation = true;
                 moveDownRewardBubble.speedMoveDown = 1.8f;
 
-                /*CircleCollider2D circleCollider2dRewardBubble = */
+                // 添加碰撞盒
                 goRewardBubble.AddComponent<CircleCollider2D>();
+
+                // 添加 RewardBubble 组件， 设置其属性
+                RewardBubble rewardBubble = goRewardBubble.AddComponent<RewardBubble>();
+                rewardBubble.hpRewardBubble = randomScalc * ConstTemplate.rewardBubbleMaxHp;
+                rewardBubble.scoreRewardBubble = randomScalc * ConstTemplate.rewardBubbleMaxScore;
+                rewardBubble.scaleRewardBubble = randomScalc;
+                rewardBubble.speedMoveToPlayer = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerMax;
+                rewardBubble.isEaten = false;
             }
 
             SaveRewardBubblePositionAndScaleData(createNums);
@@ -166,4 +174,106 @@ public static class RewardBubbleCreatePosition {
 
         Debug.Log("-- silent -- 结束保存奖励泡泡数据");
     }
+
+
+    [MenuItem("silentTools/CrewatMultiRewardBubblePositionOrganize")]
+    public static void CrewatMultiRewardBubblePositionOrganize()
+    {
+        Debug.Log("-- silent -- 开始创建各个关卡的多个奖励泡泡(有规律的)");
+
+        // 读取外部配置文件
+        string strCreateRewardBubbleDataAllLevelPath = Application.dataPath + "/Resources/Data/RewardBubbleData/RewardBubbleDataAllLevel.txt";
+
+        //string strDateAllLevel = File.ReadAllText(strCreateRewardBubbleDataAllLevelPath); // (第几关，没关中的奖励泡泡的数量),(1,100),(2,150)
+        string[] strAllRewardCount = File.ReadAllLines(strCreateRewardBubbleDataAllLevelPath);
+
+        // 去掉前1个
+        for (int istr = 1; istr < strAllRewardCount.Length; istr ++)
+        {
+            // 解析字符串
+            string strLevelData = strAllRewardCount[istr];
+            string[] strLevelDataSqlit = strLevelData.Split(',', '(', ')', ' ');
+
+            // 需要创建的第几个关卡
+            int createNums = int.Parse(strLevelDataSqlit[0]);
+            Debug.Log("-- silent -- createNums = " + createNums);
+
+            // 清理奖励泡泡列表
+            listRewardBubbleDatas.Clear();
+
+            // 需要创建的奖励泡泡的数量
+            int rewardBubbleCount = int.Parse(strLevelDataSqlit[1]);
+
+            // 随机生成奖励泡泡的起始高度
+            float randomY = Random.Range(ConstTemplate.screenHeight / 2, ConstTemplate.screenHeight);
+
+            Sprite spriteRewardBubble = Resources.Load<Sprite>("Player/bubble_02_65");
+
+            for (int iBubbleAll = 0; iBubbleAll < rewardBubbleCount; )
+            {
+
+                int rewardBubbleInterval = Random.Range(10, 50);
+                if (iBubbleAll + rewardBubbleInterval > rewardBubbleCount)
+                    rewardBubbleInterval = rewardBubbleCount - iBubbleAll;
+                iBubbleAll += rewardBubbleInterval;
+
+                // 开始的x、y值
+                float randomX = Random.Range(-ConstTemplate.screenWith*0.4f, ConstTemplate.screenWith*0.4f);
+                float randomYstart = Random.Range(ConstTemplate.screenHeight*0.5f, ConstTemplate.screenHeight*1.5f);
+                randomY += randomYstart;
+
+                // 每个相距的x、y值
+                float randomXInterval = Random.Range(ConstTemplate.playerRadius * 1.0f, ConstTemplate.playerRadius * 2.0f);
+                float randomYInterval = Random.Range(ConstTemplate.playerRadius * 2.0f, ConstTemplate.playerRadius * 3.0f);
+
+                Debug.Log("-- silent -- 本次创建的奖励泡泡的数量 = " + rewardBubbleInterval);
+                for (int iBubbleInterval = 0; iBubbleInterval < rewardBubbleInterval; iBubbleInterval++)
+                {
+                    // 泡泡的缩放值
+                    float randomScalc = Random.Range(0.4f, 0.9f);
+
+                    // y轴处理
+                    randomY += randomYInterval;
+
+                    // x轴处理
+                    if (randomX + randomXInterval > ConstTemplate.screenWith*0.4f || randomX + randomXInterval < -ConstTemplate.screenWith*0.4f)
+                        randomXInterval = -randomXInterval;
+                    randomX += randomXInterval;
+
+                    listRewardBubbleDatas.Add(new RewardBubbleData()
+                    {
+                        posX = randomX,
+                        posY = randomY,
+                        scaleRadiu = randomScalc
+                    });
+
+                    GameObject goRewardBubble = new GameObject();
+                    goRewardBubble.transform.parent = GameObject.Find("root/reward_bubbles").transform;
+                    goRewardBubble.name = "rewardBubbleRandom_" + iBubbleAll + "_" + iBubbleInterval;
+                    goRewardBubble.tag = "reward_bubble";
+                    goRewardBubble.transform.localPosition = new Vector3(randomX, randomY);
+                    goRewardBubble.transform.localScale = new Vector3(randomScalc, randomScalc, randomScalc);
+
+                    SpriteRenderer spriteRendererRewardBubble = goRewardBubble.AddComponent<SpriteRenderer>();
+                    spriteRendererRewardBubble.sprite = spriteRewardBubble;
+                    spriteRendererRewardBubble.sortingLayerName = "other_object";
+
+                    // 添加碰撞盒
+                    goRewardBubble.AddComponent<CircleCollider2D>();
+
+                    // 添加 RewardBubble 组件， 设置其属性
+                    RewardBubble rewardBubble = goRewardBubble.AddComponent<RewardBubble>();
+                    rewardBubble.hpRewardBubble = randomScalc * ConstTemplate.rewardBubbleMaxHp;
+                    rewardBubble.scoreRewardBubble = randomScalc * ConstTemplate.rewardBubbleMaxScore;
+                    rewardBubble.scaleRewardBubble = randomScalc;
+                    rewardBubble.speedMoveToPlayer = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerMax;
+                    rewardBubble.isEaten = false;
+                }
+
+
+            }
+        }
+    }
+
+
 }

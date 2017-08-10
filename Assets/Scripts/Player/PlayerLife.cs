@@ -7,19 +7,15 @@ public class PlayerLife : MonoBehaviour{
     public bool isPlaying = false;                  // 是否正在游戏中
 
     public float playerLife = 0.0f;                 // 玩家生命值
-    public float vec2PlayerLifeChangeHeight = 0.0f; // 生命改变图片的Rect Transform 坐标
-
-    public Vector3 vec3PlayerLifeChangeMark = Vector3.zero; // 生命改变图片Mark的Rect Transform 坐标
 
     public Image playerLifeChange;                 // 玩家生命改变值
-    public Image playerLifeChangeMark;             // 玩家生命改变mark
+
+    public Animator animatorPlayerLife;            // 玩家生命动画
 
     public GameManager scriptGameManager;          // 管理类
 
-    void Start()
-    {
-        vec2PlayerLifeChangeHeight = playerLifeChange.rectTransform.rect.height;
-        vec3PlayerLifeChangeMark = playerLifeChangeMark.rectTransform.localPosition;
+    void Start(){
+
     }
 
     void Update(){
@@ -55,7 +51,7 @@ public class PlayerLife : MonoBehaviour{
     {
         float ratioLife = playerLife / ConstTemplate.playerLifeMax;
         playerLifeChange.fillAmount = ratioLife;
-        SetPlayerLifeChangeMarkPosY(ratioLife);
+        PlayDiePlayerLifeAnim(ratioLife);
     }
 
     // 增加玩家生命(增加的生命值)
@@ -63,13 +59,27 @@ public class PlayerLife : MonoBehaviour{
     {
         playerLife = playerLife > ConstTemplate.playerLifeMax ? ConstTemplate.playerLifeMax : playerLife + increaseLifeNum;
         SetPlayerLife(playerLife);
+        PlayIncreasePlayerLifeAnim();
     }
 
-    // 设置当前mark的Y轴的位置
-    private void SetPlayerLifeChangeMarkPosY(float ratioLife)
+    // 播放玩家增加生命的动画
+    private void PlayIncreasePlayerLifeAnim()
     {
-        float yPosMark = vec3PlayerLifeChangeMark.y - (1 - ratioLife)*vec2PlayerLifeChangeHeight;
-        playerLifeChangeMark.rectTransform.localPosition = new Vector3(vec3PlayerLifeChangeMark.x, yPosMark, vec3PlayerLifeChangeMark.z);
+        if (playerLifeChange.fillAmount >= ConstTemplate.playerLifeDieValue)
+            animatorPlayerLife.PlayInFixedTime("player_life_Increase");
+    }
+
+    // 播放玩家生命要结束的动画
+    private void PlayDiePlayerLifeAnim(float lifeValue)
+    {
+        if (lifeValue >= ConstTemplate.playerLifeDieValue || lifeValue <= 0.0f)
+        {
+            animatorPlayerLife.SetBool("player_life_die", false);
+            return;
+        }
+
+        animatorPlayerLife.SetBool("player_life_die", true);
+        animatorPlayerLife.Play("player_life_die");
     }
 
 }

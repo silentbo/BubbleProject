@@ -128,14 +128,24 @@ public class Player : MonoBehaviour{
         this.isPlaying = false;
         this.isAnimMoveLeftOrRight = false;
 
+        animatorPlayer.Stop();
+
         PlayAnimBubbleDie();
 
     }
 
+    // 播放泡泡死亡动画
     private void PlayAnimBubbleDie()
     {
         animatorPlayer.gameObject.SetActive(false);
         animatorBubble.PlayInFixedTime("bubble_die");
+    }
+
+
+    // 播放泡泡正在死亡动画
+    public void PlayAnimPlayerDying(bool boolValue)
+    {
+        animatorPlayer.SetBool("player_dying", boolValue);
     }
 
 }

@@ -13,6 +13,7 @@ public class PlayerLife : MonoBehaviour{
     public Animator animatorPlayerLife;            // 玩家生命动画
 
     public GameManager scriptGameManager;          // 管理类
+    public Player scriptPlayer;                    // 主角类
 
     void Start(){
 
@@ -75,11 +76,13 @@ public class PlayerLife : MonoBehaviour{
         if (lifeValue >= ConstTemplate.playerLifeDieValue || lifeValue <= 0.0f)
         {
             animatorPlayerLife.SetBool("player_life_die", false);
+            scriptPlayer.PlayAnimPlayerDying(false);
             return;
         }
 
         animatorPlayerLife.SetBool("player_life_die", true);
         animatorPlayerLife.Play("player_life_die");
+        scriptPlayer.PlayAnimPlayerDying(true);
     }
 
 }

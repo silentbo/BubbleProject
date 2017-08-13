@@ -36,6 +36,11 @@ public class Player : MonoBehaviour{
             case "reward_bubble":
                 ColliderByRewardBubble(other);
                 break;
+
+            case "germ":
+                ColliderByGerm(other);
+                break;
+
         }
 
     }
@@ -53,6 +58,12 @@ public class Player : MonoBehaviour{
 
         // 播放吃东西动画
         PlayAnimEatRewardBubble();
+    }
+
+
+    private void ColliderByGerm(Collider2D other2D)
+    {
+        Debug.Log("-- silent -- player collider other2d.name = " + other2D.name);
     }
 
     // 吃掉其他泡泡动画

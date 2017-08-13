@@ -59,6 +59,7 @@ public class ConstTemplate
         #region 动画路径
 
             public const string resPathAnimatorBubbleMotion = "anim/animator/bubble_motion"; // 泡泡的待机动画路径
+            public const string resPathAnimatorGerm = "anim/animator/grem_idle";             // germ(细菌)的待机动画路径
 
         #endregion 动画路径
 
@@ -67,9 +68,9 @@ public class ConstTemplate
             public const string resPathSpriteBtnPause = "UI/pause_resume/icon_pause";   // 暂停按钮
             public const string resPathSpriteBtnResume = "UI/pause_resume/icon_resume"; // 继续按钮
 
-    #endregion 暂停按钮icon
+        #endregion 暂停按钮icon
 
-    #endregion 路径
+        #endregion 路径
 
     #region enum
 

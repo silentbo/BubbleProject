@@ -19,12 +19,12 @@ public class CreateRewardBubbles : MonoBehaviour{
 
         for (int i = 0; i < rewardBubbleLevelData.reward_bubble_data.Length; i ++)
         {
-            CreateOneRewardLevelBubble(rewardBubbleLevelData.reward_bubble_data[i]);
+            CreateOneRewardBubble(rewardBubbleLevelData.reward_bubble_data[i]);
         }
     }
 
     // 创建一个奖励泡泡
-    private void CreateOneRewardLevelBubble(RewardBubbleData rewardBubbleDate)
+    private void CreateOneRewardBubble(RewardBubbleData rewardBubbleDate)
     {
         // 创建对象，设置属性值
         GameObject goNewRewardBubble = new GameObject();

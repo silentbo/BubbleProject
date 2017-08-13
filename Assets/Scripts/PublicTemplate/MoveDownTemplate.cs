@@ -4,8 +4,8 @@
 public class MoveDownTemplate : MonoBehaviour
 {
 
-    public float speedMoveDown = 2.0f; // 下落速度
     public bool isAnimation = true; // 是否运动
+    public float speedMoveDown = 2.0f; // 下落速度
 	
 	void Update ()
 	{

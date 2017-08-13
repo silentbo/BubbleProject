@@ -40,4 +40,10 @@ public class BtnGamePauseOrResume : MonoBehaviour, IPointerClickHandler {
     {
         this.isPlaying = true;
     }
+
+    // 游戏结束
+    public void PlayGameOverBtnGamePauseOrResume()
+    {
+        this.isPlaying = false;
+    }
 }

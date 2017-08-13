@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour {
         scriptPlayerDistance.GameOverPlayerDistance();
         scriptPlayerTime.GameOverPlayerTime();
         scriptPlayerScore.GameOverPlayerScore();
+        scriptBtnGamePauseOrResume.PlayGameOverBtnGamePauseOrResume();
 
         MoveDownTemplate[] rewardBubbles = goRewardBubbleCreate.GetComponentsInChildren<MoveDownTemplate>();
         for (int i = 0; i < rewardBubbles.Length; i ++)

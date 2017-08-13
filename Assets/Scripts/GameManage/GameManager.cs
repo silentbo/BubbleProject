@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour {
         print("-- silent -- game over -- ");
 
         for (int i = 0; i < scriptBgMoveDownTemplates.Length; i ++)
-            scriptBgMoveDownTemplates[i].isAnimation = false;
+            scriptBgMoveDownTemplates[scriptBgMoveDownTemplates.Length - i - 1].isAnimation = false;
 
         scriptPlayer.GameOverPlayer();
         scriptPlayerLife.isPlaying = false;

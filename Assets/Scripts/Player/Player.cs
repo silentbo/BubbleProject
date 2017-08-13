@@ -8,6 +8,7 @@ public class Player : MonoBehaviour{
     public bool isPlaying = false;               // 是否正在游戏中
     public bool isAnimMoveLeftOrRight = true;    // 是否可以左右移动
     public bool isGameStartBeforeFinish = false; // 是否播放完开场动画了
+    public bool isPlayAnimPlayerDying = false;   // 是否正在播放玩家正在死亡动画
 
     public float speedMoveByBtn = 5.0f; // 按钮控制其左右移动的速度
 
@@ -40,10 +41,7 @@ public class Player : MonoBehaviour{
     }
 
     // 碰撞奖励泡泡事件
-    private void ColliderByRewardBubble(Collider2D other2D)
-    {
-        // 播放吃东西动画
-        PlayAnimEatRewardBubble();
+    private void ColliderByRewardBubble(Collider2D other2D){
 
         // 获取奖励泡泡增加的生命值
         RewardBubble rewardBubble = other2D.GetComponent<RewardBubble>();
@@ -52,17 +50,22 @@ public class Player : MonoBehaviour{
         rewardBubble.EatenByPlayer(this.gameObject);                           // 奖励泡泡被吃动画
         scriptPlayerLife.IncreasePlayerLife(rewardBubble.hpRewardBubble);      // 增加玩家生命值
         scriptPlayerScore.IncreasePlayerScore(rewardBubble.scoreRewardBubble); // 增加玩家分数
+
+        // 播放吃东西动画
+        PlayAnimEatRewardBubble();
     }
 
     // 吃掉其他泡泡动画
-    private void PlayAnimEatRewardBubble()
-    {
+    private void PlayAnimEatRewardBubble(){
+        
+        // 玩家正在死亡的时候,吃东西不播放吃东西动画
+        if (isPlayAnimPlayerDying) return; 
         animatorPlayer.PlayInFixedTime("player_eat");
     }
 
     // 左右移动
-    public void MovePlayerLeftOrRightByBtn(ConstTemplate.BtnControlDirectionType btnDirectionType)
-    {
+    public void MovePlayerLeftOrRightByBtn(ConstTemplate.BtnControlDirectionType btnDirectionType){
+        
         if (!isAnimMoveLeftOrRight) return;
 
         switch (btnDirectionType){
@@ -86,8 +89,8 @@ public class Player : MonoBehaviour{
     }
 
     // 限制主角的移动范围
-    private bool LimitRangeOfPlayerMove(Vector3 vec3AddValue)
-    {
+    private bool LimitRangeOfPlayerMove(Vector3 vec3AddValue){
+
         Vector3 vec3PlayerEndPos = this.transform.position + vec3AddValue;
         float vec3PlayerLimitX = ConstTemplate.screenWith / 2 - ConstTemplate.playerRadius * 1.2f;
         if (vec3PlayerEndPos.x >= vec3PlayerLimitX)
@@ -104,8 +107,8 @@ public class Player : MonoBehaviour{
     }
 
     // 在游戏开始之前播放的动画
-    private void BeforeStartGamePlayerAnimation()
-    {
+    private void BeforeStartGamePlayerAnimation(){
+
         if (isGameStartBeforeFinish)
             return;
 
@@ -122,8 +125,8 @@ public class Player : MonoBehaviour{
     }
 
     // 游戏结束player需要处理的内容
-    public void GameOverPlayer()
-    {
+    public void GameOverPlayer(){
+
         this.circleCollider2DPlayer.enabled = false;
         this.isPlaying = false;
         this.isAnimMoveLeftOrRight = false;
@@ -135,17 +138,29 @@ public class Player : MonoBehaviour{
     }
 
     // 播放泡泡死亡动画
-    private void PlayAnimBubbleDie()
-    {
+    private void PlayAnimBubbleDie(){
+
         animatorPlayer.gameObject.SetActive(false);
         animatorBubble.PlayInFixedTime("bubble_die");
     }
 
 
     // 播放泡泡正在死亡动画
-    public void PlayAnimPlayerDying(bool boolValue)
-    {
-        animatorPlayer.SetBool("player_dying", boolValue);
+    public void PlayAnimPlayerDying(bool boolValue){
+
+        // 播放增在死亡动画 boolValue = true
+        if (isPlayAnimPlayerDying != boolValue && !isPlayAnimPlayerDying)
+        {
+            animatorPlayer.PlayInFixedTime("player_die");
+            print("-- silent -- player play anim player_die --");
+        }
+        // 播放待机动画 boolValue = false
+        if (isPlayAnimPlayerDying != boolValue && isPlayAnimPlayerDying)
+        {
+            animatorPlayer.PlayInFixedTime("player_idle");
+            print("-- silent -- player play anim player_idle --");
+        }
+        isPlayAnimPlayerDying = boolValue;
     }
 
 }

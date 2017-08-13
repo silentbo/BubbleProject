@@ -59,15 +59,22 @@ public class ConstTemplate
         #region 动画路径
 
             public const string resPathAnimatorBubbleMotion = "anim/animator/bubble_motion"; // 泡泡的待机动画路径
-    
+
         #endregion 动画路径
+
+        #region 暂停or继续按钮icon
+
+            public const string resPathSpriteBtnPause = "UI/pause_resume/icon_pause";   // 暂停按钮
+            public const string resPathSpriteBtnResume = "UI/pause_resume/icon_resume"; // 继续按钮
+
+    #endregion 暂停按钮icon
 
     #endregion 路径
 
     #region enum
 
-        // 控制方向的enum
-        public enum BtnControlDirectionType
+    // 控制方向的enum
+    public enum BtnControlDirectionType
         {
             BtnControlDirectionDefault, // 默认，没有方向
             BtnControlDirectionLeft,    // 左

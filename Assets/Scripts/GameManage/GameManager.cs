@@ -11,13 +11,15 @@ public class GameManager : MonoBehaviour {
 
     public GameObject goRewardBubbleCreate;    // 创建奖励动画的对象
 
-    public MoveDownTemplate[] scriptBgMoveDownTemplates; // 背景的移动效果，有几个背景就拖过来几个
-    public CreateRewardBubbles scriptRewardBubbleCreate; // 创建奖励泡泡 脚本
-    public PlayerLife scriptPlayerLife;                  // 玩家生命 脚本
-    public Player scriptPlayer;                          // 玩家主角 脚本
-    public PlayerScore scriptPlayerScore;                // 玩家分数 脚本
-    public PlayerDistance scriptPlayerDistance;          // 玩家距离 脚本
-    public PlayerTime scriptPlayerTime;                  // 玩家时间 脚本
+    public MoveDownTemplate[] scriptBgMoveDownTemplates;     // 背景的移动效果，有几个背景就拖过来几个
+    public CreateRewardBubbles scriptRewardBubbleCreate;     // 创建奖励泡泡 脚本
+    public PlayerLife scriptPlayerLife;                      // 玩家生命 脚本
+    public Player scriptPlayer;                              // 玩家主角 脚本
+    public PlayerScore scriptPlayerScore;                    // 玩家分数 脚本
+    public PlayerDistance scriptPlayerDistance;              // 玩家距离 脚本
+    public PlayerTime scriptPlayerTime;                      // 玩家时间 脚本
+    public BtnGamePauseOrResume scriptBtnGamePauseOrResume;  // 暂停or继续按钮 脚本
+
 
 	// Use this for initialization
 	void Start (){
@@ -43,7 +45,6 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-
     // 开始游戏
     public void PlayGameStart()
     {
@@ -55,7 +56,9 @@ public class GameManager : MonoBehaviour {
 
         scriptRewardBubbleCreate.CreateRewardLevelBubble(levelId);
 
-        scriptPlayerLife.PlayerLifeStart();
+        scriptPlayerLife.PlayGameStartPlayerLife();
+
+        scriptBtnGamePauseOrResume.PlayGameStartBtnGamePauseOrResume();
 
     }
 
@@ -68,26 +71,36 @@ public class GameManager : MonoBehaviour {
             scriptBgMoveDownTemplates[scriptBgMoveDownTemplates.Length - i - 1].isAnimation = false;
 
         scriptPlayer.GameOverPlayer();
-        scriptPlayerLife.isPlaying = false;
-        scriptPlayerDistance.isPlaying = false;
-        scriptPlayerTime.isPlaying = false;
-        scriptPlayerScore.isPlaying = false;
+        scriptPlayerLife.GameOverPlayerLife();
+        scriptPlayerDistance.GameOverPlayerDistance();
+        scriptPlayerTime.GameOverPlayerTime();
+        scriptPlayerScore.GameOverPlayerScore();
 
         MoveDownTemplate[] rewardBubbles = goRewardBubbleCreate.GetComponentsInChildren<MoveDownTemplate>();
         for (int i = 0; i < rewardBubbles.Length; i ++)
             rewardBubbles[i].isAnimation = false;
     }
 
-    // 游戏暂停
-    public void PlayGamePause()
+    // 游戏暂停or继续 false 暂停游戏， true 继续游戏
+    public void PlayGamePauseOrResume(bool pauseOrResume)
     {
         print("-- silent -- game pause");
-    }
 
-    // 游戏恢复
-    public void PlayGameResume()
-    {
-        print("-- silent -- game resume");
+        // 暂停背景
+        for (int i = 0; i < scriptBgMoveDownTemplates.Length; i++)
+            scriptBgMoveDownTemplates[scriptBgMoveDownTemplates.Length - i - 1].isAnimation = pauseOrResume;
+
+        // 暂停奖励泡泡
+        MoveDownTemplate[] rewardBubbles = goRewardBubbleCreate.GetComponentsInChildren<MoveDownTemplate>();
+        for (int i = 0; i < rewardBubbles.Length; i++)
+            rewardBubbles[i].isAnimation = pauseOrResume;
+
+        scriptPlayer.GamePauseOrResumePlayer(pauseOrResume);
+        scriptPlayerLife.GamePauseOrResumePlayerLife(pauseOrResume);
+        scriptPlayerDistance.GamePauseOrResumePlayerDistance(pauseOrResume);
+        scriptPlayerTime.GamePauseOrResumePlayerTime(pauseOrResume);
+        scriptPlayerScore.GamePauseOrResumePlayerScore(pauseOrResume);
+
     }
 
 }

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,5 +34,17 @@ public class PlayerDistance : MonoBehaviour {
         stringBuilder.Append(" m");
         
         textPlayerDistance.text = stringBuilder.ToString();
+    }
+
+    // 游戏暂停or继续
+    public void GamePauseOrResumePlayerDistance(bool pauseOrResume)
+    {
+        this.isPlaying = pauseOrResume;
+    }
+
+    // 游戏结束
+    public void GameOverPlayerDistance()
+    {
+        GamePauseOrResumePlayerDistance(false);
     }
 } 

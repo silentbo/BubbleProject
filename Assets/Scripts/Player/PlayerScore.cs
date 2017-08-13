@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -43,4 +44,15 @@ public class PlayerScore : MonoBehaviour{
         ShowPlayerScore();
     }
 
+    // 暂停or继续游戏
+    public void GamePauseOrResumePlayerScore(bool pauseOrResume)
+    {
+        this.isPlaying = pauseOrResume;
+    }
+
+    // 结束游戏
+    public void GameOverPlayerScore()
+    {
+        GamePauseOrResumePlayerScore(false);
+    }
 }

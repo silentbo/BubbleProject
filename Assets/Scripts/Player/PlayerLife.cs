@@ -15,10 +15,6 @@ public class PlayerLife : MonoBehaviour{
     public GameManager scriptGameManager;          // 管理类
     public Player scriptPlayer;                    // 主角类
 
-    void Start(){
-
-    }
-
     void Update(){
 
         if (isPlaying){
@@ -28,7 +24,7 @@ public class PlayerLife : MonoBehaviour{
     }
 
     // 血条开始计时
-    public void PlayerLifeStart()
+    public void PlayGameStartPlayerLife()
     {
         isPlaying = true;
         playerLife = ConstTemplate.playerLifeMax;
@@ -85,4 +81,14 @@ public class PlayerLife : MonoBehaviour{
         scriptPlayer.PlayAnimPlayerDying(true);
     }
 
+    // 生命暂停or继续
+    public void GamePauseOrResumePlayerLife(bool pauseOrResume)
+    {
+        this.isPlaying = pauseOrResume;
+    }
+
+    public void GameOverPlayerLife()
+    {
+        GamePauseOrResumePlayerLife(false);
+    }
 }

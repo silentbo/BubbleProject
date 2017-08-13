@@ -12,15 +12,6 @@ public class RewardBubble : MonoBehaviour
     
     public GameObject goPlayer = null;        // 主角
 
-    private Animator animatorBubble;          // 泡泡动画
-
-    private SpriteRenderer spriteRendererbubble; // 泡泡图片
-
-    void Start(){
-
-        animatorBubble = this.transform.GetComponent<Animator>();
-        spriteRendererbubble = this.transform.GetComponent<SpriteRenderer>();
-    }
 
     // Update is called once per frame
     void Update () {

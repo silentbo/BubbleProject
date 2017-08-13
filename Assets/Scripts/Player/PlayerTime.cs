@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
+using System;
 
 // 玩家游戏中玩过的时间
 public class PlayerTime : MonoBehaviour {
@@ -33,5 +34,17 @@ public class PlayerTime : MonoBehaviour {
         stringBuilder.Append(" s");
 
         textPlayerTime.text = stringBuilder.ToString();
+    }
+
+    // 游戏结束
+    public void GameOverPlayerTime()
+    {
+        GamePauseOrResumePlayerTime(false);
+    }
+
+    // 游戏暂停or继续
+    public void GamePauseOrResumePlayerTime(bool pauseOrResume)
+    {
+        this.isPlaying = pauseOrResume;
     }
 }

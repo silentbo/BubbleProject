@@ -127,14 +127,19 @@ public class Player : MonoBehaviour{
     // 游戏结束player需要处理的内容
     public void GameOverPlayer(){
 
-        this.circleCollider2DPlayer.enabled = false;
-        this.isPlaying = false;
-        this.isAnimMoveLeftOrRight = false;
+        GamePauseOrResumePlayer(false);
 
         animatorPlayer.Stop();
 
         PlayAnimBubbleDie();
+    }
 
+    // 暂停or继续游戏
+    public void GamePauseOrResumePlayer(bool pauseOrResume)
+    {
+        this.circleCollider2DPlayer.enabled = pauseOrResume;
+        this.isPlaying = pauseOrResume;
+        this.isAnimMoveLeftOrRight = pauseOrResume;
     }
 
     // 播放泡泡死亡动画

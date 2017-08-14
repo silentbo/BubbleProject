@@ -22,9 +22,13 @@ public class Player : MonoBehaviour{
     public PlayerScore scriptPlayerScore;    // 玩家分数脚本
     public PlayerLife scriptPlayerLife;      // 玩家生命脚本
     public GameManager scriptGamseManager;   // 管理类
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Start(){
+        this.circleCollider2DPlayer.enabled = false;
+    }
+
+    // Update is called once per frame
+    void Update () {
         BeforeStartGamePlayerAnimation();
 	}
 
@@ -60,10 +64,20 @@ public class Player : MonoBehaviour{
         PlayAnimEatRewardBubble();
     }
 
-
     private void ColliderByGerm(Collider2D other2D)
     {
         Debug.Log("-- silent -- player collider other2d.name = " + other2D.name);
+
+        // 获取细菌germ
+        Germ germ = other2D.GetComponent<Germ>();
+        if (!germ) return;
+
+        // 减少生命
+        scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm);
+
+        // 播放受伤动画
+        PlayAnimHurtByGerm();
+
     }
 
     // 吃掉其他泡泡动画
@@ -74,6 +88,11 @@ public class Player : MonoBehaviour{
         animatorPlayer.PlayInFixedTime("player_eat");
     }
 
+    // 被细菌伤害了
+    private void PlayAnimHurtByGerm()
+    {
+        //print("-- silent -- player play hurt by germ --");
+    }
     // 左右移动
     public void MovePlayerLeftOrRightByBtn(ConstTemplate.BtnControlDirectionType btnDirectionType){
         
@@ -127,10 +146,9 @@ public class Player : MonoBehaviour{
         if (Math.Abs(this.transform.position.y - ConstTemplate.playerPlayPosY) < 0.1f)
         {
             scriptGamseManager.PlayGameStart();
-            isGameStartBeforeFinish = true;
             return;
         }
-
+        
         // 在一定的时间内移动到指定位置，第一个参数为this.transform.position， 自己写的new Vector3(x，y，z)不好使，不理解
         this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(this.transform.position.x, ConstTemplate.playerPlayPosY, this.transform.position.z), ConstTemplate.playerSpeedBeforeGameStart * Time.deltaTime);
     }
@@ -177,6 +195,15 @@ public class Player : MonoBehaviour{
             print("-- silent -- player play anim player_idle --");
         }
         isPlayAnimPlayerDying = boolValue;
+    }
+
+    // 开始游戏
+    public void PlayGameStartPlayer(){
+
+        isPlaying = true;
+        isGameStartBeforeFinish = true;
+        this.circleCollider2DPlayer.enabled = true;
+
     }
 
 }

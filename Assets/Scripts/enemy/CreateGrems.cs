@@ -8,7 +8,7 @@ public class CreateGrems : MonoBehaviour {
     // Use this for initialization
     void Start () {
         runtimeAnimatorControllerGerm = Resources.Load<RuntimeAnimatorController>(ConstTemplate.resPathAnimatorGerm);
-        InvokeRepeating("CreateOneGerm", 1.0f, 2.0f);   
+        InvokeRepeating("CreateOneGerm", 3.0f, 2.0f);   
     }
 
 
@@ -42,6 +42,11 @@ public class CreateGrems : MonoBehaviour {
         animatorGerm.runtimeAnimatorController = runtimeAnimatorControllerGerm;
         int randomGermAnimation = Random.Range(1, 6);
         animatorGerm.PlayInFixedTime("grem_0" + randomGermAnimation.ToString());
+
+        // 添加 Germ 组件，设置生命
+        Germ germ = goNewGerm.AddComponent<Germ>();
+        germ.scaleGerm = randomScale;
+        germ.hpGerm = randomScale * ConstTemplate.playerLifeMax;
 
         //// 添加 RotateAutoTemplate 组件，设置速度
         //RotateAutoTemplate rotateAutoTemplate = goNewGerm.AddComponent<RotateAutoTemplate>();

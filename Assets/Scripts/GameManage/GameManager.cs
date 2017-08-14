@@ -54,6 +54,8 @@ public class GameManager : MonoBehaviour {
 
         ChangeSpeedBgMove(ConstTemplate.bgSpeedGameStart);
 
+        scriptPlayer.PlayGameStartPlayer();
+
         scriptRewardBubbleCreate.CreateRewardLevelBubble(levelId);
 
         scriptPlayerLife.PlayGameStartPlayerLife();

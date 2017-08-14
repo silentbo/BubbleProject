@@ -27,7 +27,7 @@ public class ConstTemplate
     #region 背景
         
         public const float bgSpeedGameStart = 2.0f;        // 正常游戏时背景向下移动的速度
-        public const float bgSpeedBeforeGameStart = 1.5f;  // 游戏开始之前背景向下移动的速度
+        public const float bgSpeedBeforeGameStart = 0.5f;  // 游戏开始之前背景向下移动的速度
         
     #endregion 背景
 

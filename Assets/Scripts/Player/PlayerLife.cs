@@ -39,8 +39,7 @@ public class PlayerLife : MonoBehaviour{
 
         SetPlayerLife(playerLife);
 
-        if (playerLife < ConstTemplate.playerLifeMin)
-            scriptGameManager.PlayGameOver();
+        
     }
 
     // 设置当前玩家生命值
@@ -49,12 +48,16 @@ public class PlayerLife : MonoBehaviour{
         float ratioLife = playerLife / ConstTemplate.playerLifeMax;
         playerLifeChange.fillAmount = ratioLife;
         PlayDiePlayerLifeAnim(ratioLife);
+
+        if (playerLife <= ConstTemplate.playerLifeMin)
+            scriptGameManager.PlayGameOver();
     }
 
     // 增加玩家生命(增加的生命值)
     public void IncreasePlayerLife(float increaseLifeNum)
     {
         playerLife = playerLife > ConstTemplate.playerLifeMax ? ConstTemplate.playerLifeMax : playerLife + increaseLifeNum;
+        playerLife = playerLife <= ConstTemplate.playerLifeMin ? ConstTemplate.playerLifeMin : playerLife;
         SetPlayerLife(playerLife);
         PlayIncreasePlayerLifeAnim();
     }

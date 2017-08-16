@@ -36,11 +36,21 @@ public class ConstTemplate
         
         public const float rewardBubbleMaxHp = 2.0f;                 // 奖励泡泡的最大的HP
         public const float rewardBubbleMaxScore = 20.0f;             // 奖励泡泡的最大的Score
+        public const float rewardBubbleSpeedMoveDown = 1.8f;         // 奖励泡泡向下移动的速度
         public const float rewardBubbleSpeedMoveToPlayerMax = 5.0f;  // 奖励泡泡被吃后，向主角移动的速度
         
     #endregion 奖励泡泡
 
-    #region PlayerPrefs key值
+    #region germ(细菌)
+
+        public const float germMaxHp = 2.0f;                 // germ(细菌)的最大的HP
+        public const float germMaxScore = 20.0f;             // germ(细菌)的最大的Score
+        public const float germSpeedMoveDown = 1.8f;         // germ(细菌)向下移动的速度
+        public const float germRadius = 0.5f;                // germ(细菌)的正常情况下的半径
+
+    #endregion germ(细菌)
+
+        #region PlayerPrefs key值
 
         public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
         
@@ -51,8 +61,10 @@ public class ConstTemplate
 
         #region 关卡路径
 
-            public const string resLevelPath = "/Resources/Data/RewardBubbleData/"; // 关卡文件夹路径
-            public const string resLevelName = "RewardBubbleDataLevel_";            // 关卡名
+            public const string resRewardBubbleLevelPath = "/Resources/Data/RewardBubbleData/"; // 关卡奖励泡泡文件夹路径
+            public const string resGermLevelPath = "/Resources/Data/GermData/";                 // 关卡germ(细菌)文件夹路径
+            public const string resRewardBubbleLevelName = "RewardBubbleDataLevel_";            // 关卡奖励泡泡名
+            public const string resGermLevelName = "GermDataLevel_";                            // 关卡germ(细菌)名
 
         #endregion 关卡路径
 
@@ -70,11 +82,21 @@ public class ConstTemplate
 
         #endregion 暂停按钮icon
 
-        #endregion 路径
 
-    #region enum
+        #region 图片路径
 
-    // 控制方向的enum
+            public const string resPathSpriteDefaultRewardBubble = "Player/bubble_02_65";   // 奖励泡泡默认图片
+            public const string resPathSpriteDefaultGerm = "Player/germ_idle_05_01";       // germ(细菌)默认图片
+
+        #endregion 图片路径
+
+
+
+    #endregion 路径
+
+            #region enum
+
+            // 控制方向的enum
     public enum BtnControlDirectionType
         {
             BtnControlDirectionDefault, // 默认，没有方向

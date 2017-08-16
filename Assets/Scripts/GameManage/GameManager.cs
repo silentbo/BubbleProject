@@ -10,15 +10,17 @@ public class GameManager : MonoBehaviour {
     public float speedBgMove = 0.0f; // 游戏中背景移动速度，动态改变的哦
 
     public GameObject goRewardBubbleCreate;    // 创建奖励动画的对象
+    public GameObject goGermCreate;            // 创建germ(细菌)动画的对象
 
     public MoveDownTemplate[] scriptBgMoveDownTemplates;     // 背景的移动效果，有几个背景就拖过来几个
-    public CreateRewardBubbles scriptRewardBubbleCreate;     // 创建奖励泡泡 脚本
     public PlayerLife scriptPlayerLife;                      // 玩家生命 脚本
     public Player scriptPlayer;                              // 玩家主角 脚本
     public PlayerScore scriptPlayerScore;                    // 玩家分数 脚本
     public PlayerDistance scriptPlayerDistance;              // 玩家距离 脚本
     public PlayerTime scriptPlayerTime;                      // 玩家时间 脚本
     public BtnGamePauseOrResume scriptBtnGamePauseOrResume;  // 暂停or继续按钮 脚本
+    public CreateRewardBubbles scriptRewardBubbleCreate;     // 创建奖励泡泡 脚本
+    public CreateGrems scriptGermCreate;                     // 创建germ(细菌) 脚本
 
 
 	// Use this for initialization
@@ -57,6 +59,7 @@ public class GameManager : MonoBehaviour {
         scriptPlayer.PlayGameStartPlayer();
 
         scriptRewardBubbleCreate.CreateRewardLevelBubble(levelId);
+        scriptGermCreate.CreateRewardLevelBubble(levelId);
 
         scriptPlayerLife.PlayGameStartPlayerLife();
 
@@ -82,6 +85,10 @@ public class GameManager : MonoBehaviour {
         MoveDownTemplate[] rewardBubbles = goRewardBubbleCreate.GetComponentsInChildren<MoveDownTemplate>();
         for (int i = 0; i < rewardBubbles.Length; i ++)
             rewardBubbles[i].isAnimation = false;
+
+        MoveDownTemplate[] germs = goGermCreate.GetComponentsInChildren<MoveDownTemplate>();
+        for (int i = 0; i < germs.Length; i ++)
+            germs[i].isAnimation = false;
     }
 
     // 游戏暂停or继续 false 暂停游戏， true 继续游戏

@@ -29,6 +29,7 @@ public class Player : MonoBehaviour{
 
     // Update is called once per frame
     void Update () {
+
         BeforeStartGamePlayerAnimation();
 	}
 
@@ -45,6 +46,9 @@ public class Player : MonoBehaviour{
                 ColliderByGerm(other);
                 break;
 
+            case "reward_tool":
+                ColliderByRewardTool(other);
+                break;
         }
 
     }
@@ -64,9 +68,8 @@ public class Player : MonoBehaviour{
         PlayAnimEatRewardBubble();
     }
 
-    private void ColliderByGerm(Collider2D other2D)
-    {
-        Debug.Log("-- silent -- player collider other2d.name = " + other2D.name);
+    // 碰撞germ(细菌)事件
+    private void ColliderByGerm(Collider2D other2D){
 
         // 获取细菌germ
         Germ germ = other2D.GetComponent<Germ>();
@@ -77,6 +80,21 @@ public class Player : MonoBehaviour{
 
         // 播放受伤动画
         PlayAnimHurtByGerm();
+
+    }
+
+    // 碰撞奖励道具事件
+    private void ColliderByRewardTool(Collider2D other2D){
+
+        // 获取奖励泡泡增加的生命值
+        RewardTools rewardTools = other2D.GetComponent<RewardTools>();
+        if (!rewardTools) return;
+
+        rewardTools.EatenByPlayer(this.gameObject);                          // 奖励泡泡被吃动画
+        scriptPlayerScore.IncreasePlayerScore(rewardTools.scoreRewardTools); // 增加玩家分数
+
+        // 播放吃东西动画
+        PlayAnimEatRewardBubble();
 
     }
 
@@ -143,14 +161,14 @@ public class Player : MonoBehaviour{
             return;
 
         // 是否到达指定高度了，在上移过程中，泡泡是可以左右移动的
-        if (Math.Abs(this.transform.position.y - ConstTemplate.playerPlayPosY) < 0.1f)
+        if (Math.Abs(this.transform.position.y - ConstTemplate.playerPlayPosY) < 0.001f)
         {
             scriptGamseManager.PlayGameStart();
             return;
         }
-        
+
         // 在一定的时间内移动到指定位置，第一个参数为this.transform.position， 自己写的new Vector3(x，y，z)不好使，不理解
-        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(this.transform.position.x, ConstTemplate.playerPlayPosY, this.transform.position.z), ConstTemplate.playerSpeedBeforeGameStart * Time.deltaTime);
+        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(this.transform.position.x, ConstTemplate.playerPlayPosY, this.transform.position.z), (this.transform.position.y < ConstTemplate.playerPlayPosYQuick ? ConstTemplate.playerSpeedBeforeGameStartQuick : ConstTemplate.playerSpeedBeforeGameStart) * Time.deltaTime);
     }
 
     // 游戏结束player需要处理的内容

@@ -19,7 +19,9 @@ public class ConstTemplate
         public const float playerRadius = 0.4f;         // 主角的半径
         public const float playerPlayPosY = -2.0f;      // 主角开始游戏的时候的位置
         public const float playerDefaultPosY = -4.36f;  // 主角默认的位置，未开始进行游戏的位置
-        public const float playerSpeedBeforeGameStart = 1.0f; // 玩家开始动画时向上移动的速度
+        public const float playerPlayPosYQuick = -2.5f; // 主角开始动画时加速运动结束的位置
+        public const float playerSpeedBeforeGameStart = 1.5f; // 玩家开始动画时向上移动的速度
+        public const float playerSpeedBeforeGameStartQuick = 2.5f; // 玩家开始动画时向上移动的速度(快)
 
     #endregion 主角
 
@@ -31,6 +33,13 @@ public class ConstTemplate
         
     #endregion 背景
 
+
+    #region 奖励道具
+
+        public const float rewardToolsMaxScore = 50.0f;    // 奖励道具奖励的最大的Score
+        public const float rewardToolsDurationTime = 5.0f; // 奖励道具的持续时间
+
+    #endregion 奖励道具
 
     #region 奖励泡泡
         
@@ -46,7 +55,6 @@ public class ConstTemplate
         public const float germMaxHp = 2.0f;                 // germ(细菌)的最大的HP
         public const float germMaxScore = 20.0f;             // germ(细菌)的最大的Score
         public const float germSpeedMoveDown = 1.8f;         // germ(细菌)向下移动的速度
-        public const float germRadius = 0.5f;                // germ(细菌)的正常情况下的半径
 
     #endregion germ(细菌)
 
@@ -94,14 +102,27 @@ public class ConstTemplate
 
     #endregion 路径
 
-            #region enum
+    #region enum
 
-            // 控制方向的enum
-    public enum BtnControlDirectionType
+        // 控制方向的enum
+        public enum BtnControlDirectionType
         {
-            BtnControlDirectionDefault, // 默认，没有方向
-            BtnControlDirectionLeft,    // 左
-            BtnControlDirectionRight,   // 右
+            BtnControlDirectionDefault = 0, // 默认，没有方向
+            BtnControlDirectionLeft = 1, // 左
+            BtnControlDirectionRight = 2, // 右
+        }
+
+        // 奖励道具的类型
+        public enum RewardToolType
+        {
+            RewardToolNoBuff = 0,    // 无变化，没有buff效果
+            RewardToolNoDie = 1,     // 无敌
+            RewardToolAttract = 2,   // 吸引
+            RewardToolLessen = 3,    // 变小
+            RewardToolLargen = 4,    // 变大
+            RewardToolAddLife = 5,   // 加命
+            RewardToolSpeedDown = 6, // 减速
+            RewardToolSpeedUp = 7,   // 加速
         }
 
     #endregion enum

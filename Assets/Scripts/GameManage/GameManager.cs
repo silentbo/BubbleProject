@@ -58,8 +58,8 @@ public class GameManager : MonoBehaviour {
 
         scriptPlayer.PlayGameStartPlayer();
 
-        scriptRewardBubbleCreate.CreateRewardLevelBubble(levelId);
-        scriptGermCreate.CreateRewardLevelBubble(levelId);
+        //scriptRewardBubbleCreate.CreateRewardLevelBubble(levelId);
+        //scriptGermCreate.CreateRewardLevelBubble(levelId);
 
         scriptPlayerLife.PlayGameStartPlayerLife();
 

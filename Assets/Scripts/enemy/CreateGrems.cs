@@ -46,8 +46,7 @@ public class CreateGrems : MonoBehaviour {
         moveDownGerm.speedMoveDown = ConstTemplate.germSpeedMoveDown;
 
         // 添加碰撞盒
-        CircleCollider2D circleCollider2D = goNewGerm.AddComponent<CircleCollider2D>();
-        //circleCollider2D.radius = randomScale * ConstTemplate.germRadius;
+        goNewGerm.AddComponent<CircleCollider2D>();
 
 
         // 添加 Animator 组件， 设置对应的动画

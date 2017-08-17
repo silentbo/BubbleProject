@@ -5,8 +5,8 @@ public class Germ : MonoBehaviour {
 
     public bool isPlaying = true; // 是否正在游戏
 
-    public float hpGerm = 0.0f;   // 细菌的生命值，就是玩家减少的生命值
-    public float scaleGerm = 1.0f;// 细菌的大小 
+    public float hpGerm = ConstTemplate.germMaxHp;   // 细菌的生命值，就是玩家减少的生命值
+    public float scaleGerm = ConstTemplate.germMaxScore; // 细菌的大小 
 
     // Use this for initialization
     void Start () {

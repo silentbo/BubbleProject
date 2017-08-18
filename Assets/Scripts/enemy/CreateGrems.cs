@@ -53,7 +53,9 @@ public class CreateGrems : MonoBehaviour {
         Animator animatorGerm = goNewGerm.AddComponent<Animator>();
         animatorGerm.runtimeAnimatorController = runtimeAnimatorControllerGerm;
         int randomGermAnimation = Random.Range(1, 6);
-        animatorGerm.PlayInFixedTime(string.Format("germ_{0:D2}", randomGermAnimation));
+        string strGerm = string.Format("germ_{0:D2}", randomGermAnimation);
+        print("-- silent -- germ animator " + strGerm);
+        animatorGerm.PlayInFixedTime(strGerm);
 
         // 添加 Germ 组件，设置生命
         Germ germ = goNewGerm.AddComponent<Germ>();

@@ -1,0 +1,35 @@
+{
+	"reward_tool_data":
+	[
+		{
+			"id":"0", 
+			"randomX":"0", 
+			"randomY":"17.66"
+		},
+		{
+			"id":"1", 
+			"randomX":"-0.46", 
+			"randomY":"28.29"
+		},
+		{
+			"id":"2", 
+			"randomX":"1.16", 
+			"randomY":"56.91"
+		},
+		{
+			"id":"3", 
+			"randomX":"-0.04", 
+			"randomY":"76.45"
+		},
+		{
+			"id":"4", 
+			"randomX":"-0.06", 
+			"randomY":"116.6"
+		},
+		{
+			"id":"5", 
+			"randomX":"-0.06", 
+			"randomY":"146.07"
+		}
+	]
+}

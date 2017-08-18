@@ -202,16 +202,12 @@ public class Player : MonoBehaviour{
 
         // 播放增在死亡动画 boolValue = true
         if (isPlayAnimPlayerDying != boolValue && !isPlayAnimPlayerDying)
-        {
             animatorPlayer.PlayInFixedTime("player_die");
-            print("-- silent -- player play anim player_die --");
-        }
+        
         // 播放待机动画 boolValue = false
         if (isPlayAnimPlayerDying != boolValue && isPlayAnimPlayerDying)
-        {
             animatorPlayer.PlayInFixedTime("player_idle");
-            print("-- silent -- player play anim player_idle --");
-        }
+
         isPlayAnimPlayerDying = boolValue;
     }
 

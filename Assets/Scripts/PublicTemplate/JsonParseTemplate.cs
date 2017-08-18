@@ -21,6 +21,13 @@ public class GermLevelData
     public ObjectPositionData[] germ_data;
 }
 
+// 奖励道具关卡数据json解析类
+[System.Serializable]
+public class RewardToolsLevelData
+{
+    public ObjectPositionData[] reward_tool_data;
+}
+
 
 // 物体位置数据信息解析类
 [System.Serializable] // 定义的变量名与json中的名字一样
@@ -55,9 +62,9 @@ public class JsonParseTemplate : MonoBehaviour {
     public static GermLevelData LoadGermLevelJsonData(int levelId)
     {
         // 获取文件的绝对路径
-        string rewardBubblePath = Application.dataPath + ConstTemplate.resGermLevelPath + ConstTemplate.resGermLevelName + string.Format("{0:D2}.json", levelId);
+        string germPath = Application.dataPath + ConstTemplate.resGermLevelPath + ConstTemplate.resGermLevelName + string.Format("{0:D2}.json", levelId);
         // 使用读取流来获取文件内容
-        StreamReader streamReader = new StreamReader(rewardBubblePath);
+        StreamReader streamReader = new StreamReader(germPath);
         // 读取文件所有内容
         string strJsonLevelData = streamReader.ReadToEnd();
 
@@ -66,6 +73,23 @@ public class JsonParseTemplate : MonoBehaviour {
 
         // 返回解析json的数据结构
         return JsonUtility.FromJson<GermLevelData>(strJsonLevelData);
+    }
+
+    // 获取对应关卡的germ(细菌)的所有位置信息
+    public static RewardToolsLevelData LoadRewardToolLevelJsonData(int levelId)
+    {
+        // 获取文件的绝对路径
+        string rewardToolPath = Application.dataPath + ConstTemplate.resRewardToolLevelPath + ConstTemplate.resRewardToolLevelName + string.Format("{0:D2}.json", levelId);
+        // 使用读取流来获取文件内容
+        StreamReader streamReader = new StreamReader(rewardToolPath);
+        // 读取文件所有内容
+        string strJsonLevelData = streamReader.ReadToEnd();
+
+        // 没有内容就不做处理了
+        if (strJsonLevelData.Length <= 0) return null;
+
+        // 返回解析json的数据结构
+        return JsonUtility.FromJson<RewardToolsLevelData>(strJsonLevelData);
     }
 
 }

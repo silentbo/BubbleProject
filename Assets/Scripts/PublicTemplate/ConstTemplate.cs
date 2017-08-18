@@ -38,6 +38,9 @@ public class ConstTemplate
 
         public const float rewardToolsMaxScore = 50.0f;    // 奖励道具奖励的最大的Score
         public const float rewardToolsDurationTime = 5.0f; // 奖励道具的持续时间
+        public const float rewardToolsSpeedMoveToPlayerMax = 5.0f; // 奖励道具被吃之后，向主角移动的速度
+        public const float rewardToolsSpeedMoveDown = 1.8f;// 奖励泡泡向下移动的速度
+        public const float rewardToolsMaxHp = 2.0f;        // 奖励道具的最大hp
 
     #endregion 奖励道具
 
@@ -71,8 +74,11 @@ public class ConstTemplate
 
             public const string resRewardBubbleLevelPath = "/Resources/Data/RewardBubbleData/"; // 关卡奖励泡泡文件夹路径
             public const string resGermLevelPath = "/Resources/Data/GermData/";                 // 关卡germ(细菌)文件夹路径
+            public const string resRewardToolLevelPath = "/Resources/Data/RewardToolsData/";    // 关卡奖励道具文件夹路径
+
             public const string resRewardBubbleLevelName = "RewardBubbleDataLevel_";            // 关卡奖励泡泡名
             public const string resGermLevelName = "GermDataLevel_";                            // 关卡germ(细菌)名
+            public const string resRewardToolLevelName = "RewardToolsDataLevel_";              // 关卡奖励道具名
 
         #endregion 关卡路径
 
@@ -94,7 +100,8 @@ public class ConstTemplate
         #region 图片路径
 
             public const string resPathSpriteDefaultRewardBubble = "Player/bubble_02_65";   // 奖励泡泡默认图片
-            public const string resPathSpriteDefaultGerm = "Player/germ_idle_05_01";       // germ(细菌)默认图片
+            public const string resPathSpriteDefaultGerm = "Player/germ_idle_01_01";        // germ(细菌)默认图片
+            public const string resPathSpriteDefaultRewardTool = "Player/bubble_02_65_yellow_dark"; // 奖励道具默认图片
 
         #endregion 图片路径
 

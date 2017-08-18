@@ -5,8 +5,8 @@ public class RewardBubble : MonoBehaviour
     public bool isPlaying = true;             // 是否正在游戏
     public bool isEaten = false;              // 是否被吃了
 
-    public float hpRewardBubble = 0.0f;       // 泡泡奖励生命值
-    public float scaleRewardBubble = 0.0f;    // 泡泡缩放比例
+    public float hpRewardBubble = 2.0f;       // 泡泡奖励生命值
+    public float scaleRewardBubble = 1.0f;    // 泡泡缩放比例
     public float speedMoveToPlayer = 5.0f;    // 向主角移动的速度
     public float scoreRewardBubble = 0.0f;    // 泡泡奖励的分数
     

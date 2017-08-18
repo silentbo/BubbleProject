@@ -5,8 +5,10 @@ public class RewardTools : MonoBehaviour{
     public bool isPlaying = true; // 是否正在游戏中
     public bool isEaten = false;  // 是否正在被吃中
 
+    public float hpRewardTools = ConstTemplate.rewardToolsMaxHp; // 奖励道具的生命
     public float scoreRewardTools = ConstTemplate.rewardToolsMaxScore; // 奖励道具的奖励分数
-    public float speedMoveToPlayer = 5.0f; // 向主角移动的速度
+    public float speedMoveToPlayer = ConstTemplate.rewardToolsSpeedMoveToPlayerMax; // 向主角移动的速度
+    public float scaleRewardTools = 1.0f; // 奖励道具缩放值
 
     public ConstTemplate.RewardToolType rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff; // 奖励类型
 

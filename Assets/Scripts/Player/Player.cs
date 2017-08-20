@@ -147,8 +147,14 @@ public class Player : MonoBehaviour{
         goBubbleNoDie.SetActive(false);
         rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff;
         CancelInvoke("playerNoDieFinish"); // 结束计时
+        DestoryGermByScreen();
+    }
+
+    // 销毁屏幕内的所有germ
+    private void DestoryGermByScreen()
+    {
         // 在屏幕范围内的germ都将自爆
-        for (int i = 0; i < scriptGamseManager.goGermCreate.transform.childCount; i ++)
+        for (int i = 0; i < scriptGamseManager.goGermCreate.transform.childCount; i++)
         {
             Transform transChild = scriptGamseManager.goGermCreate.transform.GetChild(i);
             if (transChild.position.y < ConstTemplate.screenHeight / 2)

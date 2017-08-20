@@ -12,7 +12,11 @@ public class Player : MonoBehaviour{
 
     public float speedMoveByBtn = 5.0f; // 按钮控制其左右移动的速度
 
+    public ConstTemplate.RewardToolType rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff; // 主角buff类型
+
     public Vector3 moveDirection = Vector3.zero; // 主角移动的方向
+
+    public GameObject goBubbleNoDie;         // 主角不死动画
 
     public Animator animatorPlayer;          // 主角动画
     public Animator animatorBubble;          // 泡泡动画
@@ -25,6 +29,7 @@ public class Player : MonoBehaviour{
 
     void Start(){
         this.circleCollider2DPlayer.enabled = false;
+        goBubbleNoDie.SetActive(false);
     }
 
     // Update is called once per frame
@@ -75,11 +80,27 @@ public class Player : MonoBehaviour{
         Germ germ = other2D.GetComponent<Germ>();
         if (!germ) return;
 
-        // 减少生命
-        scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm);
+        // 关闭碰撞检测了
+        germ.HarmPlayerFinish();
 
-        // 播放受伤动画
-        PlayAnimHurtByGerm();
+        switch (rewardToolType)
+        {
+            case ConstTemplate.RewardToolType.RewardToolNoDie:
+                germ.PlayAnimationDying();
+                scriptPlayerScore.IncreasePlayerScore(germ.scoreGerm); // 增加玩家分数
+                break;
+            case ConstTemplate.RewardToolType.RewardToolAddLife:
+            case ConstTemplate.RewardToolType.RewardToolAttract:
+            case ConstTemplate.RewardToolType.RewardToolLargen:
+            case ConstTemplate.RewardToolType.RewardToolLessen:
+            case ConstTemplate.RewardToolType.RewardToolNoBuff:
+                // 减少生命
+                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm);
+
+                // 播放受伤动画
+                PlayAnimHurtByGerm();
+                break;
+        }
 
     }
 
@@ -90,12 +111,53 @@ public class Player : MonoBehaviour{
         RewardTools rewardTools = other2D.GetComponent<RewardTools>();
         if (!rewardTools) return;
 
+        // 奖励道具类型
+        rewardToolType = rewardTools.rewardToolType;
+
         rewardTools.EatenByPlayer(this.gameObject);                          // 奖励泡泡被吃动画
         scriptPlayerScore.IncreasePlayerScore(rewardTools.scoreRewardTools); // 增加玩家分数
 
         // 播放吃东西动画
         PlayAnimEatRewardBubble();
 
+        switch (rewardToolType)
+        {
+            case ConstTemplate.RewardToolType.RewardToolNoDie:
+                PlayerNoDieCallBack();
+                break;
+            case ConstTemplate.RewardToolType.RewardToolAddLife:
+            case ConstTemplate.RewardToolType.RewardToolAttract:
+            case ConstTemplate.RewardToolType.RewardToolLargen:
+            case ConstTemplate.RewardToolType.RewardToolLessen:
+            case ConstTemplate.RewardToolType.RewardToolNoBuff:
+                break;
+        }
+
+    }
+
+    // 主角不死buff回调
+    private void PlayerNoDieCallBack(){
+        goBubbleNoDie.SetActive(true);
+        CancelInvoke("playerNoDieFinish"); // 先暂停之前的计时，重新计算
+        Invoke("playerNoDieFinish", ConstTemplate.rewardToolsDurationTime); // 在规定的时间后结束buff
+    }
+
+    // 主角不死buff结束
+    private void playerNoDieFinish(){
+        goBubbleNoDie.SetActive(false);
+        rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff;
+        CancelInvoke("playerNoDieFinish"); // 结束计时
+        // 在屏幕范围内的germ都将自爆
+        for (int i = 0; i < scriptGamseManager.goGermCreate.transform.childCount; i ++)
+        {
+            Transform transChild = scriptGamseManager.goGermCreate.transform.GetChild(i);
+            if (transChild.position.y < ConstTemplate.screenHeight / 2)
+            {
+                Germ germChild = transChild.GetComponent<Germ>();
+                if (germChild && germChild.animator)
+                    germChild.PlayAnimationDying();
+            }
+        }
     }
 
     // 吃掉其他泡泡动画
@@ -177,6 +239,7 @@ public class Player : MonoBehaviour{
         GamePauseOrResumePlayer(false);
 
         animatorPlayer.Stop();
+        goBubbleNoDie.SetActive(false);
 
         PlayAnimBubbleDie();
     }

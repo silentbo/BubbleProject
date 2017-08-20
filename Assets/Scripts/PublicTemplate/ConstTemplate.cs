@@ -22,6 +22,7 @@ public class ConstTemplate
         public const float playerPlayPosYQuick = -2.5f; // 主角开始动画时加速运动结束的位置
         public const float playerSpeedBeforeGameStart = 1.5f; // 玩家开始动画时向上移动的速度
         public const float playerSpeedBeforeGameStartQuick = 2.5f; // 玩家开始动画时向上移动的速度(快)
+        public const float bubbleSpeedNoDie = 1.0f;     // 主角不死时的缩放变化速度
 
     #endregion 主角
 
@@ -36,11 +37,11 @@ public class ConstTemplate
 
     #region 奖励道具
 
-        public const float rewardToolsMaxScore = 50.0f;    // 奖励道具奖励的最大的Score
-        public const float rewardToolsDurationTime = 5.0f; // 奖励道具的持续时间
+        public const float rewardToolsMaxScore = 50.0f;     // 奖励道具奖励的最大的Score
+        public const float rewardToolsDurationTime = 10.0f; // 奖励道具的持续时间
         public const float rewardToolsSpeedMoveToPlayerMax = 5.0f; // 奖励道具被吃之后，向主角移动的速度
-        public const float rewardToolsSpeedMoveDown = 2.0f;// 奖励泡泡向下移动的速度
-        public const float rewardToolsMaxHp = 2.0f;        // 奖励道具的最大hp
+        public const float rewardToolsSpeedMoveDown = 2.0f; // 奖励泡泡向下移动的速度
+        public const float rewardToolsMaxHp = 2.0f;         // 奖励道具的最大hp
 
     #endregion 奖励道具
 
@@ -56,7 +57,7 @@ public class ConstTemplate
     #region germ(细菌)
 
         public const float germMaxHp = 2.0f;                 // germ(细菌)的最大的HP
-        public const float germMaxScore = 20.0f;             // germ(细菌)的最大的Score
+        public const float germMaxScore = 50.0f;             // germ(细菌)的最大的Score
         public const float germSpeedMoveDown = 2.0f;         // germ(细菌)向下移动的速度
 
     #endregion germ(细菌)

@@ -54,9 +54,7 @@ public class CreateRewardBubbles : MonoBehaviour
         if (distanceCreateRewardBubble + ConstTemplate.screenHeight / 2 > scriptPlayerDistance.playerDistance) return;
 
         distanceCreateRewardBubble = scriptPlayerDistance.playerDistance;
-        print("-- silent -- distanceCreateRewardBubble == " + distanceCreateRewardBubble);
         float maxPosYCreateRewardBubble = scriptPlayerDistance.playerDistance - ConstTemplate.screenHeight / 2 + ConstTemplate.screenHeight * 1.5f;
-        print("-- silent -- maxPosYCreateRewardBubble == " + maxPosYCreateRewardBubble);
 
         // 从后向前遍历，动态删除的哦
         for (int i = listRewardBubblePositionData.Count - 1; i >= 0; i --)

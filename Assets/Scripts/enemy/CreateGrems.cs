@@ -54,9 +54,7 @@ public class CreateGrems : MonoBehaviour {
         if (distanceCreateGerm + ConstTemplate.screenHeight / 2 > scriptPlayerDistance.playerDistance) return;
 
         distanceCreateGerm = scriptPlayerDistance.playerDistance;
-        print("-- silent -- distanceCreateGerm == " + distanceCreateGerm);
         float maxPosYCreateGerm = scriptPlayerDistance.playerDistance - ConstTemplate.screenHeight / 2 + ConstTemplate.screenHeight * 1.5f;
-        print("-- silent -- maxPosYCreateGerm == " + maxPosYCreateGerm);
 
         // 从后向前遍历，动态删除的哦
         for (int i = listGermPositionData.Count - 1; i >= 0; i--)
@@ -110,6 +108,8 @@ public class CreateGrems : MonoBehaviour {
         Germ germ = goNewGerm.AddComponent<Germ>();
         germ.scaleGerm = randomScale;
         germ.hpGerm = randomScale * ConstTemplate.playerLifeMax;
+        germ.animator = animatorGerm;
+        germ.scoreGerm = randomScale * ConstTemplate.germMaxScore;
 
         //// 添加 RotateAutoTemplate 组件，设置速度
         //RotateAutoTemplate rotateAutoTemplate = goNewGerm.AddComponent<RotateAutoTemplate>();

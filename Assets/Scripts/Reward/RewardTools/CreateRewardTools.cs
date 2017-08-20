@@ -54,9 +54,7 @@ public class CreateRewardTools : MonoBehaviour
         if (distanceCreateRewardTools + ConstTemplate.screenHeight / 2 > scriptPlayerDistance.playerDistance) return;
 
         distanceCreateRewardTools = scriptPlayerDistance.playerDistance;
-        print("-- silent -- distatnceCreateRewardTools == " + distanceCreateRewardTools);
         float maxPosYCreateRewardTool = scriptPlayerDistance.playerDistance - ConstTemplate.screenHeight / 2 + ConstTemplate.screenHeight * 1.5f;
-        print("-- silent -- maxPosYCreateRewardTool == " + maxPosYCreateRewardTool);
 
         // 从后向前遍历，动态删除的哦
         for (int i = listRewardToolsPositionData.Count - 1; i >= 0; i--)
@@ -104,6 +102,7 @@ public class CreateRewardTools : MonoBehaviour
         rewardTools.scaleRewardTools = randomScale;
         rewardTools.speedMoveToPlayer = randomScale * ConstTemplate.rewardToolsSpeedMoveToPlayerMax;
         rewardTools.isEaten = false;
+        rewardTools.rewardToolType = ConstTemplate.RewardToolType.RewardToolNoDie;//(ConstTemplate.RewardToolType)(int)Random.Range(1, 8);
 
 
     }

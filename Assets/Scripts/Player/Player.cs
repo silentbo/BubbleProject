@@ -86,19 +86,23 @@ public class Player : MonoBehaviour{
         switch (rewardToolType)
         {
             case ConstTemplate.RewardToolType.RewardToolNoDie:
-                germ.PlayAnimationDying();
+                germ.PlayAnimationDying();                             // 播放germ死亡动画
                 scriptPlayerScore.IncreasePlayerScore(germ.scoreGerm); // 增加玩家分数
                 break;
             case ConstTemplate.RewardToolType.RewardToolAddLife:
             case ConstTemplate.RewardToolType.RewardToolAttract:
+                break;
             case ConstTemplate.RewardToolType.RewardToolLargen:
+                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm / 4); // 减少生命
+                PlayAnimHurtByGerm();                                  // 播放受伤动画
+                break;
             case ConstTemplate.RewardToolType.RewardToolLessen:
+                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm * 2); // 减少生命
+                PlayAnimHurtByGerm();                                  // 播放受伤动画
+                break;
             case ConstTemplate.RewardToolType.RewardToolNoBuff:
-                // 减少生命
-                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm);
-
-                // 播放受伤动画
-                PlayAnimHurtByGerm();
+                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm);     // 减少生命
+                PlayAnimHurtByGerm();                                  // 播放受伤动画
                 break;
         }
 
@@ -127,8 +131,13 @@ public class Player : MonoBehaviour{
                 break;
             case ConstTemplate.RewardToolType.RewardToolAddLife:
             case ConstTemplate.RewardToolType.RewardToolAttract:
+                break;
             case ConstTemplate.RewardToolType.RewardToolLargen:
+                PlayerLargenCallBack();
+                break;
             case ConstTemplate.RewardToolType.RewardToolLessen:
+                PlayerLessenCallBack();
+                break;
             case ConstTemplate.RewardToolType.RewardToolNoBuff:
                 break;
         }
@@ -149,6 +158,29 @@ public class Player : MonoBehaviour{
         CancelInvoke("playerNoDieFinish"); // 结束计时
         DestoryGermByScreen();
     }
+
+    // 主角变大buff
+    private void PlayerLargenCallBack(){
+        this.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        CancelInvoke("PlayerLargenAndLessenFinish");
+        Invoke("PlayerLargenAndLessenFinish", ConstTemplate.rewardToolsDurationTime);
+    }
+
+    // 主角变小buff
+    private void PlayerLessenCallBack()
+    {
+        this.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        CancelInvoke("PlayerLargenAndLessenFinish");
+        Invoke("PlayerLargenAndLessenFinish", ConstTemplate.rewardToolsDurationTime);
+    }
+    // 主角变大buff结束
+    private void PlayerLargenAndLessenFinish(){
+        this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff;
+        CancelInvoke("PlayerLargenAndLessenFinish"); // 结束计时
+        DestoryGermByScreen();
+    }
+    
 
     // 销毁屏幕内的所有germ
     private void DestoryGermByScreen()

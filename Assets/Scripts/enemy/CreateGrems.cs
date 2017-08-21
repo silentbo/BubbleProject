@@ -107,7 +107,7 @@ public class CreateGrems : MonoBehaviour {
         // 添加 Germ 组件，设置生命
         Germ germ = goNewGerm.AddComponent<Germ>();
         germ.scaleGerm = randomScale;
-        germ.hpGerm = randomScale * ConstTemplate.playerLifeMax;
+        germ.hpGerm = randomScale * ConstTemplate.germMaxHp;
         germ.animator = animatorGerm;
         germ.scoreGerm = randomScale * ConstTemplate.germMaxScore;
 

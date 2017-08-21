@@ -56,7 +56,7 @@ public class ConstTemplate
 
     #region germ(细菌)
 
-        public const float germMaxHp = 2.0f;                 // germ(细菌)的最大的HP
+        public const float germMaxHp = 10.0f;                // germ(细菌)的最大的HP(伤害主角的HP)
         public const float germMaxScore = 50.0f;             // germ(细菌)的最大的Score
         public const float germSpeedMoveDown = 2.0f;         // germ(细菌)向下移动的速度
 

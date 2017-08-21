@@ -86,23 +86,23 @@ public class Player : MonoBehaviour{
         switch (rewardToolType)
         {
             case ConstTemplate.RewardToolType.RewardToolNoDie:
-                germ.PlayAnimationDying();                             // 播放germ死亡动画
-                scriptPlayerScore.IncreasePlayerScore(germ.scoreGerm); // 增加玩家分数
+                germ.PlayAnimationDying();                              // 播放germ死亡动画
+                scriptPlayerScore.IncreasePlayerScore(germ.scoreGerm);  // 增加玩家分数
                 break;
             case ConstTemplate.RewardToolType.RewardToolAddLife:
             case ConstTemplate.RewardToolType.RewardToolAttract:
                 break;
             case ConstTemplate.RewardToolType.RewardToolLargen:
-                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm / 4); // 减少生命
-                PlayAnimHurtByGerm();                                  // 播放受伤动画
+                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm / 4);   // 减少生命
+                PlayAnimHurtByGerm();                                    // 播放受伤动画
                 break;
             case ConstTemplate.RewardToolType.RewardToolLessen:
-                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm * 2); // 减少生命
-                PlayAnimHurtByGerm();                                  // 播放受伤动画
+                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm * 1.5f); // 减少生命
+                PlayAnimHurtByGerm();                                     // 播放受伤动画
                 break;
             case ConstTemplate.RewardToolType.RewardToolNoBuff:
-                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm);     // 减少生命
-                PlayAnimHurtByGerm();                                  // 播放受伤动画
+                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm);        // 减少生命
+                PlayAnimHurtByGerm();                                     // 播放受伤动画
                 break;
         }
 

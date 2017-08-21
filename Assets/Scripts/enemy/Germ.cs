@@ -32,6 +32,7 @@ public class Germ : MonoBehaviour {
     // 播放正在死亡动画
     public void PlayAnimationDying()
     {
+        circleCollider2D.enabled = false;
         animator.PlayInFixedTime("grem_die");
     }
 

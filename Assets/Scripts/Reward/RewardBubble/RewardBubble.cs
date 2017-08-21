@@ -4,6 +4,7 @@ public class RewardBubble : MonoBehaviour
 {
     public bool isPlaying = true;             // 是否正在游戏
     public bool isEaten = false;              // 是否被吃了
+    public bool isAttract = false;            // 是否被吸引了
 
     public float hpRewardBubble = 2.0f;       // 泡泡奖励生命值
     public float scaleRewardBubble = 1.0f;    // 泡泡缩放比例
@@ -18,22 +19,41 @@ public class RewardBubble : MonoBehaviour
 
 	    if (isPlaying)
 	    {
-	        MoveToPlayer();
+	        MoveToPlayerByEaten();
+            MoveToPlayerByAttract();
 	    }
 
 	    AutoDestroy();
 
     }
 
+    // 泡泡被吸引动画
+    public void AttractByPlayer(GameObject player)
+    {
+        isAttract = true;
+        isEaten = false;
+        this.goPlayer = player;
+    }
+
+    // 泡泡被吸引向主角移动
+    public void MoveToPlayerByAttract()
+    {
+        if(!isAttract) return;
+
+        // 边移动位置，边缩小
+        this.transform.position = Vector3.MoveTowards(this.transform.position, goPlayer.transform.position, speedMoveToPlayer * Time.deltaTime);
+    }
+
     // 泡泡被吃动画
     public void EatenByPlayer(GameObject player)
     {
         isEaten = true;
+        isAttract = false;
         this.goPlayer = player;
     }
 
     // 向主角移动
-    public void MoveToPlayer()
+    public void MoveToPlayerByEaten()
     {
         if (!isEaten) return;
 

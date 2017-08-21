@@ -17,6 +17,7 @@ public class Player : MonoBehaviour{
     public Vector3 moveDirection = Vector3.zero; // 主角移动的方向
 
     public GameObject goBubbleNoDie;         // 主角不死动画
+    public GameObject goPlayerAttract;       // 主角吸引奖励泡泡动画
 
     public Animator animatorPlayer;          // 主角动画
     public Animator animatorBubble;          // 泡泡动画
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour{
     void Start(){
         this.circleCollider2DPlayer.enabled = false;
         goBubbleNoDie.SetActive(false);
+        goPlayerAttract.SetActive(false);
     }
 
     // Update is called once per frame
@@ -131,6 +133,7 @@ public class Player : MonoBehaviour{
                 break;
             case ConstTemplate.RewardToolType.RewardToolAddLife:
             case ConstTemplate.RewardToolType.RewardToolAttract:
+                PlayerAttractCallBack();
                 break;
             case ConstTemplate.RewardToolType.RewardToolLargen:
                 PlayerLargenCallBack();
@@ -167,8 +170,7 @@ public class Player : MonoBehaviour{
     }
 
     // 主角变小buff
-    private void PlayerLessenCallBack()
-    {
+    private void PlayerLessenCallBack(){
         this.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         CancelInvoke("PlayerLargenAndLessenFinish");
         Invoke("PlayerLargenAndLessenFinish", ConstTemplate.rewardToolsDurationTime);
@@ -180,7 +182,21 @@ public class Player : MonoBehaviour{
         CancelInvoke("PlayerLargenAndLessenFinish"); // 结束计时
         DestoryGermByScreen();
     }
-    
+
+    // 主角吸引奖励泡泡回调
+    private void PlayerAttractCallBack(){
+        goPlayerAttract.SetActive(true);
+        CancelInvoke("PlayerAttractFinish");
+        Invoke("PlayerAttractFinish", ConstTemplate.rewardToolsDurationTime);
+    }
+
+    // 主角吸引奖励泡泡buff结束
+    private void PlayerAttractFinish(){
+        goPlayerAttract.SetActive(false);
+        rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff;
+        DestoryGermByScreen();
+    }
+
 
     // 销毁屏幕内的所有germ
     private void DestoryGermByScreen()

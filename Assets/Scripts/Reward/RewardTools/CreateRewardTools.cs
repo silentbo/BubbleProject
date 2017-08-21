@@ -102,7 +102,7 @@ public class CreateRewardTools : MonoBehaviour
         rewardTools.scaleRewardTools = randomScale;
         rewardTools.speedMoveToPlayer = randomScale * ConstTemplate.rewardToolsSpeedMoveToPlayerMax;
         rewardTools.isEaten = false;
-        rewardTools.rewardToolType = ConstTemplate.RewardToolType.RewardToolLessen;//(ConstTemplate.RewardToolType)(int)Random.Range(1, 8);
+        rewardTools.rewardToolType = ConstTemplate.RewardToolType.RewardToolAttract;//(ConstTemplate.RewardToolType)(int)Random.Range(1, 8);
 
 
     }

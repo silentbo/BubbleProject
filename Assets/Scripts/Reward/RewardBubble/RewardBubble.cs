@@ -2,19 +2,18 @@
 
 public class RewardBubble : MonoBehaviour
 {
-    public bool isPlaying = true;             // 是否正在游戏
-    public bool isEaten = false;              // 是否被吃了
-    public bool isAttract = false;            // 是否被吸引了
+    public bool isPlaying = true;                   // 是否正在游戏
+    public bool isEaten = false;                    // 是否被吃了
+    public bool isAttract = false;                  // 是否被吸引了
+                                                    
+    public float hpRewardBubble = 0.0f;             // 泡泡奖励生命值
+    public float scaleRewardBubble = 1.0f;          // 泡泡缩放比例
+    public float speedMoveToPlayerByEaten = 0.0f;   // 向主角移动的速度被吃
+    public float speedMoveToPlayerByAttract = 0.0f; // 向主角移动的速度被吸引
+    public float scoreRewardBubble = 0.0f;          // 泡泡奖励的分数
 
-    public float hpRewardBubble = 2.0f;       // 泡泡奖励生命值
-    public float scaleRewardBubble = 1.0f;    // 泡泡缩放比例
-    public float speedMoveToPlayer = 5.0f;    // 向主角移动的速度
-    public float scoreRewardBubble = 0.0f;    // 泡泡奖励的分数
-    
-    public GameObject goPlayer = null;        // 主角
+    public GameObject goPlayer = null;              // 主角
 
-
-    // Update is called once per frame
     void Update () {
 
 	    if (isPlaying)
@@ -41,7 +40,7 @@ public class RewardBubble : MonoBehaviour
         if(!isAttract) return;
 
         // 边移动位置，边缩小
-        this.transform.position = Vector3.MoveTowards(this.transform.position, goPlayer.transform.position, speedMoveToPlayer * Time.deltaTime);
+        this.transform.position = Vector3.MoveTowards(this.transform.position, goPlayer.transform.position, speedMoveToPlayerByAttract * Time.deltaTime);
     }
 
     // 泡泡被吃动画
@@ -58,7 +57,7 @@ public class RewardBubble : MonoBehaviour
         if (!isEaten) return;
 
         // 边移动位置，边缩小
-        this.transform.position = Vector3.MoveTowards(this.transform.position, goPlayer.transform.position, speedMoveToPlayer * Time.deltaTime);
+        this.transform.position = Vector3.MoveTowards(this.transform.position, goPlayer.transform.position, speedMoveToPlayerByEaten * Time.deltaTime);
         this.transform.localScale = new Vector3(this.transform.localScale.x - 0.1f, this.transform.localScale.y - 0.1f, this.transform.localScale.z - 0.1f);
 
         if (this.transform.localScale.x <= 0)

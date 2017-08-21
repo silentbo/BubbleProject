@@ -3,11 +3,15 @@
 // 主角吸引buff类
 public class PlayerAttract : MonoBehaviour{
 
+    public bool isPlaying = true; // 是否在游戏中
+
     public GameObject goPlayer; // 主角
 
     // 碰撞检测
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (!isPlaying) return;
+
         switch (other.tag)
         {
             case "reward_bubble":

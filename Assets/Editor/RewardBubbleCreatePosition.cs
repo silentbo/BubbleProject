@@ -115,7 +115,8 @@ public static class RewardBubbleCreatePosition {
                 rewardBubble.hpRewardBubble = randomScalc * ConstTemplate.rewardBubbleMaxHp;
                 rewardBubble.scoreRewardBubble = randomScalc * ConstTemplate.rewardBubbleMaxScore;
                 rewardBubble.scaleRewardBubble = randomScalc;
-                rewardBubble.speedMoveToPlayer = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerMax;
+                rewardBubble.speedMoveToPlayerByEaten = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerByEatenMax;
+                rewardBubble.speedMoveToPlayerByAttract = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerByAttractMax;
                 rewardBubble.isEaten = false;
             }
 
@@ -266,7 +267,8 @@ public static class RewardBubbleCreatePosition {
                     rewardBubble.hpRewardBubble = randomScalc * ConstTemplate.rewardBubbleMaxHp;
                     rewardBubble.scoreRewardBubble = randomScalc * ConstTemplate.rewardBubbleMaxScore;
                     rewardBubble.scaleRewardBubble = randomScalc;
-                    rewardBubble.speedMoveToPlayer = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerMax;
+                    rewardBubble.speedMoveToPlayerByEaten = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerByEatenMax;
+                    rewardBubble.speedMoveToPlayerByAttract = randomScalc * ConstTemplate.rewardBubbleSpeedMoveToPlayerByAttractMax;
                     rewardBubble.isEaten = false;
                 }
             }

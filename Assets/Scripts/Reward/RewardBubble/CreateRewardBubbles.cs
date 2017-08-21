@@ -101,7 +101,8 @@ public class CreateRewardBubbles : MonoBehaviour
         rewardBubble.hpRewardBubble = randomScale * ConstTemplate.rewardBubbleMaxHp;
         rewardBubble.scoreRewardBubble = randomScale * ConstTemplate.rewardBubbleMaxScore;
         rewardBubble.scaleRewardBubble = randomScale;
-        rewardBubble.speedMoveToPlayer = randomScale * ConstTemplate.rewardBubbleSpeedMoveToPlayerMax;
+        rewardBubble.speedMoveToPlayerByEaten = randomScale * ConstTemplate.rewardBubbleSpeedMoveToPlayerByEatenMax;
+        rewardBubble.speedMoveToPlayerByAttract = randomScale * ConstTemplate.rewardBubbleSpeedMoveToPlayerByAttractMax;
         rewardBubble.isEaten = false;
 
         // 添加 Animator 组件， 设置对应的动画

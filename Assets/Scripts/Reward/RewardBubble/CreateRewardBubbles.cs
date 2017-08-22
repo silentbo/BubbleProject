@@ -102,8 +102,9 @@ public class CreateRewardBubbles : MonoBehaviour
         rewardBubble.scoreRewardBubble = randomScale * ConstTemplate.rewardBubbleMaxScore;
         rewardBubble.scaleRewardBubble = randomScale;
         rewardBubble.speedMoveToPlayerByEaten = randomScale * ConstTemplate.rewardBubbleSpeedMoveToPlayerByEatenMax;
-        rewardBubble.speedMoveToPlayerByAttract = randomScale * ConstTemplate.rewardBubbleSpeedMoveToPlayerByAttractMax;
+        rewardBubble.speedMoveToPlayerByAttract = randomScale > 0.5f ? randomScale * ConstTemplate.rewardBubbleSpeedMoveToPlayerByAttractMax : ConstTemplate.rewardBubbleSpeedMoveToPlayerByAttractMax * 0.5f;
         rewardBubble.isEaten = false;
+        rewardBubble.isAttract = false;
 
         // 添加 Animator 组件， 设置对应的动画
         Animator animatorRewardBubble = goNewRewardBubble.AddComponent<Animator>();

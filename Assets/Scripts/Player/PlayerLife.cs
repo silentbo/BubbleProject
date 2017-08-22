@@ -56,7 +56,8 @@ public class PlayerLife : MonoBehaviour{
     // 增加玩家生命(增加的生命值)
     public void IncreasePlayerLife(float increaseLifeNum)
     {
-        playerLife = playerLife > ConstTemplate.playerLifeMax ? ConstTemplate.playerLifeMax : playerLife + increaseLifeNum;
+        playerLife += increaseLifeNum;
+        playerLife = playerLife > ConstTemplate.playerLifeMax ? ConstTemplate.playerLifeMax : playerLife;
         playerLife = playerLife <= ConstTemplate.playerLifeMin ? ConstTemplate.playerLifeMin : playerLife;
         SetPlayerLife(playerLife);
         PlayIncreasePlayerLifeAnim();

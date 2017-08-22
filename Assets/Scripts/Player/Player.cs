@@ -93,6 +93,8 @@ public class Player : MonoBehaviour{
                 break;
             case ConstTemplate.RewardToolType.RewardToolAddLife:
             case ConstTemplate.RewardToolType.RewardToolAttract:
+                scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm);       // 减少生命
+                PlayAnimHurtByGerm();                                    // 播放受伤动画
                 break;
             case ConstTemplate.RewardToolType.RewardToolLargen:
                 scriptPlayerLife.IncreasePlayerLife(-germ.hpGerm / 4);   // 减少生命

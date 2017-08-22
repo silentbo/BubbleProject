@@ -39,7 +39,8 @@ public class ConstTemplate
 
         public const float rewardToolsMaxScore = 50.0f;     // 奖励道具奖励的最大的Score
         public const float rewardToolsDurationTime = 10.0f; // 奖励道具的持续时间
-        public const float rewardToolsSpeedMoveToPlayerMax = 5.0f; // 奖励道具被吃之后，向主角移动的速度
+        public const float rewardToolsSpeedMoveToPlayerByEatenMax = 5.0f;   // 奖励道具被吃之后，向主角移动的速度
+        public const float rewardToolsSpeedMoveToPlayerByAttractMax = 10.0f; // 奖励道具被吸引之后，向主角移动的速度
         public const float rewardToolsSpeedMoveDown = 2.0f; // 奖励泡泡向下移动的速度
         public const float rewardToolsMaxHp = 2.0f;         // 奖励道具的最大hp
 

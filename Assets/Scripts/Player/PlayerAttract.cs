@@ -10,15 +10,26 @@ public class PlayerAttract : MonoBehaviour{
     // 碰撞检测
     void OnTriggerEnter2D(Collider2D other)
     {
+        print("-- silent -- Player attract onCollisionEnter2D " + other.tag + " --");
         if (!isPlaying) return;
 
         switch (other.tag)
         {
             case "reward_bubble":
-            case "reward_tool":
                 ColliderByRewardBubble(other);
                 break;
+            case "reward_tool":
+                ColliderByRewarTool(other);
+                break;
         }
+    }
+
+    // 碰到了奖励道具泡泡
+    private void ColliderByRewarTool(Collider2D other)
+    {
+        RewardTools rewardTools = other.GetComponent<RewardTools>();
+        if (!rewardTools) return;
+        rewardTools.AttractByPlayer(goPlayer);
     }
 
     // 碰撞到了奖励泡泡

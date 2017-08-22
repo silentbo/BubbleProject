@@ -94,7 +94,7 @@ public class CreateRewardBubbles : MonoBehaviour
         moveDownRewardBubble.speedMoveDown = ConstTemplate.rewardBubbleSpeedMoveDown;
 
         // 添加碰撞盒
-        goNewRewardBubble.AddComponent<CircleCollider2D>();
+        CircleCollider2D circleCollider2D = goNewRewardBubble.AddComponent<CircleCollider2D>();
 
         // 添加 RewardBubble 组件， 设置其属性
         RewardBubble rewardBubble = goNewRewardBubble.AddComponent<RewardBubble>();
@@ -105,6 +105,7 @@ public class CreateRewardBubbles : MonoBehaviour
         rewardBubble.speedMoveToPlayerByAttract = randomScale > 0.5f ? randomScale * ConstTemplate.rewardBubbleSpeedMoveToPlayerByAttractMax : ConstTemplate.rewardBubbleSpeedMoveToPlayerByAttractMax * 0.5f;
         rewardBubble.isEaten = false;
         rewardBubble.isAttract = false;
+        rewardBubble.circleCollider2D = circleCollider2D;
 
         // 添加 Animator 组件， 设置对应的动画
         Animator animatorRewardBubble = goNewRewardBubble.AddComponent<Animator>();

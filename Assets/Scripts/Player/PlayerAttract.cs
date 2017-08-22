@@ -10,7 +10,6 @@ public class PlayerAttract : MonoBehaviour{
     // 碰撞检测
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("-- silent -- Player attract onCollisionEnter2D " + other.tag + " --");
         if (!isPlaying) return;
 
         switch (other.tag)

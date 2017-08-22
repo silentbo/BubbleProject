@@ -122,7 +122,7 @@ public class Player : MonoBehaviour{
         // 奖励道具类型
         rewardToolType = rewardTools.rewardToolType;
 
-        rewardTools.EatenByPlayer(this.gameObject);                          // 奖励泡泡被吃动画
+        rewardTools.EatenByPlayer(this.gameObject);                          // 奖励道具被吃动画
         scriptPlayerScore.IncreasePlayerScore(rewardTools.scoreRewardTools); // 增加玩家分数
 
         // 播放吃东西动画

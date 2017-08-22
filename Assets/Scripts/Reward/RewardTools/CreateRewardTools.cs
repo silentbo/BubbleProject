@@ -93,17 +93,18 @@ public class CreateRewardTools : MonoBehaviour
         moveDownRewardBubble.speedMoveDown = ConstTemplate.rewardToolsSpeedMoveDown;
 
         // 添加碰撞盒
-        goNewRewardBubble.AddComponent<CircleCollider2D>();
+        CircleCollider2D circleCollider2D = goNewRewardBubble.AddComponent<CircleCollider2D>();
 
         // 添加 RewardTools 组件， 设置其属性
         RewardTools rewardTools = goNewRewardBubble.AddComponent<RewardTools>();
         rewardTools.hpRewardTools = randomScale * ConstTemplate.rewardToolsMaxHp;
         rewardTools.scoreRewardTools = randomScale * ConstTemplate.rewardToolsMaxScore;
         rewardTools.scaleRewardTools = randomScale;
-        rewardTools.speedMoveToPlayer = randomScale * ConstTemplate.rewardToolsSpeedMoveToPlayerByEatenMax;
+        rewardTools.speedMoveToPlayerByEaten = randomScale * ConstTemplate.rewardToolsSpeedMoveToPlayerByEatenMax;
         rewardTools.speedMoveToPlayerByAttract = randomScale > 0.5f ? randomScale * ConstTemplate.rewardToolsSpeedMoveToPlayerByAttractMax : ConstTemplate.rewardToolsSpeedMoveToPlayerByAttractMax * 0.5f;
         rewardTools.isEaten = false;
         rewardTools.isAttract = false;
+        rewardTools.circleCollider2D = circleCollider2D;
         rewardTools.rewardToolType = ConstTemplate.RewardToolType.RewardToolAttract;//(ConstTemplate.RewardToolType)(int)Random.Range(1, 8);
 
 

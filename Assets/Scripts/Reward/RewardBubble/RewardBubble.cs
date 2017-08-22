@@ -12,6 +12,7 @@ public class RewardBubble : MonoBehaviour
     public float speedMoveToPlayerByAttract = 0.0f; // 向主角移动的速度被吸引
     public float scoreRewardBubble = 0.0f;          // 泡泡奖励的分数
 
+    public CircleCollider2D circleCollider2D;       // 碰撞盒
     public GameObject goPlayer = null;              // 主角
 
     void Update () {
@@ -49,6 +50,7 @@ public class RewardBubble : MonoBehaviour
         isEaten = true;
         isAttract = false;
         this.goPlayer = player;
+        circleCollider2D.enabled = false;
     }
 
     // 向主角移动

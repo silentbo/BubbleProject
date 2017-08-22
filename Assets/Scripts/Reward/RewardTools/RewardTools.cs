@@ -8,11 +8,13 @@ public class RewardTools : MonoBehaviour{
 
     public float hpRewardTools = 0.0f;              // 奖励道具的生命
     public float scoreRewardTools = 0.0f;           // 奖励道具的奖励分数
-    public float speedMoveToPlayer = 0.0f;          // 向主角移动的速度
+    public float speedMoveToPlayerByEaten = 0.0f;   // 向主角移动的速度被吃
     public float speedMoveToPlayerByAttract = 0.0f; // 向主角移动的速度被吸引
     public float scaleRewardTools = 0.0f;           // 奖励道具缩放值
 
     public ConstTemplate.RewardToolType rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff; // 奖励类型
+
+    public CircleCollider2D circleCollider2D; // 碰撞盒
 
     public GameObject goPlayer = null;        // 主角
 
@@ -49,6 +51,7 @@ public class RewardTools : MonoBehaviour{
         isEaten = true;
         isAttract = false;
         this.goPlayer = player;
+        circleCollider2D.enabled = false;
     }
 
     // 被主角吃掉后向主角移动之后再销毁
@@ -57,7 +60,7 @@ public class RewardTools : MonoBehaviour{
         if (!isEaten) return;
 
         // 边移动位置，边缩小
-        this.transform.position = Vector3.MoveTowards(this.transform.position, goPlayer.transform.position, speedMoveToPlayer * Time.deltaTime);
+        this.transform.position = Vector3.MoveTowards(this.transform.position, goPlayer.transform.position, speedMoveToPlayerByEaten * Time.deltaTime);
         this.transform.localScale = new Vector3(this.transform.localScale.x - 0.1f, this.transform.localScale.y - 0.1f, this.transform.localScale.z - 0.1f);
 
         if (this.transform.localScale.x <= 0)

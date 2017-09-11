@@ -105,7 +105,8 @@ public class CreateRewardTools : MonoBehaviour
         rewardTools.isEaten = false;
         rewardTools.isAttract = false;
         rewardTools.circleCollider2D = circleCollider2D;
-        rewardTools.rewardToolType = ConstTemplate.RewardToolType.RewardToolAttract;//(ConstTemplate.RewardToolType)(int)Random.Range(1, 8);
+        //rewardTools.rewardToolType = ConstTemplate.RewardToolType.RewardToolAddLife;//(ConstTemplate.RewardToolType)(int)Random.Range(1, 8);
+        rewardTools.rewardToolType = (ConstTemplate.RewardToolType) (int) (Random.Range(1, 5));
 
 
     }

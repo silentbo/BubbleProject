@@ -3,7 +3,6 @@
 public class ConstTemplate
 {
 
-
     #region 屏幕
     
         public const float screenWith = 4.8f; // 屏幕的宽
@@ -26,14 +25,12 @@ public class ConstTemplate
 
     #endregion 主角
 
-
     #region 背景
         
         public const float bgSpeedGameStart = 2.0f;        // 正常游戏时背景向下移动的速度
         public const float bgSpeedBeforeGameStart = 0.5f;  // 游戏开始之前背景向下移动的速度
         
     #endregion 背景
-
 
     #region 奖励道具
 
@@ -64,12 +61,13 @@ public class ConstTemplate
 
     #endregion germ(细菌)
 
-        #region PlayerPrefs key值
+    #region PlayerPrefs key值
 
         public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
+        public const string keyPlayerPrefsMusic = "Key_PlayerPrefs_Music";     // 玩家是否播放背景音乐key值
+        public const string keyPlayerPrefsSound = "Key_PlayerPrefs_Sound";     // 玩家是否播放音效key值
         
     #endregion PlayerPrefs key值
-
 
     #region 路径
 
@@ -135,6 +133,11 @@ public class ConstTemplate
             RewardToolSpeedUp = 7,   // 加速
         }
 
+        public enum AudioType
+        {
+            AudioMusic = 0, // 背景音乐
+            AudioSound = 1, // 音效
+        }
     #endregion enum
 
 }

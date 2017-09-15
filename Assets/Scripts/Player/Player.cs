@@ -24,14 +24,28 @@ public class Player : MonoBehaviour{
 
     public CircleCollider2D circleCollider2DPlayer; // 主角的碰撞盒
 
+    public AudioClip audioClipGerm;         // 细菌碰撞音效
+    public AudioClip audioClipGermDestroy;  // 细菌被打败音效
+    public AudioClip audioClipRewardBubble; // 奖励泡泡碰撞音效
+    public AudioClip audioClipRewardTool;   // 奖励道具碰撞音效
+    public AudioClip audioClipDestruction;  // 销毁屏幕上的所有敌人音效
+
     public PlayerScore scriptPlayerScore;    // 玩家分数脚本
     public PlayerLife scriptPlayerLife;      // 玩家生命脚本
     public GameManager scriptGamseManager;   // 管理类
+
+    private AudioManager scriptAudioManager; // 声音管理
 
     void Start(){
         this.circleCollider2DPlayer.enabled = false;
         goBubbleNoDie.SetActive(false);
         goPlayerAttract.SetActive(false);
+       
+        // 获取声音管理类
+        GameObject goAudioManager = GameObject.FindGameObjectWithTag("audio_manager");
+        if (goAudioManager) scriptAudioManager = goAudioManager.GetComponent<AudioManager>();
+        if (!scriptAudioManager) Debug.LogError("-- silent -- scriptAudioManager isn`t exit --, gameobject name == " + this.gameObject.name);
+
     }
 
     // Update is called once per frame
@@ -47,6 +61,7 @@ public class Player : MonoBehaviour{
         {
             case "reward_bubble":
                 ColliderByRewardBubble(other);
+                PlayAudioSoundByPlayer(audioClipRewardBubble);
                 break;
 
             case "germ":
@@ -55,6 +70,7 @@ public class Player : MonoBehaviour{
 
             case "reward_tool":
                 ColliderByRewardTool(other);
+                PlayAudioSoundByPlayer(audioClipRewardTool);
                 break;
         }
 
@@ -73,6 +89,7 @@ public class Player : MonoBehaviour{
 
         // 播放吃东西动画
         PlayAnimEatRewardBubble();
+        
     }
 
     // 碰撞germ(细菌)事件
@@ -90,6 +107,7 @@ public class Player : MonoBehaviour{
             case ConstTemplate.RewardToolType.RewardToolNoDie:
                 germ.PlayAnimationDying();                              // 播放germ死亡动画
                 scriptPlayerScore.IncreasePlayerScore(germ.scoreGerm);  // 增加玩家分数
+                PlayAudioSoundByPlayer(audioClipGermDestroy);
                 break;
             case ConstTemplate.RewardToolType.RewardToolAddLife:
             case ConstTemplate.RewardToolType.RewardToolAttract:
@@ -214,6 +232,9 @@ public class Player : MonoBehaviour{
                     germChild.PlayAnimationDying();
             }
         }
+
+        PlayAudioSoundByPlayer(audioClipDestruction);
+
     }
 
     // 吃掉其他泡泡动画
@@ -228,7 +249,9 @@ public class Player : MonoBehaviour{
     private void PlayAnimHurtByGerm()
     {
         //print("-- silent -- player play hurt by germ --");
+        PlayAudioSoundByPlayer(audioClipGerm);
     }
+
     // 左右移动
     public void MovePlayerLeftOrRightByBtn(ConstTemplate.BtnControlDirectionType btnDirectionType){
         
@@ -301,8 +324,8 @@ public class Player : MonoBehaviour{
     }
 
     // 暂停or继续游戏
-    public void GamePauseOrResumePlayer(bool pauseOrResume)
-    {
+    public void GamePauseOrResumePlayer(bool pauseOrResume){
+
         this.circleCollider2DPlayer.enabled = pauseOrResume;
         this.isPlaying = pauseOrResume;
         this.isAnimMoveLeftOrRight = pauseOrResume;
@@ -337,6 +360,12 @@ public class Player : MonoBehaviour{
         isGameStartBeforeFinish = true;
         this.circleCollider2DPlayer.enabled = true;
 
+    }
+
+    // 播放音乐
+    public void PlayAudioSoundByPlayer(AudioClip audioClip){
+
+        scriptAudioManager.PlayAudioClip(ConstTemplate.AudioType.AudioSound, audioClip);
     }
 
 }

@@ -336,6 +336,9 @@ public class Player : MonoBehaviour{
 
         animatorPlayer.gameObject.SetActive(false);
         animatorBubble.PlayInFixedTime("bubble_die");
+
+        PlayAudioSoundByPlayer(audioClipGerm);
+
     }
 
 

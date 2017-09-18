@@ -61,9 +61,22 @@ public class ConstTemplate
 
     #endregion germ(细菌)
 
+    #region 随机泡泡
+
+        public const float randomBubbleSpeedMoveMin = 0.2f;  // 最小移动的速度
+        public const float randomBubbleSpeedMoveMax = 0.8f;  // 最大移动的速度 
+        public const float randomBubbleMinDestoryY = -1.2f;  // 最小的自动删除的y值
+        public const float randomBubbleMaxDestoryY = 11.0f;  // 最大的自动删除的y值
+        public const float randomBubbleMinMoveX = -0.2f;     // x轴移动的最小值
+        public const float randomBubbleMaxMoveX = 0.2f;      // x轴移动的最大值
+        public const float randomBubbleMinAlpha = 0.4f;      // 最小透明度
+        public const float randomBubbleMaxAlpha = 1.0f;      // 最大透明度
+
+    #endregion 随机泡泡
+
     #region PlayerPrefs key值
 
-        public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
+    public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
         public const string keyPlayerPrefsMusic = "Key_PlayerPrefs_Music";     // 玩家是否播放背景音乐key值
         public const string keyPlayerPrefsSound = "Key_PlayerPrefs_Sound";     // 玩家是否播放音效key值
         

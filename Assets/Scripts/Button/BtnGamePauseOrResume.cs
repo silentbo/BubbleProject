@@ -61,5 +61,6 @@ public class BtnGamePauseOrResume : MonoBehaviour, IPointerClickHandler {
     public void PlayGameOverBtnGamePauseOrResume()
     {
         this.isPlaying = false;
+        PlayBtnMoreAnimator(false);
     }
 }

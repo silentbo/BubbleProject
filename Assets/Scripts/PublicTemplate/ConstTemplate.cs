@@ -86,9 +86,9 @@ public class ConstTemplate
 
         #region 关卡路径
 
-            public const string resRewardBubbleLevelPath = "/Resources/Data/RewardBubbleData/"; // 关卡奖励泡泡文件夹路径
-            public const string resGermLevelPath = "/Resources/Data/GermData/";                 // 关卡germ(细菌)文件夹路径
-            public const string resRewardToolLevelPath = "/Resources/Data/RewardToolsData/";    // 关卡奖励道具文件夹路径
+            public const string resRewardBubbleLevelPath = "Data/RewardBubbleData/"; // 关卡奖励泡泡文件夹路径
+            public const string resGermLevelPath = "Data/GermData/";                 // 关卡germ(细菌)文件夹路径
+            public const string resRewardToolLevelPath = "Data/RewardToolsData/";    // 关卡奖励道具文件夹路径
 
             public const string resRewardBubbleLevelName = "RewardBubbleDataLevel_";            // 关卡奖励泡泡名
             public const string resGermLevelName = "GermDataLevel_";                            // 关卡germ(细菌)名

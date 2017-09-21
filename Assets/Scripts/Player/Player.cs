@@ -195,6 +195,7 @@ public class Player : MonoBehaviour{
         CancelInvoke("PlayerLargenAndLessenFinish");
         Invoke("PlayerLargenAndLessenFinish", ConstTemplate.rewardToolsDurationTime);
     }
+   
     // 主角变大buff结束
     private void PlayerLargenAndLessenFinish(){
         this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
@@ -216,7 +217,6 @@ public class Player : MonoBehaviour{
         rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff;
         DestoryGermByScreen();
     }
-
 
     // 销毁屏幕内的所有germ
     private void DestoryGermByScreen()
@@ -359,9 +359,17 @@ public class Player : MonoBehaviour{
     // 开始游戏
     public void PlayGameStartPlayer(){
 
-        isPlaying = true;
         isGameStartBeforeFinish = true;
-        this.circleCollider2DPlayer.enabled = true;
+        GamePauseOrResumePlayer(true);
+
+    }
+
+    // 重新开始游戏
+    public void PlayGameResetPlayer(){
+
+        isGameStartBeforeFinish = false;
+        GamePauseOrResumePlayer(true);
+        this.transform.localPosition = new Vector3(this.transform.localPosition.x, ConstTemplate.playerDefaultPosY, this.transform.localPosition.z);
 
     }
 

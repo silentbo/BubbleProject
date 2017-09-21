@@ -47,4 +47,12 @@ public class PlayerDistance : MonoBehaviour {
     {
         GamePauseOrResumePlayerDistance(false);
     }
+
+    // 游戏从新开始
+    public void PlayGameResetPlayerDistance()
+    {
+        this.playerDistance = 0.0f;
+        GamePauseOrResumePlayerDistance(true);
+    }
+
 } 

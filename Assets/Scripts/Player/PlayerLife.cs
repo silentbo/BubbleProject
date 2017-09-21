@@ -95,4 +95,11 @@ public class PlayerLife : MonoBehaviour{
     {
         GamePauseOrResumePlayerLife(false);
     }
+
+    // 重新开始游戏
+    public void PlayGameResetPlayerLife()
+    {
+        isPlaying = false;
+        SetPlayerLife(ConstTemplate.playerLifeMax);
+    }
 }

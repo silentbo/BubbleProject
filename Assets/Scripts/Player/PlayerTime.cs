@@ -47,4 +47,12 @@ public class PlayerTime : MonoBehaviour {
     {
         this.isPlaying = pauseOrResume;
     }
+
+    // 重新开始游戏
+    public void PlayGameResetPlayerTime()
+    {
+        this.playerTime = 0.0f;
+        GamePauseOrResumePlayerTime(true);
+    }
+
 }

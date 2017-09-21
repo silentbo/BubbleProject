@@ -128,4 +128,33 @@ public class GameManager : MonoBehaviour {
 
     }
 
+    // 重新开始游戏
+    public void PlayGameReset(){
+        print("-- silent -- game reset -- ");
+
+        DestoryAllChild(goRewardBubbleCreate);
+        DestoryAllChild(goGermCreate);
+        DestoryAllChild(goRewardToolCreate);
+
+        InitDataBeforeGameStart();
+
+        scriptBtnGamePauseOrResume.PlayerGameResetBtnGamePauseOrResume();
+        scriptPlayer.PlayGameResetPlayer();
+        scriptPlayerDistance.PlayGameResetPlayerDistance();
+        scriptPlayerTime.PlayGameResetPlayerTime();
+        scriptPlayerLife.PlayGameResetPlayerLife();
+        scriptPlayerScore.PlayGameResetPlayerSocre();
+
+    }
+
+    // 清理root下的所有子物体
+    public void DestoryAllChild(GameObject goRoot)
+    {
+        for (int i = 0; i < goRoot.transform.childCount; i ++)
+        {
+            //GameObject.Destroy(goRoot.transform.GetChild(i));
+            goRoot.transform.GetChild(i).gameObject.SetActive(false);
+        }
+    }
+
 }

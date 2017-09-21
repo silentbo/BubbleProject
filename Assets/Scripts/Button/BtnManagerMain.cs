@@ -13,7 +13,9 @@ public class BtnManagerMain : MonoBehaviour
     public GameObject goBtnSoundOn;  // 音效开
     public GameObject goBtnSoundOff; // 音效关
 
-    private AudioManager scriptAudioManager; // 音乐管理类
+    private AudioManager scriptAudioManager = null; // 音乐管理类
+    private GameManager scriptGameManager = null;   // 游戏管理类
+    private GameObject goGameManager = null;        // 游戏管理对象
 
     void Start()
     {
@@ -45,6 +47,20 @@ public class BtnManagerMain : MonoBehaviour
     public void BtnClickOfPlayBack()
     {
         SceneManager.LoadScene("Bubble_Main"); // 跳转到游戏开始场景中
+    }
+
+    // 重新开始游戏
+    public void BtnClickOfPlayReset()
+    {
+        if (scriptGameManager)
+            scriptGameManager.PlayGameReset();
+        else
+        {
+            goGameManager = goGameManager ?? GameObject.FindGameObjectWithTag("game_manager");
+            scriptGameManager = goGameManager.GetComponent<GameManager>();
+            scriptGameManager.PlayGameReset();
+        }
+
     }
 
     // 音乐开关

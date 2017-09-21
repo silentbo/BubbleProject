@@ -55,4 +55,11 @@ public class PlayerScore : MonoBehaviour{
     {
         GamePauseOrResumePlayerScore(false);
     }
+
+    // 重新开始游戏
+    public void PlayGameResetPlayerSocre()
+    {
+        this.playerScore = 0.0f;
+        GamePauseOrResumePlayerScore(true);
+    }
 }

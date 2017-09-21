@@ -5,8 +5,8 @@ using UnityEngine.UI;
 // 游戏暂停or继续按钮实现(实现方式是使用接口来实现，api中的自带的方法)
 public class BtnGamePauseOrResume : MonoBehaviour, IPointerClickHandler {
 
-    public bool isPlayPauseOrResume = true;  // 游戏时暂停还是继续游戏
     public bool isPlaying = false;           // 是否正在游戏中
+    public bool isPlayPauseOrResume = true;  // 游戏时暂停还是继续游戏
 
     public Image imagePauseResume;           // 按钮图标，暂停还是继续游戏图标
 
@@ -29,8 +29,6 @@ public class BtnGamePauseOrResume : MonoBehaviour, IPointerClickHandler {
 
         if (!isPlaying) return;
 
-        // 修改图片
-        imagePauseResume.sprite = isPlayPauseOrResume ? sprResumeIcon : sprPauseIcon;
         // 修改游戏状态
         isPlayPauseOrResume = !isPlayPauseOrResume;
         scriptGameManager.PlayGamePauseOrResume(isPlayPauseOrResume);
@@ -39,15 +37,17 @@ public class BtnGamePauseOrResume : MonoBehaviour, IPointerClickHandler {
 
     public void PlayBtnMoreAnimator(bool isState)
     {
-        if (!isState)
+        // 修改图片
+        imagePauseResume.sprite = isState ? sprPauseIcon : sprResumeIcon;
+        if (isState)
+        {
+            animatorBtnMore.SetFloat("speed_condition", -1.0f);
+        }
+        else
         {
             animatorBtnMore.enabled = true;
             animatorBtnMore.PlayInFixedTime("btn_play_scene");
             animatorBtnMore.SetFloat("speed_condition", 1.0f);
-        }
-        else
-        {
-            animatorBtnMore.SetFloat("speed_condition", -1.0f);
         }
     }
 
@@ -62,5 +62,12 @@ public class BtnGamePauseOrResume : MonoBehaviour, IPointerClickHandler {
     {
         this.isPlaying = false;
         PlayBtnMoreAnimator(false);
+    }
+
+    // 重新开始游戏
+    public void PlayerGameResetBtnGamePauseOrResume()
+    {
+        this.isPlaying = false;
+        PlayBtnMoreAnimator(true);
     }
 }

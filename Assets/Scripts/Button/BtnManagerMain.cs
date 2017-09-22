@@ -8,6 +8,9 @@ public class BtnManagerMain : MonoBehaviour
     public bool isPlaying = true;  // 是否正在游戏
     public bool isTouching = true; // 是否可以点击
 
+    public float quitGameTimeInterval = 2.0f; // 退出游戏两次按键间隔时间
+    public float quitGameTimeOld = 0.0f;      // 退出游戏两次按键间隔时间
+
     public GameObject goBtnMusicOn;  // 音乐开
     public GameObject goBtnMusicOff; // 音乐关
     public GameObject goBtnSoundOn;  // 音效开
@@ -25,6 +28,11 @@ public class BtnManagerMain : MonoBehaviour
         if (!scriptAudioManager) Debug.LogError("-- silent -- scriptAudioManager isn`t exit --, gameobject name == " + this.gameObject.name);
 
         InitBtnMusicAndSound();
+    }
+
+    void Update()
+    {
+        QuitGameKey();
     }
 
     // 初始化 按钮的状态
@@ -93,6 +101,19 @@ public class BtnManagerMain : MonoBehaviour
     public void BtnClickOfInfo()
     {
  
+    }
+
+
+    // 退出按键
+    public void QuitGameKey()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (Time.time - quitGameTimeOld <= quitGameTimeInterval)
+                Application.Quit();
+            else
+                quitGameTimeOld = Time.time;
+        }
     }
 
 

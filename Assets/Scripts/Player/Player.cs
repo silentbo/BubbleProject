@@ -12,7 +12,8 @@ public class Player : MonoBehaviour{
 
     public float speedMoveByBtn = 5.0f; // 按钮控制其左右移动的速度
 
-    public ConstTemplate.RewardToolType rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff; // 主角buff类型
+    public ConstTemplate.RewardToolType rewardToolTypeOld = ConstTemplate.RewardToolType.RewardToolNoBuff; // 主角buff类型
+    public ConstTemplate.RewardToolType rewardToolTypeNew = ConstTemplate.RewardToolType.RewardToolNoBuff; // 主角buff类型
 
     public Vector3 moveDirection = Vector3.zero; // 主角移动的方向
 
@@ -102,7 +103,7 @@ public class Player : MonoBehaviour{
         // 关闭碰撞检测了
         germ.HarmPlayerFinish();
 
-        switch (rewardToolType)
+        switch (rewardToolTypeNew)
         {
             case ConstTemplate.RewardToolType.RewardToolNoDie:
                 germ.PlayAnimationDying();                              // 播放germ死亡动画
@@ -131,14 +132,13 @@ public class Player : MonoBehaviour{
     }
 
     // 碰撞奖励道具事件
-    private void ColliderByRewardTool(Collider2D other2D){
+    private void ColliderByRewardTool(Collider2D other2D)
+    {
 
         // 获取奖励泡泡增加的生命值
         RewardTools rewardTools = other2D.GetComponent<RewardTools>();
         if (!rewardTools) return;
 
-        // 奖励道具类型
-        rewardToolType = rewardTools.rewardToolType;
 
         rewardTools.EatenByPlayer(this.gameObject);                          // 奖励道具被吃动画
         scriptPlayerScore.IncreasePlayerScore(rewardTools.scoreRewardTools); // 增加玩家分数
@@ -146,7 +146,23 @@ public class Player : MonoBehaviour{
         // 播放吃东西动画
         PlayAnimEatRewardBubble();
 
-        switch (rewardToolType)
+        ChangePlayerBuff(rewardTools.rewardToolType);
+
+    }
+
+    private void ChangePlayerBuff(ConstTemplate.RewardToolType  buffTypeNew)
+    {
+        // 奖励道具类型 必须是一下顺序
+        rewardToolTypeOld = rewardToolTypeNew;
+        PlayerBuffFinish(rewardToolTypeOld);
+        rewardToolTypeNew = buffTypeNew;
+        PlayerBuff(rewardToolTypeNew);
+    }
+
+    // player buff 效果
+    private void PlayerBuff(ConstTemplate.RewardToolType buffTypeNew)
+    {
+        switch (buffTypeNew)
         {
             case ConstTemplate.RewardToolType.RewardToolNoDie:
                 PlayerNoDieCallBack();
@@ -162,60 +178,87 @@ public class Player : MonoBehaviour{
                 PlayerLessenCallBack();
                 break;
             case ConstTemplate.RewardToolType.RewardToolNoBuff:
+                PlayerNoBuffCallBack();
                 break;
         }
-
     }
+
+    // 清除自身buff倒计时
+    private void PlayerBuffFinish(ConstTemplate.RewardToolType buffTypeOld)
+    {
+        switch (buffTypeOld)
+        {
+            case ConstTemplate.RewardToolType.RewardToolNoDie:
+                goBubbleNoDie.SetActive(false);
+                CancelInvoke("playerNoDieFinish");
+                break;
+            case ConstTemplate.RewardToolType.RewardToolAddLife:
+            case ConstTemplate.RewardToolType.RewardToolAttract:
+                goPlayerAttract.SetActive(false);
+                CancelInvoke("PlayerAttractFinish");
+                break;
+            case ConstTemplate.RewardToolType.RewardToolLargen:
+            case ConstTemplate.RewardToolType.RewardToolLessen:
+                CancelInvoke("PlayerLargenAndLessenFinish");
+                break;
+            case ConstTemplate.RewardToolType.RewardToolNoBuff:
+                break;
+        }
+    }
+
 
     // 主角不死buff回调
     private void PlayerNoDieCallBack(){
         goBubbleNoDie.SetActive(true);
-        CancelInvoke("playerNoDieFinish"); // 先暂停之前的计时，重新计算
         Invoke("playerNoDieFinish", ConstTemplate.rewardToolsDurationTime); // 在规定的时间后结束buff
     }
 
     // 主角不死buff结束
     private void playerNoDieFinish(){
         goBubbleNoDie.SetActive(false);
-        rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff;
-        CancelInvoke("playerNoDieFinish"); // 结束计时
+        PlayerBuffFinish(rewardToolTypeNew);
+        rewardToolTypeOld = rewardToolTypeNew = ConstTemplate.RewardToolType.RewardToolNoBuff;
         DestoryGermByScreen();
     }
 
     // 主角变大buff
     private void PlayerLargenCallBack(){
         this.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-        CancelInvoke("PlayerLargenAndLessenFinish");
         Invoke("PlayerLargenAndLessenFinish", ConstTemplate.rewardToolsDurationTime);
     }
 
     // 主角变小buff
     private void PlayerLessenCallBack(){
         this.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        CancelInvoke("PlayerLargenAndLessenFinish");
         Invoke("PlayerLargenAndLessenFinish", ConstTemplate.rewardToolsDurationTime);
     }
    
     // 主角变大buff结束
     private void PlayerLargenAndLessenFinish(){
         this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-        rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff;
-        CancelInvoke("PlayerLargenAndLessenFinish"); // 结束计时
+        PlayerBuffFinish(rewardToolTypeNew);
+        rewardToolTypeOld = rewardToolTypeNew = ConstTemplate.RewardToolType.RewardToolNoBuff;
         DestoryGermByScreen();
     }
 
     // 主角吸引奖励泡泡回调
     private void PlayerAttractCallBack(){
         goPlayerAttract.SetActive(true);
-        CancelInvoke("PlayerAttractFinish");
         Invoke("PlayerAttractFinish", ConstTemplate.rewardToolsDurationTime);
     }
 
     // 主角吸引奖励泡泡buff结束
     private void PlayerAttractFinish(){
         goPlayerAttract.SetActive(false);
-        rewardToolType = ConstTemplate.RewardToolType.RewardToolNoBuff;
+        PlayerBuffFinish(rewardToolTypeNew);
+        rewardToolTypeOld = rewardToolTypeNew = ConstTemplate.RewardToolType.RewardToolNoBuff;
         DestoryGermByScreen();
+    }
+
+    // 主角没有buff效果
+    private void PlayerNoBuffCallBack()
+    {
+        this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
     }
 
     // 销毁屏幕内的所有germ
@@ -319,6 +362,7 @@ public class Player : MonoBehaviour{
 
         animatorPlayer.Stop();
         goBubbleNoDie.SetActive(false);
+        goPlayerAttract.SetActive(false);
 
         PlayAnimBubbleDie();
     }
@@ -367,9 +411,12 @@ public class Player : MonoBehaviour{
     // 重新开始游戏
     public void PlayGameResetPlayer(){
 
-        isGameStartBeforeFinish = false;
-        GamePauseOrResumePlayer(true);
         this.transform.localPosition = new Vector3(this.transform.localPosition.x, ConstTemplate.playerDefaultPosY, this.transform.localPosition.z);
+        isGameStartBeforeFinish = false;
+        animatorPlayer.gameObject.SetActive(true);
+        animatorBubble.PlayInFixedTime("bubble_motion");
+        GamePauseOrResumePlayer(true);
+        ChangePlayerBuff(ConstTemplate.RewardToolType.RewardToolNoBuff);
 
     }
 

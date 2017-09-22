@@ -41,13 +41,12 @@ public class BtnGamePauseOrResume : MonoBehaviour, IPointerClickHandler {
         imagePauseResume.sprite = isState ? sprPauseIcon : sprResumeIcon;
         if (isState)
         {
-            animatorBtnMore.SetFloat("speed_condition", -1.0f);
+            animatorBtnMore.PlayInFixedTime("btn_move_up_play_scene");
         }
         else
         {
             animatorBtnMore.enabled = true;
-            animatorBtnMore.PlayInFixedTime("btn_play_scene");
-            animatorBtnMore.SetFloat("speed_condition", 1.0f);
+            animatorBtnMore.PlayInFixedTime("btn_move_down_play_scene");
         }
     }
 

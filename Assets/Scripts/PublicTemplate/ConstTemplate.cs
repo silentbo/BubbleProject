@@ -76,9 +76,10 @@ public class ConstTemplate
 
     #region PlayerPrefs key值
 
-    public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
+        public const string keyPlayerPrefsLevelId = "Key_PlayerPrefs_LevelId"; // 玩家第几关卡保存key值
         public const string keyPlayerPrefsMusic = "Key_PlayerPrefs_Music";     // 玩家是否播放背景音乐key值
         public const string keyPlayerPrefsSound = "Key_PlayerPrefs_Sound";     // 玩家是否播放音效key值
+        public const string keyPlayerPrefsBestScore = "Key_PlayerPrefs_BestScore"; // 玩家最好成绩key值
         
     #endregion PlayerPrefs key值
 

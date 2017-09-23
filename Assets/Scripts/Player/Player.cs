@@ -359,6 +359,7 @@ public class Player : MonoBehaviour{
     public void GameOverPlayer(){
 
         GamePauseOrResumePlayer(false);
+        ChangePlayerBuff(ConstTemplate.RewardToolType.RewardToolNoBuff);
 
         animatorPlayer.Stop();
         goBubbleNoDie.SetActive(false);

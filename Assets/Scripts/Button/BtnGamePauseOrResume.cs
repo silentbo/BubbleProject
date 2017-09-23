@@ -57,7 +57,7 @@ public class BtnGamePauseOrResume : MonoBehaviour, IPointerClickHandler {
     }
 
     // 游戏结束
-    public void PlayGameOverBtnGamePauseOrResume()
+    public void GameOverBtnGamePauseOrResume()
     {
         this.isPlaying = false;
         PlayBtnMoreAnimator(false);

@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour {
     public CreateRewardBubbles scriptRewardBubbleCreate;     // 创建奖励泡泡 脚本
     public CreateGrems scriptGermCreate;                     // 创建germ(细菌) 脚本
     public CreateRewardTools scriptRewardToolsCreate;        // 创建奖励道具 脚本
+    public GameResult scripteGameResult;                     // 游戏结果 脚本
 
 
 	// Use this for initialization
@@ -83,26 +84,10 @@ public class GameManager : MonoBehaviour {
         scriptPlayerDistance.GameOverPlayerDistance();
         scriptPlayerTime.GameOverPlayerTime();
         scriptPlayerScore.GameOverPlayerScore();
-        scriptBtnGamePauseOrResume.PlayGameOverBtnGamePauseOrResume();
+        scriptBtnGamePauseOrResume.GameOverBtnGamePauseOrResume();
+        scripteGameResult.GameOverGameResult();
 
-        // bg
-        for (int i = scriptBgMoveDownTemplates.Length - 1; i >= 0; i--)
-            scriptBgMoveDownTemplates[i].isAnimation = false;
-
-        // 奖励泡泡
-        MoveDownTemplate[] rewardBubbles = goRewardBubbleCreate.GetComponentsInChildren<MoveDownTemplate>();
-        for (int i = 0; i < rewardBubbles.Length; i ++)
-            rewardBubbles[i].isAnimation = false;
-
-        // germ
-        MoveDownTemplate[] germs = goGermCreate.GetComponentsInChildren<MoveDownTemplate>();
-        for (int i = 0; i < germs.Length; i ++)
-            germs[i].isAnimation = false;
-
-        // 奖励道具
-        MoveDownTemplate[] rewardTools = goRewardToolCreate.GetComponentsInChildren<MoveDownTemplate>();
-        for (int i = 0; i < rewardTools.Length; i ++)
-            rewardTools[i].isAnimation = false;
+        PauseOrResumeAllMoveObejct(false);
 
     }
 
@@ -110,8 +95,20 @@ public class GameManager : MonoBehaviour {
     public void PlayGamePauseOrResume(bool pauseOrResume)
     {
         print("-- silent -- game pause");
+        PauseOrResumeAllMoveObejct(pauseOrResume);
 
-        // 暂停背景
+        scriptPlayer.GamePauseOrResumePlayer(pauseOrResume);
+        scriptPlayerLife.GamePauseOrResumePlayerLife(pauseOrResume);
+        scriptPlayerDistance.GamePauseOrResumePlayerDistance(pauseOrResume);
+        scriptPlayerTime.GamePauseOrResumePlayerTime(pauseOrResume);
+        scriptPlayerScore.GamePauseOrResumePlayerScore(pauseOrResume);
+
+    }
+
+    // 暂停 or 继续， bg、奖励泡泡、奖励道具、germ
+    private void PauseOrResumeAllMoveObejct(bool pauseOrResume)
+    {
+        // 背景
         for (int i = 0; i < scriptBgMoveDownTemplates.Length; i++)
             scriptBgMoveDownTemplates[scriptBgMoveDownTemplates.Length - i - 1].isAnimation = pauseOrResume;
 
@@ -120,12 +117,15 @@ public class GameManager : MonoBehaviour {
         for (int i = 0; i < rewardBubbles.Length; i++)
             rewardBubbles[i].isAnimation = pauseOrResume;
 
-        scriptPlayer.GamePauseOrResumePlayer(pauseOrResume);
-        scriptPlayerLife.GamePauseOrResumePlayerLife(pauseOrResume);
-        scriptPlayerDistance.GamePauseOrResumePlayerDistance(pauseOrResume);
-        scriptPlayerTime.GamePauseOrResumePlayerTime(pauseOrResume);
-        scriptPlayerScore.GamePauseOrResumePlayerScore(pauseOrResume);
+        // germ
+        MoveDownTemplate[] germs = goGermCreate.GetComponentsInChildren<MoveDownTemplate>();
+        for (int i = 0; i < germs.Length; i++)
+            germs[i].isAnimation = pauseOrResume;
 
+        // 奖励道具
+        MoveDownTemplate[] rewardTools = goRewardToolCreate.GetComponentsInChildren<MoveDownTemplate>();
+        for (int i = 0; i < rewardTools.Length; i++)
+            rewardTools[i].isAnimation = pauseOrResume;
     }
 
     // 重新开始游戏
@@ -144,6 +144,7 @@ public class GameManager : MonoBehaviour {
         scriptPlayerTime.PlayGameResetPlayerTime();
         scriptPlayerLife.PlayGameResetPlayerLife();
         scriptPlayerScore.PlayGameResetPlayerSocre();
+        scripteGameResult.PlayGameResetGameResult();
 
     }
 
@@ -152,8 +153,8 @@ public class GameManager : MonoBehaviour {
     {
         for (int i = 0; i < goRoot.transform.childCount; i ++)
         {
-            //GameObject.Destroy(goRoot.transform.GetChild(i));
-            goRoot.transform.GetChild(i).gameObject.SetActive(false);
+            GameObject.Destroy(goRoot.transform.GetChild(i).gameObject);
+            //goRoot.transform.GetChild(i).gameObject.SetActive(false);
         }
     }
 

@@ -8,18 +8,18 @@
   <fullscreen>false</fullscreen>
   <hardMode>false</hardMode>
   <cameraDistortionEnabled>true</cameraDistortionEnabled>
-  <keyPlayer1Fire>Z</keyPlayer1Fire>
+  <keyPlayer1Fire>J</keyPlayer1Fire>
   <keyPlayer2Fire>T</keyPlayer2Fire>
-  <keyPlayer1Special>X</keyPlayer1Special>
+  <keyPlayer1Special>I</keyPlayer1Special>
   <keyPlayer2Special>Y</keyPlayer2Special>
-  <keyPlayer1Up>UpArrow</keyPlayer1Up>
+  <keyPlayer1Up>K</keyPlayer1Up>
   <keyPlayer2Up>W</keyPlayer2Up>
-  <keyPlayer1Down>DownArrow</keyPlayer1Down>
+  <keyPlayer1Down>S</keyPlayer1Down>
   <keyPlayer2Down>S</keyPlayer2Down>
-  <keyPlayer1Left>LeftArrow</keyPlayer1Left>
+  <keyPlayer1Left>A</keyPlayer1Left>
   <keyPlayer2Left>A</keyPlayer2Left>
-  <keyPlayer1Right>RightArrow</keyPlayer1Right>
+  <keyPlayer1Right>D</keyPlayer1Right>
   <keyPlayer2Right>D</keyPlayer2Right>
-  <keyPlayer1HighFive>C</keyPlayer1HighFive>
+  <keyPlayer1HighFive>L</keyPlayer1HighFive>
   <keyPlayer2HighFive>U</keyPlayer2HighFive>
 </PlayerOptions>

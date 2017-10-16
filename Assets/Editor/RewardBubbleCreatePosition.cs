@@ -19,7 +19,7 @@ public static class RewardBubbleCreatePosition {
     // 有多少个奖励泡泡
     private static List<RewardBubbleData> listRewardBubbleDatas = new List<RewardBubbleData>();
 
-    [MenuItem("silentTools/CreateOneRewardBubblePosition")]
+    [MenuItem("silentTools/CreateOneRewardBubblePosition")] // 创建一个奖励泡泡
 	static void CreateOneRewardBubblePosition()
     {
         Debug.Log("-- silent -- 开始创建奖励泡泡");
@@ -44,7 +44,7 @@ public static class RewardBubbleCreatePosition {
         Debug.Log("-- silent -- 结束创建奖励泡泡");
     }
 
-    [MenuItem("silentTools/CreateMultiRewardBubblePosition")]
+    [MenuItem("silentTools/CreateMultiRewardBubblePosition")] // 创建多个奖励泡泡
     static void CreateMultiRewardBubblePosition()
     {
         Debug.Log("-- silent -- 开始创建各个关卡的多个奖励泡泡");
@@ -177,7 +177,7 @@ public static class RewardBubbleCreatePosition {
     }
 
 
-    [MenuItem("silentTools/CrewatMultiRewardBubblePositionOrganize")]
+    [MenuItem("silentTools/CrewatMultiRewardBubblePositionOrganize")] // 创建多个有组织的奖励泡泡
     public static void CrewatMultiRewardBubblePositionOrganize()
     {
         Debug.Log("-- silent -- 开始创建各个关卡的多个奖励泡泡(有规律的)");
@@ -213,7 +213,7 @@ public static class RewardBubbleCreatePosition {
             for (int iBubbleAll = 0; iBubbleAll < rewardBubbleCount; )
             {
 
-                int rewardBubbleInterval = Random.Range(10, 50);
+                int rewardBubbleInterval = Random.Range(30, 80);
                 if (iBubbleAll + rewardBubbleInterval > rewardBubbleCount)
                     rewardBubbleInterval = rewardBubbleCount - iBubbleAll;
                 iBubbleAll += rewardBubbleInterval;
@@ -224,15 +224,18 @@ public static class RewardBubbleCreatePosition {
                 randomY += randomYstart;
 
                 // 每个相距的x、y值
-                float randomXInterval = Random.Range(ConstTemplate.playerRadius * 1.0f, ConstTemplate.playerRadius * 2.0f);
+                float randomXInterval = Random.Range(-ConstTemplate.playerRadius * 2.0f, ConstTemplate.playerRadius * 2.0f);
                 float randomYInterval = Random.Range(ConstTemplate.playerRadius * 2.0f, ConstTemplate.playerRadius * 3.0f);
+                // 泡泡的缩放值
+                float randomScalc = Random.Range(0.4f, 0.9f);
+                // 泡泡的距离随着泡泡的缩放比例来调整
+                randomYInterval *= randomScalc;
+                Debug.Log("-- silent -- 本次创建的奖励泡泡的缩放值 = " + randomScalc);
 
                 Debug.Log("-- silent -- 本次创建的奖励泡泡的数量 = " + rewardBubbleInterval);
                 for (int iBubbleInterval = 0; iBubbleInterval < rewardBubbleInterval; iBubbleInterval++)
                 {
-                    // 泡泡的缩放值
-                    float randomScalc = Random.Range(0.4f, 0.9f);
-
+                    
                     // y轴处理
                     randomY += randomYInterval;
 

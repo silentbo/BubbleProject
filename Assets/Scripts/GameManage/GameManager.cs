@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour {
     public GameObject goGermCreate;            // 创建germ(细菌)的root
     public GameObject goRewardToolCreate;      // 创建奖励道具的root
 
-    public MoveDownTemplate[] scriptBgMoveDownTemplates;     // 背景的移动效果，有几个背景就拖过来几个
+    //public MoveDownTemplate[] scriptBgMoveDownTemplates;     // 背景的移动效果，有几个背景就拖过来几个
+    public MoveDownTemplate scriptBgMoveDownTemplate1;       // 第一张背景 脚本
+    public MoveDownTemplate scriptBgMoveDownTemplate2;       // 第一张背景 脚本
     public PlayerLife scriptPlayerLife;                      // 玩家生命 脚本
     public Player scriptPlayer;                              // 玩家主角 脚本
     public PlayerScore scriptPlayerScore;                    // 玩家分数 脚本
@@ -43,11 +45,19 @@ public class GameManager : MonoBehaviour {
     private void ChangeSpeedBgMove(float speedMoveChanged)
     {
         speedBgMove = speedMoveChanged;
-        for (int i = 0; i < scriptBgMoveDownTemplates.Length; i++)
-        {
-            scriptBgMoveDownTemplates[i].isAnimation = true;
-            scriptBgMoveDownTemplates[i].speedMoveDown = speedMoveChanged;
-        }
+        scriptBgMoveDownTemplate2.speedMoveDown = speedMoveChanged;
+        scriptBgMoveDownTemplate1.speedMoveDown = speedMoveChanged;
+        scriptBgMoveDownTemplate2.isAnimation = true;
+        scriptBgMoveDownTemplate1.isAnimation = true;
+
+
+
+
+        //for (int i = 0; i < scriptBgMoveDownTemplates.Length; i++)
+        //{
+        //    scriptBgMoveDownTemplates[i].isAnimation = true;
+        //    scriptBgMoveDownTemplates[i].speedMoveDown = speedMoveChanged;
+        //}
     }
 
     // 开始游戏
@@ -76,8 +86,10 @@ public class GameManager : MonoBehaviour {
     {
         print("-- silent -- game over -- ");
 
-        for (int i = 0; i < scriptBgMoveDownTemplates.Length; i ++)
-            scriptBgMoveDownTemplates[scriptBgMoveDownTemplates.Length - i - 1].isAnimation = false;
+        //for (int i = 0; i < scriptBgMoveDownTemplates.Length; i ++)
+        //    scriptBgMoveDownTemplates[scriptBgMoveDownTemplates.Length - i - 1].isAnimation = false;
+        scriptBgMoveDownTemplate1.isAnimation = false;
+        scriptBgMoveDownTemplate2.isAnimation = false;
 
         scriptPlayer.GameOverPlayer();
         scriptPlayerLife.GameOverPlayerLife();
@@ -109,8 +121,10 @@ public class GameManager : MonoBehaviour {
     private void PauseOrResumeAllMoveObejct(bool pauseOrResume)
     {
         // 背景
-        for (int i = 0; i < scriptBgMoveDownTemplates.Length; i++)
-            scriptBgMoveDownTemplates[scriptBgMoveDownTemplates.Length - i - 1].isAnimation = pauseOrResume;
+        //for (int i = 0; i < scriptBgMoveDownTemplates.Length; i++)
+        //    scriptBgMoveDownTemplates[scriptBgMoveDownTemplates.Length - i - 1].isAnimation = pauseOrResume;
+        scriptBgMoveDownTemplate1.isAnimation = false;
+        scriptBgMoveDownTemplate2.isAnimation = false;
 
         // 暂停奖励泡泡
         MoveDownTemplate[] rewardBubbles = goRewardBubbleCreate.GetComponentsInChildren<MoveDownTemplate>();

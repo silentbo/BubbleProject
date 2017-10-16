@@ -80,7 +80,7 @@ public class CreateRewardBubbles : MonoBehaviour
         goNewRewardBubble.transform.parent = this.transform;
         goNewRewardBubble.tag = "reward_bubble";
         goNewRewardBubble.transform.localPosition = new Vector3(rewardBubblePositionDate.randomX, rewardBubblePositionDate.randomY - distanceMoved, 0.0f);
-        float randomScale = Random.Range(0.3f, 1.0f);
+        float randomScale = rewardBubblePositionDate.randomScale;
         goNewRewardBubble.transform.localScale = new Vector3(randomScale, randomScale, randomScale);
 
         // 添加 SpriteRenderer 组件， 设置层级

@@ -199,6 +199,7 @@ public class Player : MonoBehaviour{
                 break;
             case ConstTemplate.RewardToolType.RewardToolLargen:
             case ConstTemplate.RewardToolType.RewardToolLessen:
+                this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
                 CancelInvoke("PlayerLargenAndLessenFinish");
                 break;
             case ConstTemplate.RewardToolType.RewardToolNoBuff:

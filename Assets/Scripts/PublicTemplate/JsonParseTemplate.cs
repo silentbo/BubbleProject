@@ -36,6 +36,7 @@ public class ObjectPositionData
     public int id;
     public float randomX;
     public float randomY;
+    public float randomScale;
 }
 
 // json解析类

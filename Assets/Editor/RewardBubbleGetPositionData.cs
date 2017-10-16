@@ -47,9 +47,9 @@ public class RewardBubbleGetPositionData {
                 stringBuilderDataContent.Append("\n\t\t{\n\t\t\t\"id\":\"");
                 stringBuilderDataContent.Append(rewardBubbleCount ++);
                 stringBuilderDataContent.Append("\", \n\t\t\t\"randomX\":\"");
-                stringBuilderDataContent.Append(transChild.position.x);
+                stringBuilderDataContent.Append(transChild.localPosition.x);
                 stringBuilderDataContent.Append("\", \n\t\t\t\"randomY\":\"");
-                stringBuilderDataContent.Append(transChild.position.y);
+                stringBuilderDataContent.Append(transChild.localPosition.y);
                 stringBuilderDataContent.Append("\"\n\t\t}");
             }
         }

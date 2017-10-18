@@ -6,8 +6,9 @@ public class MoveDownTemplate : MonoBehaviour
 
     public bool isAnimation = true; // 是否运动
     public float speedMoveDown = 2.0f; // 下落速度
-	
-	void Update ()
+
+    // Update() FixedUpdate() LateUpdate()
+    void FixedUpdate()
 	{
 	    MoveDown();
 	}

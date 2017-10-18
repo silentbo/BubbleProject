@@ -33,7 +33,13 @@ public class PlayerTime : MonoBehaviour {
         stringBuilder.Append(playerTime.ToString("0.00"));
         stringBuilder.Append(" s");
 
+        float speedMove = scriptGameManager.speedBgMove + Time.deltaTime / 60;
+        
+        stringBuilder.Append(speedMove);
+
         textPlayerTime.text = stringBuilder.ToString();
+
+        scriptGameManager.ChangeSpeedBgMove(speedMove);
     }
 
     // 游戏结束

@@ -7,10 +7,9 @@ public class BgLoopMove : MonoBehaviour
 
     public bool isPlaying = true; // 是否正在游戏中
 
-    // Update is called once per frame
-    private void Update()
+    // Update() FixedUpdate() LateUpdate()
+    void FixedUpdate()
     {
-
         if (isPlaying)
         {
             LoopMove();

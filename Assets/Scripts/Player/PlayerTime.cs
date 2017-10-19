@@ -9,6 +9,7 @@ public class PlayerTime : MonoBehaviour {
     public bool isPlaying = true;           // 是否正在游戏
 
     public float playerTime = 0.0f;         // 玩家玩过的时间
+    public int playerTimeCount = 0;         // 玩家玩过的时间的次数，已10s为单位
     
     public Text textPlayerTime;             // 玩家玩过的时间 text
 
@@ -33,13 +34,16 @@ public class PlayerTime : MonoBehaviour {
         stringBuilder.Append(playerTime.ToString("0.00"));
         stringBuilder.Append(" s");
 
-        float speedMove = scriptGameManager.speedBgMove + Time.deltaTime / 60;
-        
-        stringBuilder.Append(speedMove);
-
+        int playerTimeCountTemp = (int)(playerTime / 10.0f);
+        if (playerTimeCountTemp != playerTimeCount)
+        {
+            playerTimeCount = playerTimeCountTemp;
+            float speedMove = scriptGameManager.speedBgMove + playerTimeCount / 10.0f;
+            scriptGameManager.ChangeSpeedBgMove(speedMove);
+        }
+        stringBuilder.Append(scriptGameManager.speedBgMove);
         textPlayerTime.text = stringBuilder.ToString();
 
-        scriptGameManager.ChangeSpeedBgMove(speedMove);
     }
 
     // 游戏结束
@@ -58,6 +62,7 @@ public class PlayerTime : MonoBehaviour {
     public void PlayGameResetPlayerTime()
     {
         this.playerTime = 0.0f;
+        this.playerTimeCount = 0;
         GamePauseOrResumePlayerTime(true);
     }
 
